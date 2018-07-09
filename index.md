@@ -64,4 +64,6 @@ The first few lines of code import the UC Berkeley `datascience` module and the 
 
 I graduated from SSHS in June 2017 with a cumulative GPA of 4.38. While at SSHS, I mainly focused on my interest in the hard sciences, like chemistry, and a fondness for anatomy that fostered from growing up with a mother who was a nurse. In the 12th grade, I took an Anatomy & Physiology course wherein our final project was to write a dissection manual for the dissection of a rabbit's respiratory system; you can view the finished product [here](https://docs.google.com/file/d/0B7kiIqQskeaWZkluR2xhTTBqX28/preview). 
 
+![Image](0001.jpg)
+
 I also completed a a Senior Project (what we termed out capstone projects), which involved publishing an issue of our literary magazine, [*Littérateur*](https://docs.google.com/file/d/0B7kiIqQskeaWdXU4RUg3bDhXSDQ/preview). The issue for which I was Editor-In-Chief focused on the US education system and its benefits and pitfalls. The publishing of this magazine I consider to be one of my greatest achievements, among such others as attaining the rank of Eagle Scout. 
