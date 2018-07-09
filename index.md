@@ -12,6 +12,6 @@ Please view my resume [here](https://docs.google.com/file/d/0B7kiIqQskeaWa3VvbDB
 
 | Freshman | Sophomore | Junior |
 | --- | --- | --- |
-| Fall 2018: Multivariable Calculus, General Chemistry & Quantitative Analysis |  |  |
-| Spring 2018: Linear Algebra & Differential Equations |  |  |
-| Summer 2018: Foundations of Data Science, Discrete Math |  |  |
+| *Fall 2018*: Multivariable Calculus, General Chemistry & Quantitative Analysis | *Fall 2019*: Structure and Function of Computer Programs, Linear Algebra, Intro to Analysis, Contemporary Theories of Political Economy |  |
+| *Spring 2018*: Linear Algebra & Differential Equations |  |  |
+| *Summer 2018*: Foundations of Data Science, Discrete Math |  |  |
