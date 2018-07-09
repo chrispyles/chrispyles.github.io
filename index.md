@@ -69,13 +69,21 @@ I graduated from SSHS in June 2017 with a cumulative GPA of 4.38. While at SSHS,
 I also completed a a Senior Project (what we termed out capstone projects), which involved publishing an issue of our literary magazine, [*Littérateur*](https://docs.google.com/file/d/0B7kiIqQskeaWdXU4RUg3bDhXSDQ/preview). The issue for which I was Editor-In-Chief focused on the US education system and its benefits and pitfalls. The publishing of this magazine I consider to be one of my greatest achievements, among such others as attaining the rank of Eagle Scout. 
 
 
-## Achievements
+## Achievements & Co-Curriculars
 
 #### Eagle Scout
 
 As of October 19, 2016, I am an Eagle Scout. The highest award in the Boy Scouts of America, I worked my way up through seven ranks and twenty-something merit badges before completing an Eagle Scout Service Project in order to obtain this honor. The Eagle Project involved designing, funding, and completing a project to benefit a local nonprofit; my project involved repainting ceiling tiles in my high school's MPR. You can see my project notebook (from proposal to conclusion) [here](https://docs.google.com/file/d/1wKD-LOLmlMjiT7LMbEYkorK6DCQPHQPd/preview).
 
 ![](eagle_project_picture.jpg)
+
+#### Foresight Prep @ Oberlin: Future of Communications
+
+I attended a seminar in July 2017 on communications at Oberlin College. This seminar was such and interesting experience for me: it was a chance for me to break out of my STEM-oriented coursework and to look into fields with more of a liberal arts focus. While I did decide on pursuing an Applied Maths degree, attending Foresight Prep opened my eyes to lots of different ways of communicating and gave me innumerable skills that I am confident will be a great aid in my professional life after university. Most of the class was focused on college prep and presentation skills, the latter of which I know will come into play. The final project that we completed as a part of the seminar was to develop, in groups of 3, a communications plan for a local nonprofit; my group's nonprofit was the Oberlin Food Hub. You can see some of the work that I did below, and look at the website mockup we made at [Link](comsfoodhub.weebly.com).
+
+This is one of the materials that I made for the Oberlin Food Hub as a part of the project. It is a template for a flier that they can use, created using Adobe InDesign in conjunction with Photoshop.
+
+![](food_hub_flier.jpg)
 
 
 ## Experience
