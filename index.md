@@ -83,7 +83,7 @@ I attended a seminar in July 2017 on communications at Oberlin College. This sem
 
 This is one of the materials that I made for the Oberlin Food Hub as a part of the project. It is a template for a flier that they can use, created using Adobe InDesign in conjunction with Photoshop.
 
-![Image](food_hub_flier.jpg)
+![Image](food_hub_flier.png)
 
 
 ## Experience
