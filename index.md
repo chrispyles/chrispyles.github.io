@@ -26,6 +26,8 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+![Image](https://docs.google.com/a/bpsk12.org/file/d/0B7kiIqQskeaWa3VvbDBJSDhjM1k/preview)
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
