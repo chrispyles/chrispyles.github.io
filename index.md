@@ -26,9 +26,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-<object>
-    <iframe src="https://docs.google.com/a/bpsk12.org/file/d/0B7kiIqQskeaWa3VvbDBJSDhjM1k/preview" width=100% height="600"></iframe>
-</object>
+<iframe width=100% height="600" src="https://docs.google.com/a/bpsk12.org/file/d/0B7kiIqQskeaWa3VvbDBJSDhjM1k/preview" ></iframe>
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
