@@ -1,7 +1,7 @@
 ## Chris Pyles: Portfolio
 
 ### About Me
-I am currently in my second year at UC Berkeley, and I am intending to major in Applied Mathematics with a focus in Data Science. I want to go into something finance- or data-related, but I've always enjoyed maths and I want to do something where I get to work with that on a daily basis. Because of my dedication to my high school coursework, I will likely graduate in only 5 semester, ending with a BA in December 2019. After this point, I'm unsure of where I would like to go. One part of me would love to have the chance to continue school in the form of graduate coursework, but another wants to go straight into a career with my newfound knowledge of data science and financial systems.
+I am an Eagle Scout and currently in my second year at UC Berkeley, and I am intending to major in Applied Mathematics with a focus in Data Science. I want to go into something finance- or data-related, but I've always enjoyed maths and I want to do something where I get to work with that on a daily basis. Because of my dedication to my high school coursework, I will likely graduate in only 5 semester, ending with a BA in December 2019. After this point, I'm unsure of where I would like to go. One part of me would love to have the chance to continue school in the form of graduate coursework, but another wants to go straight into a career with my newfound knowledge of data science and financial systems.
 
 ![](resume.jpg)
 
@@ -67,6 +67,15 @@ I graduated from SSHS in June 2017 with a cumulative GPA of 4.38. While at SSHS,
 ![Image](litmagcover.jpg)
 
 I also completed a a Senior Project (what we termed out capstone projects), which involved publishing an issue of our literary magazine, [*Littérateur*](https://docs.google.com/file/d/0B7kiIqQskeaWdXU4RUg3bDhXSDQ/preview). The issue for which I was Editor-In-Chief focused on the US education system and its benefits and pitfalls. The publishing of this magazine I consider to be one of my greatest achievements, among such others as attaining the rank of Eagle Scout. 
+
+
+## Achievements
+
+#### Eagle Scout
+
+As of October 19, 2016, I am an Eagle Scout. The highest award in the Boy Scouts of America, I worked my way up through seven ranks and twenty-something merit badges before completing an Eagle Scout Service Project in order to obtain this honor. The Eagle Project involved designing, funding, and completing a project to benefit a local nonprofit; my project involved repainting ceiling tiles in my high school's MPR. You can see my project notebook (from proposal to conclusion) [here](https://docs.google.com/file/d/1wKD-LOLmlMjiT7LMbEYkorK6DCQPHQPd/preview).
+
+![](eagle_project_picture.jpg)
 
 
 ## Experience
