@@ -26,7 +26,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+<object>
     <iframe src="https://docs.google.com/a/bpsk12.org/file/d/0B7kiIqQskeaWa3VvbDBJSDhjM1k/preview" width=100% height="600"></iframe>
 </object>
 
