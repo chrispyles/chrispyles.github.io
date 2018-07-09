@@ -28,9 +28,6 @@ from datascience import *
 import numpy as np
 np.set_printoptions(threshold=np.inf)
 
-
-# revised program THAT WORKS!!!!!!!!
-
 def check_sudoku(sudoku_table):
     ''' Takes a 9x9 table (not including column title row) of sudoku 
     solutions and determines whether or not they meet the rules of sudoku'''
