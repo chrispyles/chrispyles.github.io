@@ -58,4 +58,10 @@ def check_sudoku(sudoku_table):
         return collection_array
 ```
 
-The first few lines of code import the UC Berkeley `datascience` module and the module NumPy to work with arrays.
+The first few lines of code import the UC Berkeley `datascience` module and the module NumPy to work with arrays. The function prints a line that tells you whether or not your table is a solution, but it also returns the array `collection_array`, which I used while writing the program in order to determine where the faults lay in the iterations (the `for` loops).
+
+### Santa Susana High School
+
+I graduated from SSHS in June 2017 with a cumulative GPA of 4.38. While at SSHS, I mainly focused on my interest in the hard sciences, like chemistry, and a fondness for anatomy that fostered from growing up with a mother who was a nurse. In the 12th grade, I took an Anatomy & Physiology course wherein our final project was to write a dissection manual for the dissection of a rabbit's respiratory system; you can view the finished product [here](https://docs.google.com/file/d/0B7kiIqQskeaWZkluR2xhTTBqX28/preview). 
+
+I also completed a a Senior Project (what we termed out capstone projects), which involved publishing an issue of our literary magazine, [*Littérateur*](https://docs.google.com/file/d/0B7kiIqQskeaWdXU4RUg3bDhXSDQ/preview). The issue for which I was Editor-In-Chief focused on the US education system and its benefits and pitfalls. The publishing of this magazine I consider to be one of my greatest achievements, among such others as attaining the rank of Eagle Scout. 
