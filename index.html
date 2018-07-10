@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chris Pyles: A Resume</title>
+		<link href="./style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+
+		<br>
+
+		<h1>Christopher Pyles</h1>
+
+		<br>
+
+			<p class="links"><a href="#about-me">About Me</a> | <a href="#education">Education</a> | <a href="#achievements">Achievements & Co-Curriculars</a> | <a href="#experience">Experience</a> | <a href="#resume">Resume</a></p>
+		
+		<br>
+		<br>
+
+		<div id="about-me">
+			<h2>About Me</h2>
+				<p>I am an Eagle Scout and currently in my second year at UC Berkeley, and I am intending to major in Applied Mathematics with a focus in Data Science. I want to go into something finance- or data-related, but I’ve always enjoyed maths and I want to do something where I get to work with that on a daily basis. Because of my dedication to my high school coursework, I will likely graduate in only 5 semester, ending with a BA in December 2019. After this point, I’m unsure of where I would like to go. One part of me would love to have the chance to continue school in the form of graduate coursework, but another wants to go straight into a career with my newfound knowledge of data science and financial systems. </p>
+		</div>
+
+		<br>
+		<br>
+
+		<div id="education">
+			<h1>Education</h1>
+			<div>
+				<h2>University of California, Berkeley</h2>
+				<p class="subheading">Major in Applied Mathematics with a Focus in Data Science</p>
+
+				<br>
+
+				<p>I am currently attending UC Berkeley to earn my BA in Applied Maths, with an anticipated graduation of <strong>December 2019</strong> and a cumulative GPA of <strong>3.62</strong>. While studying, I am trying to also take classes that are relevant to my interest in financial systems and the economy, while also working on-campus and being active in extra-curriculars.</p>
+
+				<br>
+				<br>
+
+				<h3>Work Samples</h3>
+
+					<br>
+
+					<p>In the course of my work while taking Introduction to Culture and Natural Resource Management with Dr. Kurt Spreyer, I participated in Dr. Spreyer’s research involving the development of the East Bay shoreline. As a part of this project, I used UC Berkeley’s <code>datascience</code> module of Python to do various analyses of the demographic changes of the East Bay. My work is published on the site we created, which can be found <a href="https://sites.google.com/berkeley.edu/espm50-spreyer/demography">here</a>.</p>
+					<br>
+					<p>In my own free time, I used what I learned between sitting in on Data 8 lectures during my work at ETS and some studying I did for CS 61A to write a Python function that takes in a table with a filled in sudoku puzzle and determines whether or not the puzzle is solved correctly. Here is the program:</p>
+					<br>
+
+					<div id="sudoku-program">
+						<p class="code">from datascience import * <br>
+								import numpy as np <br>
+								np.set_printoptions(threshold=np.inf) <br>
+								<br>
+								def check_sudoku(sudoku_table): <br>
+								    <indent> ''' Takes a 9x9 table (not including column title row) of sudoku </indent> <br>
+								    <indent> solutions and determines whether or not they meet the rules of sudoku''' </indent><br>
+								    <indent> collection_array = make_array() </indent><br>
+								    <indent> for i in np.arange(1, 10, 1): </indent><br>
+								        <indent> <indent> for j in np.arange(9): </indent></indent><br>
+								            <indent> <indent><indent>num_occurances = np.count_nonzero(sudoku_table.column(j) == i) </indent></indent></indent><br>
+								            <indent> <indent><indent>if num_occurances == 1: </indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>collection_array = np.append(collection_array, 1) </indent></indent></indent></indent><br>
+								            <indent> <indent><indent> else: </indent></indent></indent><br>
+								                <indent><indent> <indent> <indent>print("Sorry, but your answers don't work.") </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>print(collection_array) </indent> </indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>return len(collection_array) </indent> </indent></indent></indent><br>
+								    <indent> for i in np.arange(1, 10, 1): </indent><br>
+								        <indent> <indent> for j in np.arange(9): </indent></indent><br>
+								            <indent> <indent> <indent> num_occurances = np.count_nonzero(sudoku_table.row(j) == i) </indent></indent></indent><br>
+								            <indent> <indent> <indent> if num_occurances == 1: </indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> collection_array = np.append(collection_array, 1) </indent></indent></indent></indent><br>
+								            <indent> <indent> <indent> else: </indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> print("Sorry, but your answers don't work.") </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> print(collection_array) </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> return len(collection_array) </indent></indent></indent></indent><br>
+								    <indent> if np.sum(collection_array) == 162: </indent><br>
+								        <indent> <indent> print('Congratulations! Your sudoku answers check out!') </indent></indent><br>
+								        <indent> <indent> return collection_array </indent></indent><br>
+								    <indent> else: </indent><br>
+								        <indent> <indent> print("Sorry, but your answers don't work.") </indent></indent><br>
+								        <indent> <indent> return collection_array </indent></indent></p>
+					</div>
+
+					<br>
+
+					<p>The first few lines of code import the UC Berkeley <code>datascience</code> module and the module NumPy to work with arrays. The function prints a line that tells you whether or not your table is a solution, but it also returns the array <code>collection_array</code>, which I used while writing the program in order to determine where the faults lay in the iterations (the <code>for</code> loops).</p>
+
+
+			</div>
+
+			<br>
+			<br>
+
+			<div>
+				<h2>Santa Susana High School</h2>
+
+				<br>
+
+				<p>I graduated from SSHS in June 2017 with a cumulative GPA of 4.38. While at SSHS, I mainly focused on my interest in the hard sciences, like chemistry, and a fondness for anatomy that fostered from growing up with a mother who was a nurse. In the 12th grade, I took an Anatomy & Physiology course wherein our final project was to write a dissection manual for the dissection of a rabbit’s respiratory system; you can view the finished product below.</p>
+
+				<br>
+
+				<p><iframe src="https://docs.google.com/a/bpsk12.org/file/d/0B7kiIqQskeaWdXU4RUg3bDhXSDQ/preview" width=100% height="500"></iframe></p>
+
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div id="achievements">
+
+			<h1>Achievements & Co-Curriculars</h1>
+
+			<br>
+
+			<h2>Eagle Scout</h2>
+
+			<br>
+
+			<p>As of October 19, 2016, I am an Eagle Scout. The highest award in the Boy Scouts of America, I worked my way up through seven ranks and twenty-something merit badges before completing an Eagle Scout Service Project in order to obtain this honor. The Eagle Project involved designing, funding, and completing a project to benefit a local nonprofit; my project involved repainting ceiling tiles in my high school’s MPR. You can see my project notebook (from proposal to conclusion) <a href="https://docs.google.com/file/d/1wKD-LOLmlMjiT7LMbEYkorK6DCQPHQPd/preview">here</a>.</p>
+
+			<br>
+
+			<p class="image"><img src="./assets/eagle_project_picture.jpg" height="400"/></p>
+
+			<br>
+			<br>
+
+			<h2>Foresight Prep @ Oberlin: Future of Communications</h2>
+
+			<br>
+
+			<p>I attended a seminar in July 2017 on communications at Oberlin College. This seminar was such and interesting experience for me: it was a chance for me to break out of my STEM-oriented coursework and to look into fields with more of a liberal arts focus. While I did decide on pursuing an Applied Maths degree, attending Foresight Prep opened my eyes to lots of different ways of communicating and gave me innumerable skills that I am confident will be a great aid in my professional life after university. Most of the class was focused on college prep and presentation skills, the latter of which I know will come into play. The final project that we completed as a part of the seminar was to develop, in groups of 3, a communications plan for a local nonprofit; my group’s nonprofit was the Oberlin Food Hub. You can see some of the work that I did below, and look at the website mockup we made at <a href="comsfoodhub.weebly.com">comsfoodhub.weebly.com</a>.</p>
+
+			<br>
+
+			<p>This is one of the materials that I made for the Oberlin Food Hub as a part of the project. It is a template for a flier that they can use, created using Adobe InDesign in conjunction with Photoshop.</p>
+
+			<br>
+
+			<p class="image"><img src="./assets/food_hub_flier.png" height="700"/></p>
+
+		</div>
+
+		<br>
+		<br>
+
+		<div id="experience">
+
+			<h1>Experience</h1>
+
+			<br>
+
+			<h2>Student Assistant</h2>
+			<p class="subheading">UC Berkeley Summer Sessions, September 2017 - Present</p>
+
+			<br>
+
+			<p>As a student assistant, customer service skills are at the crux of my responsibilities. I interact with all of the students who need assistant from the Student Services team, and so I need to effectively work with others, and be able to help alleviate the concerns of others, give information regarding different aspects of summer courses, and perform basic office tasks. I also have a few different projects; one of my most recent was developing the training for other student assistants, which can be found here.</p>
+
+			<br>
+			<br>
+
+			<h2>Auditorium Operator</h2>
+			<p class="subheading">UC Berkeley Educational Technology Services, January 2018 - May 2018</p>
+
+			<br>
+
+			<p>As an auditorium operator, I operated the camera, audio, and other technical equipment in order to facilitate the effect running of a large (700+ person) lecture. I also interact with the professors of the courses in order to understand what they need for the lecture, and to deliver information about the auditorium if it is needed. This is another position in which customer service skills are essential, since most of my interactions with the professors occur when there are technical difficulties. It was in this capacity that I sat in on the Data 8 lectures in Spring 2018 and discovered my interest in the field, which sparked the desire to change my Applied Maths focus to the subject. It is also how I learned the <code>datascience</code> module before taking Data 8.</p>
+
+			<br>
+			<br>
+
+			<h2>Cast Member</h2>
+			<p class="subheading">Regal Civic Center 16 & IMAX, October 2015 - December 2017</p>
+
+			<br>
+
+			<p>As a cast member at Regal, I developed most of my customer service skills by interacting with many guests (the average attendance on the weekends was 3,500 guests per day). I assisted guests with purchases, directions, and other issues; in fact, I dealt with many power outage issues, including handling guest service (refunds, swaps, etc.) and bringing projection back online after a blackout. During my time at Regal, I took on many responsibilities outside the scope of my job description, routinely handling projects that I volunteered for in order to learn ore about operations; I even learned how to operate projection, normally a function of management!</p>
+
+		</div>
+
+		<br>
+		<br>
+
+		<div id="resume">
+			<h1>Resume</h1>
+				<p><iframe src="https://docs.google.com/a/bpsk12.org/file/d/0B7kiIqQskeaWa3VvbDBJSDhjM1k/preview" width=100% height="700"></iframe></p>
+		</div>
+	</body>
+</html>
