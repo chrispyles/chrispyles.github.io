@@ -119,8 +119,8 @@ indent {
 }
 
 #about-me {
-	margin-top: 100px;
-	padding-top: 0;
+	margin-top: -100px;
+	padding-top: 200px;
 }
 
 .fixed {
