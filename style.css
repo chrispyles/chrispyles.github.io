@@ -119,6 +119,7 @@ indent {
 
 #about-me {
 	margin-top: 100px;
+	padding-top: 0;
 }
 
 .fixed {
@@ -130,4 +131,10 @@ indent {
 	top: 0;
 	padding-top: 20px;
 	z-index: 1;
+}
+
+.anchor {
+	padding-top: 150px;
+	margin-top: -150px;
+}
 }
