@@ -92,6 +92,7 @@ tr {
 .links{
 	text-align: center;
 	background-color: white;
+	padding-bottom: 10px;
 }
 
 code {
