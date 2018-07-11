@@ -11,12 +11,14 @@ h1 {
 	margin: 0 auto;
 	width: 60%;
 	letter-spacing: 2px;
-	font-weight: normal;
+	font-weight: 300;
 }
 
 h1.name {
 	text-transform: uppercase;
 	letter-spacing: 7px;
+	font-size: 50px;
+	font-weight: 300;
 }
 
 h2 {
@@ -126,4 +128,5 @@ indent {
 	margin: 0 auto;
 	top: 0;
 	padding-top: 20px;
+	z-index: 1;
 }
