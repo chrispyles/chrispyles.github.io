@@ -99,6 +99,7 @@ code {
 	font-family: Courier, monospace;
 	background: #EFEEEE;
 	font-weight: normal;
+	display: inline;
 }
 
 indent {
