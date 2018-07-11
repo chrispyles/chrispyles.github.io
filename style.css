@@ -8,6 +8,12 @@ h1 {
 	text-align: center;
 	margin: 0 auto;
 	width: 60%;
+	letter-spacing: 2px;
+}
+
+h1.name {
+	text-transform: uppercase;
+	letter-spacing: 7px;
 }
 
 h2 {
@@ -15,6 +21,7 @@ h2 {
 	text-align: left;
 	margin: 0 auto;
 	width: 60%;
+	letter-spacing: 2px;
 }
 
 h3 {
@@ -23,6 +30,7 @@ h3 {
 	text-align: left;
 	margin: 0 auto;
 	width: 60%;
+	letter-spacing: 2px;
 }
 
 p {
@@ -30,6 +38,32 @@ p {
 	font-size: 16px;
 	margin: 0 auto;
 	width: 60%;
+}
+
+table {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	margin: 0 auto;
+	width: 60%;
+	border: 1px solid black;
+	table-layout: fixed;
+}
+
+th, td {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	width: 20%;
+	padding: 30px;
+	vertical-align: top;
+}
+
+th {
+	border-bottom: 1px solid black;
+}
+
+tr {
+	width: 20%;
+	border: 1px solid black;
 }
 
 .code {
@@ -62,5 +96,13 @@ indent {
 }
 
 .image {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
 	text-align: center;
 }
