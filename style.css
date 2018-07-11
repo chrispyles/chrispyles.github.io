@@ -2,14 +2,16 @@
 * {
 	margin: 0 auto;
 	padding: 0;
+	line-height: 1.75;
 }
 
 h1 {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
 	margin: 0 auto;
 	width: 60%;
 	letter-spacing: 2px;
+	font-weight: normal;
 }
 
 h1.name {
@@ -18,32 +20,33 @@ h1.name {
 }
 
 h2 {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Oswald', sans-serif;
 	text-align: left;
 	margin: 0 auto;
 	width: 60%;
 	letter-spacing: 2px;
+	font-weight: normal;
 }
 
 h3 {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
 	text-align: left;
 	margin: 0 auto;
 	width: 60%;
 	letter-spacing: 2px;
+	font-size: 22px;
 }
 
 p {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	margin: 0 auto;
 	width: 60%;
-	line-height: 1.75em;
 }
 
 table {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	margin: 0 auto;
 	width: 60%;
@@ -52,10 +55,10 @@ table {
 }
 
 th, td {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	width: 20%;
-	padding: 30px;
+	padding: 10px 30px;
 	vertical-align: top;
 }
 
@@ -75,20 +78,22 @@ tr {
 }
 
 .subheading {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 17px;
 	font-weight: normal;
 	text-align: left;
 	margin: 0 auto;
 	width: 60%;
+	font-style: italic;
 }
 
 .links{
 	text-align: center;
+	background-color: white;
 }
 
 code {
-	font-family: Courier;
+	font-family: Courier, monospace;
 	background: #EFEEEE;
 	font-weight: normal;
 }
