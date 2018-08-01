@@ -173,3 +173,19 @@ div.fixed {
 	padding: 10px;
 	border-bottom: 1px solid black;
 }
+
+/*
+
+@media (max-width: 500px) {
+
+	* {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+}
+
+*/
