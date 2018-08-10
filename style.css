@@ -108,6 +108,11 @@ code {
 	display: inline;
 }
 
+span.eqn {
+	font-family: serif;
+	font-style: italic;
+}
+
 indent {
 	margin-left: 5%;
 }
