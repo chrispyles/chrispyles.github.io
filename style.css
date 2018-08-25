@@ -79,7 +79,7 @@ tr {
 
 .code {
 	background: #EFEEEE;
-	font-family: Courier;
+	font-family: Courier, monospace;
 	font-weight: normal;
 }
 
