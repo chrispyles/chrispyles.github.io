@@ -41,8 +41,8 @@ h3 {
 }
 
 p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
 }
@@ -52,8 +52,8 @@ p.iframe {
 }
 
 table {
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
 	border: 1px solid black;
@@ -61,8 +61,8 @@ table {
 }
 
 th, td {
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 19px;
 	width: 20%;
 	padding: 10px 30px;
 	vertical-align: top;
@@ -77,6 +77,10 @@ tr {
 	border: 1px solid black;
 }
 
+a {
+	text-decoration: none;
+}
+
 .code {
 	background: #EFEEEE;
 	font-family: Courier, monospace;
@@ -84,8 +88,8 @@ tr {
 }
 
 .subheading {
-	font-family: 'Raleway', sans-serif;
-	font-size: 17px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 21px;
 	font-weight: normal;
 	text-align: left;
 	margin: 0 auto;
@@ -97,7 +101,7 @@ tr {
 	text-align: center;
 	background-color: white;
 	padding-bottom: 20px;
-	font-family: Raleway, sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
 }
 
@@ -157,8 +161,8 @@ div.fixed {
 
 .grid {
 	display: grid;
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
 	grid-template: 45px 6fr 6fr 4fr / repeat(3, 1fr);
@@ -219,7 +223,7 @@ div.fixed {
 	}
 
 	h1 {
-		font-size: 20px;
+		font-size: 19px;
 	}
 
 }
