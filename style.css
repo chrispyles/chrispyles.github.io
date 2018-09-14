@@ -41,10 +41,11 @@ h3 {
 }
 
 p {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
+	font-weight: 200;
 }
 
 p.iframe {
@@ -52,16 +53,17 @@ p.iframe {
 }
 
 table {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
 	border: 1px solid black;
 	table-layout: fixed;
+	font-weight: 200;
 }
 
 th, td {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 19px;
 	width: 20%;
 	padding: 10px 30px;
@@ -85,23 +87,44 @@ a {
 	background: #EFEEEE;
 	font-family: Courier, monospace;
 	font-weight: normal;
+	font-size: 16px;
 }
 
 .subheading {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 21px;
-	font-weight: normal;
+	font-family: 'Muli', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
 	text-align: left;
 	margin: 0 auto;
 	width: 75%;
 	font-style: italic;
 }
 
+/*
+p.title, h2.title{
+    display: inline-block; 
+}
+
+h2.title {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+    width: 75%;
+}
+
+p.title {
+    padding: 0;
+    margin: 0;
+    color: #ff0033
+    text-align: left;
+} */
+
 .links {
 	text-align: center;
 	background-color: white;
 	padding-bottom: 20px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	width: 100%;
 }
 
@@ -110,6 +133,7 @@ code {
 	background: #EFEEEE;
 	font-weight: normal;
 	display: inline;
+	font-size: 16px;
 }
 
 span.eqn {
@@ -137,9 +161,14 @@ indent {
 	font-weight: bold;
 }
 
-#about-me {
+#about-me, #education {
 	margin-top: -100px;
 	padding-top: 200px;
+}
+
+#interests, #achievements, #experience {
+	margin-top: -150px;
+	padding-top: 300px;
 }
 
 div.fixed {
@@ -161,7 +190,8 @@ div.fixed {
 
 .grid {
 	display: grid;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
+	font-weight: 200;
 	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
