@@ -171,22 +171,60 @@
 
 				<h3>Work Samples</h3>
 
+					<p>As quick sample of the kind of work that goes on in UC Berkeley introductory CS classes, here is one of the homework problems I completed in CS 88: it is a function that computes the hailstone sequence of a number <code>n</code> and returns the number of steps in that sequence. A hailstone sequence goes like this:</p>
+					<p><indent>While <code>n</code> is not 1:</p>
+					<p><indent><indent>1. If <code>n</code> is even, divide it by 2.</p>
+					<p><indent><indent>2. If <code>n</code> is odd, multiply it by 3 and add 1.</p>
+					<p><indent><indent>3. Repeat until <code>n</code> is 1.</p>
+
+					<p>Here is the program I wrote to find the hailstone sequence of a number <code>n</code> (note that the code follows the same sequence of actions as the description above; a good strategy to follow when writing a program is to follow explicit, step-by-step instructions until the desired result is achieved):</p>
+
+					<p class="code">
+						def hailstone(n): <br>
+						<indent>print(n)<br>
+							<indent>steps = 1 <br>
+						    <indent>while n != 1: <br>
+						    	<indent><indent>if n % 2 == 0: <br>
+						    		<indent><indent><indent>n = int(n/2) <br>
+						    		<indent><indent><indent>print(n) <br>
+						    		<indent><indent><indent>steps += 1 <br></indent>
+						    	<indent><indent>else: <br>
+						    		<indent><indent><indent>n = int(3*n+1) <br>
+						    		<indent><indent><indent>print(n) <br>
+						    		<indent><indent><indent>steps += 1 <br></indent>
+						    <indent>return steps</indent>
+					</p>
+
+					<br>
+
+					<p>If you run <code>hailstone(10)</code>, you would get this output:</p>
+
+					<p class="code">
+						>>> a = hailstone(10) <br>
+						10<br>
+						5<br>
+						16<br>
+						8<br>
+						4<br>
+						2<br>
+						1<br>
+						>>> a<br>
+						7
+					</p>
+
+					<br>
+
 					<p>In the course of my work while taking Introduction to Culture and Natural Resource Management with Dr. Kurt Spreyer, I participated in Dr. Spreyer’s research involving the development of the East Bay shoreline. As a part of this project, I used UC Berkeley’s <code>datascience</code> module of Python to do various analyses of the demographic changes of the East Bay. My work is published on the site we created, which can be found <a href="https://sites.google.com/berkeley.edu/espm50-spreyer/demography" target="_blank">here</a>.</p>
 					<br>
 					<p>When I took Data 8 during the summer of 2018, I was did lots of work using data sets in conjunction with the tools that I learned in the class. One sample of my work, the final project for the class focusing on classifiers (specifically <span class="eqn">k</span>-nearest neighbors classifiers), can be fond in <a href="./files/Data_8_Su18.zip" target="_blank"> this zip file</a>. I also have a sample of my writing from when I took The Classic Myths in the spring of 2018. <a href="./files/Classics_28_Sp18.pdf" target="_blank">This essay </a> is a comparison between classic tropes in Greek mythology, specificaly the <em>Odyssey</em>, and a Coen Bros. film, <em>O Brother, Where Art Thou?</em></p>
 					<br>
 					<p>As a part of my summer courses in 2018, while I was learning Python, Java, HTML, and CSS, I also took up the task of learning LaTeX so that I could turn in typed homework for my Discrete Mathematics class (I'm sure more than a few of you can understand the pains of poor penmanship). To showcase my skills at LaTeX, please see <a href="./files/Math_55_Su18.pdf" target="_blank">this assignment</a>, which I wrote and submitted using LaTeX. I have since been using LaTeX to turn in the written portions of some of my Stat 140 assignments; for a particularly nice example, please see <a href="./files/Stat_140_Fa18.pdf" target="_blank">this piece</a> of a recent homework assignment that I submitted.</p>
-					<br>
 
 
-
+			<!--
 
 
 					<p>In my own free time, I used what I learned between sitting in on Data 8 lectures during my work at <a href="#ETSmodal">ETS</a> and some studying I did for CS 88 to write a Python function that takes in a table with a filled in sudoku puzzle and determines whether or not the puzzle is solved correctly. Here is the program:</p>
-
-
-
-					<!-- <p>In my own free time, I used what I learned between sitting in on Data 8 lectures during my work at <a href="#experience">ETS</a> and some studying I did for CS 88 to write a Python function that takes in a table with a filled in sudoku puzzle and determines whether or not the puzzle is solved correctly. Here is the program:</p> -->
 
 
 
@@ -231,6 +269,8 @@
 					<br>
 
 					<p>The first few lines of code import the UC Berkeley <code>datascience</code> module and the module NumPy to work with arrays. The function prints a line that tells you whether or not your table is a solution, but it also returns the array <code>collection_array</code>, which I used while writing the program in order to determine where the faults lay in the iterations (the <code>for</code> loops).</p>
+
+		-->
 
 
 			</div>
