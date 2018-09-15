@@ -11,24 +11,37 @@
 
 
 	<body>
-		<a href="#ETSmodal">ETS</a>
+				<div class="code-box">
 
-		<div id="ETSmodal" class="modal">
+					<p><span class="def">def </span><span class="func">hailstone<span class="var">(<span class="int">n</span>)</span></span></p>
 
-			<div>
+					<p><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
 
-				<h2 class="align-center">UC Berkeley ETS</h2>
+					<p><indent><span class="var">steps </span><span class="op">= </span><span class="int">1</span></p>
 
-				<br>
-				
-				<p>I worked at ETS during the Spring 2018 semester, operating the booth in the back of one of the large lecture halls (which mainly involved projection, sound, lighting, and camera work). As a part of this, I would listen to lectures for classes, without actually being enrolled in them. One of the classes I worked during, Data 8, sparked my interest and led to my taking the class during the subsequence summer term.</p>
+					<p><indent><span class="iter">while </span><span class="var">n <span class="op">!= </span><span class="int">1</span>:</span></p>
 
-				<br>
+					<p><indent><indent><span class="iter">if </span><span class="var">n <span class="op">% </span><span class="int">2 <span class="op">== </span>0</span>:</p>
 
-				<p class="align-center"><a href="#close" title="Close" class="close">Close</a></p>
+					<p><indent><indent><indent><span class="var">n <span class="op">= </span><span class="inbuilt">int</span>(n<span class="op">/</span><span class="int">2</span>)</span></p>
+
+					<p><indent><indent><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
+
+					<p><indent><indent><indent><span class="var">steps <span class="op">+= </span><span class="int">1</span></span></p>
+
+					<p><indent><indent><span class="iter">else</span><span class="var">:</span></p>
+
+					<p><indent><indent><indent><span class="var">n <span class="op">= </span><span class="inbuilt">int</span>(<span class="int">3</span><span class="op">*</span>n<span class="op">+</span><span class="int">1</span>)</span></p>
+
+					<p><indent><indent><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
+
+					<p><indent><indent><indent><span class="var">steps <span class="op">+= </span><span class="int">1</span></span></p>
+
+					<p><indent><span class="iter">return </span><span class="var">steps</span></p>
+
+				</div>
 
 			</div>
 
-		</div>
 	</body>
 </html>
