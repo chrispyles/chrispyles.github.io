@@ -11,24 +11,39 @@
 
 
 	<body>
-		<a href="#ETSmodal">ETS</a>
-
-		<div id="ETSmodal" class="modal">
-
-			<div>
-
-				<h2 class="align-center">UC Berkeley ETS</h2>
-
-				<br>
-				
-				<p>I worked at ETS during the Spring 2018 semester, operating the booth in the back of one of the large lecture halls (which mainly involved projection, sound, lighting, and camera work). As a part of this, I would listen to lectures for classes, without actually being enrolled in them. One of the classes I worked during, Data 8, sparked my interest and led to my taking the class during the subsequence summer term.</p>
-
-				<br>
-
-				<p class="align-center"><a href="#close" title="Close" class="close">Close</a></p>
-
-			</div>
-
-		</div>
+				<div id="sudoku-program">
+						<p class="code">from datascience import * <br>
+								import numpy as np <br>
+								np.set_printoptions(threshold=np.inf) <br>
+								<br>
+								def check_sudoku(sudoku_table): <br>
+								    <indent> ''' Takes a 9x9 table (not including column title row) of sudoku </indent> <br>
+								    <indent> solutions and determines whether or not they meet the rules of sudoku''' </indent><br>
+								    <indent> collection_array = make_array() </indent><br>
+								    <indent> for i in np.arange(1, 10, 1): </indent><br>
+								        <indent> <indent> for j in np.arange(9): </indent></indent><br>
+								            <indent> <indent><indent>num_occurances = np.count_nonzero(sudoku_table.column(j) == i) </indent></indent></indent><br>
+								            <indent> <indent><indent>if num_occurances == 1: </indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>collection_array = np.append(collection_array, 1) </indent></indent></indent></indent><br>
+								            <indent> <indent><indent> else: </indent></indent></indent><br>
+								                <indent><indent> <indent> <indent>print("Sorry, but your answers don't work.") </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>print(collection_array) </indent> </indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>return len(collection_array) </indent> </indent></indent></indent><br>
+								    <indent> for i in np.arange(1, 10, 1): </indent><br>
+								        <indent> <indent> for j in np.arange(9): </indent></indent><br>
+								            <indent> <indent> <indent> num_occurances = np.count_nonzero(sudoku_table.row(j) == i) </indent></indent></indent><br>
+								            <indent> <indent> <indent> if num_occurances == 1: </indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> collection_array = np.append(collection_array, 1) </indent></indent></indent></indent><br>
+								            <indent> <indent> <indent> else: </indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> print("Sorry, but your answers don't work.") </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> print(collection_array) </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> return len(collection_array) </indent></indent></indent></indent><br>
+								    <indent> if np.sum(collection_array) == 162: </indent><br>
+								        <indent> <indent> print('Congratulations! Your sudoku answers check out!') </indent></indent><br>
+								        <indent> <indent> return collection_array </indent></indent><br>
+								    <indent> else: </indent><br>
+								        <indent> <indent> print("Sorry, but your answers don't work.") </indent></indent><br>
+								        <indent> <indent> return collection_array </indent></indent></p>
+					</div> 
 	</body>
 </html>

@@ -14,7 +14,7 @@
 
 		<div class="fixed">
 
-			<h1 class="name">Christopher Pyles</h1>
+			<h1 class="name"><a id="name" href="./index.html">Christopher Pyles</a></h1>
 
 				<p></p>
 
@@ -180,6 +180,39 @@
 
 					<p>Here is the program I wrote to find the hailstone sequence of a number <code>n</code> (note that the code follows the same sequence of actions as the description above; a good strategy to follow when writing a program is to follow explicit, step-by-step instructions until the desired result is achieved):</p>
 
+					<br>
+
+					<div class="code-box">
+
+					<p class="code-box"><span class="def">def </span><span class="func">hailstone<span class="var" style="color: black;">(<span class="int">n</span>):</span></span></p>
+
+					<p class="code-box"><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
+
+					<p class="code-box"><indent><span class="var">steps </span><span class="op">= </span><span class="int">1</span></p>
+
+					<p class="code-box"><indent><span class="iter">while </span><span class="var">n <span class="op">!= </span><span class="int">1</span>:</span></p>
+
+					<p class="code-box"><indent><indent><span class="iter">if </span><span class="var">n <span class="op">% </span><span class="int">2 <span class="op">== </span>0</span>:</p>
+
+					<p class="code-box"><indent><indent><indent><span class="var">n <span class="op">= </span><span class="inbuilt">int</span>(n<span class="op">/</span><span class="int">2</span>)</span></p>
+
+					<p class="code-box"><indent><indent><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
+
+					<p class="code-box"><indent><indent><indent><span class="var">steps <span class="op">+= </span><span class="int">1</span></span></p>
+
+					<p class="code-box"><indent><indent><span class="iter">else</span><span class="var">:</span></p>
+
+					<p class="code-box"><indent><indent><indent><span class="var">n <span class="op">= </span><span class="inbuilt">int</span>(<span class="int">3</span><span class="op">*</span>n<span class="op">+</span><span class="int">1</span>)</span></p>
+
+					<p class="code-box"><indent><indent><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
+
+					<p class="code-box"><indent><indent><indent><span class="var">steps <span class="op">+= </span><span class="int">1</span></span></p>
+
+					<p class="code-box"><indent><span class="iter">return </span><span class="var">steps</span></p>
+
+				</div>
+
+					<!--
 					<p class="code">
 						def hailstone(n): <br>
 						<indent>print(n)<br>
@@ -194,13 +227,18 @@
 						    		<indent><indent><indent>print(n) <br>
 						    		<indent><indent><indent>steps += 1 <br></indent>
 						    <indent>return steps</indent>
-					</p>
+					</p> 
+				-->
 
 					<br>
 
 					<p>If you run <code>hailstone(10)</code>, you would get this output:</p>
 
-					<p class="code">
+					<br>
+
+					<!--
+					
+						<p class="py-interp">
 						>>> a = hailstone(10) <br>
 						10<br>
 						5<br>
@@ -212,6 +250,22 @@
 						>>> a<br>
 						7
 					</p>
+
+					-->
+
+					<div class="py-interp">
+					<p class="py-interp">
+						>>> a = hailstone(10) <br>
+						10<br>
+						5<br>
+						16<br>
+						8<br>
+						4<br>
+						2<br>
+						1<br>
+						>>> a<br>
+						7
+					</p></div>
 
 					<br>
 
