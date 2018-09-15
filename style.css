@@ -252,6 +252,8 @@ div.fixed {
 
 
 
+
+
 /* Code Boxes */
 
 .docstring {
@@ -271,7 +273,7 @@ div.fixed {
 } /* also use for quotes */
 
 .var {
-	color: rgb(254, 254, 254);
+	color: black;
 	font-family: monospace !important;
 } /* also use var for parentheses and colons */
 
@@ -285,6 +287,11 @@ div.fixed {
 	font-family: monospace !important;
 	font-style: italic;
 }
+
+.called {
+	color: rgb(84, 145, 197);
+	font-family: monospace !important;
+} /* use for things like = make_array() */
 
 .op {
 	color: rgb(255, 113, 75);
@@ -301,16 +308,25 @@ div.fixed {
 	font-family: monospace !important;
 } /* also use for vars in def statement */
 
+.asterisk {
+	color: rgb(255, 82, 97);
+}
+
 div.code-box {
-	background-color: rgb(50, 61, 71);
+	/* background-color: rgb(50, 61, 71); */
 	width: 65%;
 	font-family: monospace !important;
+	/* border: 1px solid black; */
 }
 
 p.code-box {
 	width: 100%;
 	padding-left: 1em;
+	/* also included from .var below: */
+	color: black;
+	font-family: monospace !important;
 }
+
 
 
 

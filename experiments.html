@@ -11,37 +11,39 @@
 
 
 	<body>
-				<div class="code-box">
-
-					<p><span class="def">def </span><span class="func">hailstone<span class="var">(<span class="int">n</span>)</span></span></p>
-
-					<p><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
-
-					<p><indent><span class="var">steps </span><span class="op">= </span><span class="int">1</span></p>
-
-					<p><indent><span class="iter">while </span><span class="var">n <span class="op">!= </span><span class="int">1</span>:</span></p>
-
-					<p><indent><indent><span class="iter">if </span><span class="var">n <span class="op">% </span><span class="int">2 <span class="op">== </span>0</span>:</p>
-
-					<p><indent><indent><indent><span class="var">n <span class="op">= </span><span class="inbuilt">int</span>(n<span class="op">/</span><span class="int">2</span>)</span></p>
-
-					<p><indent><indent><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
-
-					<p><indent><indent><indent><span class="var">steps <span class="op">+= </span><span class="int">1</span></span></p>
-
-					<p><indent><indent><span class="iter">else</span><span class="var">:</span></p>
-
-					<p><indent><indent><indent><span class="var">n <span class="op">= </span><span class="inbuilt">int</span>(<span class="int">3</span><span class="op">*</span>n<span class="op">+</span><span class="int">1</span>)</span></p>
-
-					<p><indent><indent><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
-
-					<p><indent><indent><indent><span class="var">steps <span class="op">+= </span><span class="int">1</span></span></p>
-
-					<p><indent><span class="iter">return </span><span class="var">steps</span></p>
-
-				</div>
-
-			</div>
-
+				<div id="sudoku-program">
+						<p class="code">from datascience import * <br>
+								import numpy as np <br>
+								np.set_printoptions(threshold=np.inf) <br>
+								<br>
+								def check_sudoku(sudoku_table): <br>
+								    <indent> ''' Takes a 9x9 table (not including column title row) of sudoku </indent> <br>
+								    <indent> solutions and determines whether or not they meet the rules of sudoku''' </indent><br>
+								    <indent> collection_array = make_array() </indent><br>
+								    <indent> for i in np.arange(1, 10, 1): </indent><br>
+								        <indent> <indent> for j in np.arange(9): </indent></indent><br>
+								            <indent> <indent><indent>num_occurances = np.count_nonzero(sudoku_table.column(j) == i) </indent></indent></indent><br>
+								            <indent> <indent><indent>if num_occurances == 1: </indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>collection_array = np.append(collection_array, 1) </indent></indent></indent></indent><br>
+								            <indent> <indent><indent> else: </indent></indent></indent><br>
+								                <indent><indent> <indent> <indent>print("Sorry, but your answers don't work.") </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>print(collection_array) </indent> </indent></indent></indent><br>
+								                <indent> <indent> <indent><indent>return len(collection_array) </indent> </indent></indent></indent><br>
+								    <indent> for i in np.arange(1, 10, 1): </indent><br>
+								        <indent> <indent> for j in np.arange(9): </indent></indent><br>
+								            <indent> <indent> <indent> num_occurances = np.count_nonzero(sudoku_table.row(j) == i) </indent></indent></indent><br>
+								            <indent> <indent> <indent> if num_occurances == 1: </indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> collection_array = np.append(collection_array, 1) </indent></indent></indent></indent><br>
+								            <indent> <indent> <indent> else: </indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> print("Sorry, but your answers don't work.") </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> print(collection_array) </indent></indent></indent></indent><br>
+								                <indent> <indent> <indent> <indent> return len(collection_array) </indent></indent></indent></indent><br>
+								    <indent> if np.sum(collection_array) == 162: </indent><br>
+								        <indent> <indent> print('Congratulations! Your sudoku answers check out!') </indent></indent><br>
+								        <indent> <indent> return collection_array </indent></indent><br>
+								    <indent> else: </indent><br>
+								        <indent> <indent> print("Sorry, but your answers don't work.") </indent></indent><br>
+								        <indent> <indent> return collection_array </indent></indent></p>
+					</div> 
 	</body>
 </html>

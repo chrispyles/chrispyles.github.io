@@ -50,6 +50,78 @@
 
 					<br>
 
+
+					<div class="code-box">
+
+						<p class="code-box"><span class="iter">from <span class="var">datascience </span>import </span><span class="asterisk">*</span>
+
+						<p class="code-box"><span class="iter">import <span class="var">numpy </span>as </span><span class="var">np</span>
+
+						<p class="code-box"><span class="var">np.<span class="inbuilt" style="font-style: normal;">set_printoptions</span>(<span class="int">threshold</span><span class="op">=</span>np.inf)</span></p>
+
+						<br>
+
+						<p class="code-box"><span class="def">def </span><span class="func">check_sudoku</span><span class="var">(<span class="int">sudoku_table</span>)</span></p>
+
+						<p class="code-box"><indent><span class="docstring">''' Takes a 9x9 table (not including column title row) of sudoku<br><indent>solutions and determines whether or not they meet the rules of sudoku '''</span></p>
+
+						<p class="code-box"><indent><span class="var">colelction_array <span class="op">= </span><span class="called">make_array</span>()</span></p>
+
+						<p class="code-box"><indent><span class="iter">for </span><span class="var">i <span class="iter">in </span>np.<span class="called">arange</span>(<span class="int">1</span>, <span class="int">10</span>):</span></p>
+
+						<p class="code-box"><indent><indent><span class="iter">for </span><span class="var">j <span class="iter">in </span>np.<span class="called">arange</span>(<span class="int">9</span>):</span></p>
+
+						<p class="code-box"><indent><indent><indent><span class="var">num_occurances <span class="op">= </span>np.<span class="called">count_nonzero</span>(sudoku_table.<span class="called">column</span>(j) <span class="op">== </span>i)</span></p>
+
+						<p class="code-box"><indent><indent><indent><span class="iter">if </span>num_occurances <span class="op">== </span><span class="int">1</span>:</p>
+
+						<p class="code-box"><indent><indent><indent><indent>collection_array <span class="op">= </span>np.<span class="called">append</span>(collection_array, <span class="int">1</span>)</p>
+
+						<p class="code-box"><indent><indent><indent><span class="iter">else</span>:</p>
+
+						<p class="code-box"><indent><indent><indent><indent><span class="inbuilt">print</span>(<span class="str">"Sorry, but your answers don't work."</span>)</p>
+
+						<p class="code-box"><indent><indent><indent><indent><span class="inbuilt">print</span>(collection_array)</p>
+
+						<p class="code-box"><indent><indent><indent><indent><span class="iter">return </span><span class="inbuilt">len</span>(collection_array)</p>
+
+
+						<p class="code-box"><indent><span class="iter">for </span><span class="var">i <span class="iter">in </span>np.<span class="called">arange</span>(<span class="int">1</span>, <span class="int">10</span>):</span></p>
+
+						<p class="code-box"><indent><indent><span class="iter">for </span><span class="var">j <span class="iter">in </span>np.<span class="called">arange</span>(<span class="int">9</span>):</span></p>
+
+						<p class="code-box"><indent><indent><indent><span class="var">num_occurances <span class="op">= </span>np.<span class="called">count_nonzero</span>(sudoku_table.<span class="called">row</span>(j) <span class="op">== </span>i)</span></p>
+
+						<p class="code-box"><indent><indent><indent><span class="iter">if </span>num_occurances <span class="op">== </span><span class="int">1</span>:</p>
+
+						<p class="code-box"><indent><indent><indent><indent>collection_array <span class="op">= </span>np.<span class="called">append</span>(collection_array, <span class="int">1</span>)</p>
+
+						<p class="code-box"><indent><indent><indent><span class="iter">else</span>:</p>
+
+						<p class="code-box"><indent><indent><indent><indent><span class="inbuilt">print</span>(<span class="str">"Sorry, but your answers don't work."</span>)</p>
+
+						<p class="code-box"><indent><indent><indent><indent><span class="inbuilt">print</span>(collection_array)</p>
+
+						<p class="code-box"><indent><indent><indent><indent><span class="iter">return </span><span class="inbuilt">len</span>(collection_array)</p>
+
+
+						<p class="code-box"><indent><span class="iter">if </span>np.<span class="called">sum</span>(collection_array) <span class="op">== </span><span class="int">162</span>:</p>
+
+						<p class="code-box"><indent><indent><span class="inbuilt">print</span>(<span class="str">'Congratulations! Your sudoku answers check out!'</span>)</p>
+
+						<p class="code-box"><indent><indent><span class="iter">return </span><span class="inbuilt">len</span>(collection_array)</p>
+
+						<p class="code-box"><indent><span class="iter">else</span>:</p>
+
+						<p class="code-box"><indent><indent><span class="inbuilt">print</span>(<span class="str">"Sorry, but your answers don't work."</span>)</p>
+
+						<p class="code-box"><indent><indent><span class="iter">return </span><span class="inbuilt">len</span>(collection_array)</p>
+
+					</div>
+
+
+					<!--
+
 					<div id="sudoku-program">
 						<p class="code">from datascience import * <br>
 								import numpy as np <br>
@@ -83,7 +155,7 @@
 								    <indent> else: </indent><br>
 								        <indent> <indent> print("Sorry, but your answers don't work.") </indent></indent><br>
 								        <indent> <indent> return collection_array </indent></indent></p>
-					</div>
+					</div> -->
 
 					<br>
 
