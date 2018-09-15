@@ -6,7 +6,7 @@
 }
 
 h1 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Special Elite', sans-serif;
 	text-align: center;
 	margin: 0 auto;
 	width: 75%;
@@ -22,7 +22,7 @@ h1.name {
 }
 
 h2 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Special Elite', sans-serif;
 	text-align: left;
 	margin: 0 auto;
 	width: 75%;
@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Special Elite', sans-serif;
 	font-weight: normal;
 	text-align: left;
 	margin: 0 auto;
@@ -172,6 +172,12 @@ indent {
 	padding-top: 300px;
 }
 
+a#name { text-decoration: none; color: black;}
+a#name:visited { text-decoration: none; color: black;}
+a#name:hover { text-decoration: none; color: black;}
+a#name:focus { text-decoration: none; color: black;}
+a#name:hover, a#name:active { text-decoration: none; color: black;}
+
 div.fixed {
 	position: fixed;
 	background-color: #FFF;
@@ -242,6 +248,87 @@ div.fixed {
 	border-radius: 10px;
 	border: 1px solid black;
 	background: #fff;
+}
+
+
+
+/* Code Boxes */
+
+.docstring {
+	color: rgb(154, 163, 176);
+	font-family: monospace !important;
+}
+
+.def {
+	font-style: italic;
+	color: rgb(200, 142, 195);
+	font-family: monospace !important;
+}
+
+.func {
+	color: rgb(56, 179, 178);
+	font-family: monospace !important;
+} /* also use for quotes */
+
+.var {
+	color: rgb(254, 254, 254);
+	font-family: monospace !important;
+} /* also use var for parentheses and colons */
+
+.iter {
+	color: rgb(207, 145, 201);
+	font-family: monospace !important;
+} /* also use for return */
+
+.inbuilt {
+	color: rgb(84, 145, 197);
+	font-family: monospace !important;
+	font-style: italic;
+}
+
+.op {
+	color: rgb(255, 113, 75);
+	font-family: monospace !important;
+}
+
+.str {
+	color: rgb(133, 189, 136);
+	font-family: monospace !important;
+}
+
+.int {
+	color: rgb(239, 160, 68);
+	font-family: monospace !important;
+} /* also use for vars in def statement */
+
+div.code-box {
+	background-color: rgb(50, 61, 71);
+	width: 65%;
+	font-family: monospace !important;
+}
+
+p.code-box {
+	width: 100%;
+	padding-left: 1em;
+}
+
+
+
+
+
+/* Python Interpreter Interface */
+
+div.py-interp {
+	background-color: black;
+	width: 65%;
+}
+
+p.py-interp {
+	font-weight: bold;
+	font-family: monospace !important;
+	width: 100%;
+	padding-left: 1em;
+	color: rgb(255, 255, 255);
 }
 
 
