@@ -326,6 +326,11 @@ p.code-box {
 	font-family: monospace !important;
 }
 
+span.code-box {
+	color: black;
+	font-family: monospace !important;
+}
+
 
 
 
@@ -342,7 +347,7 @@ p.py-interp {
 	font-family: monospace !important;
 	width: 100%;
 	padding-left: 1em;
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
 
