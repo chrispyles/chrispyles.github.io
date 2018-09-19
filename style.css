@@ -220,6 +220,11 @@ div.fixed {
 	border-bottom: 1px solid black;
 }
 
+
+
+
+/* Modal Box Styles */
+
 .modal {
 	position: fixed;
 	top: 0;
@@ -309,11 +314,11 @@ div.fixed {
 
 .asterisk {
 	color: rgb(255, 82, 97);
-}
+} /* for from datascience import * */
 
 div.code-box {
 	/* background-color: rgb(50, 61, 71); */
-	width: 65%;
+	width: 75%;
 	font-family: monospace !important;
 	/* border: 1px solid black; */
 }
@@ -339,7 +344,7 @@ span.code-box {
 
 div.py-interp {
 	background-color: black;
-	width: 65%;
+	width: 75%;
 }
 
 p.py-interp {
@@ -350,13 +355,18 @@ p.py-interp {
 	color: white;
 }
 
+
+
+
+/* Footer Styles */
+
 footer {
 	width: 75%;
 }
 
 p.footer {
-		width: 100%;
-		font-size: 14px;
+	width: 100%;
+	font-size: 14px;
 }
 
 img.social {
