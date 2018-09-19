@@ -49,24 +49,24 @@ p {
 }
 
 p.iframe {
-	width: 74%;
+	width: 75%;
 }
 
 table {
 	font-family: 'Muli', sans-serif;
 	font-size: 19px;
 	margin: 0 auto;
-	width: 75%;
+	/* width: 75%;
 	border: 1px solid black;
 	table-layout: fixed;
-	font-weight: 200;
+	font-weight: 200; */
 }
 
 th, td {
 	font-family: 'Muli', sans-serif;
 	font-size: 19px;
 	width: 20%;
-	padding: 10px 30px;
+	/* padding: 10px 30px; */
 	vertical-align: top;
 }
 
@@ -349,6 +349,41 @@ p.py-interp {
 	padding-left: 1em;
 	color: white;
 }
+
+footer {
+	width: 75%;
+}
+
+p.footer {
+		width: 100%;
+		font-size: 14px;
+}
+
+img.social {
+	height: 30px;
+}
+
+table.footer {
+	width: 100%;
+	border: 0px solid white;
+}
+
+/* 
+@media (min-width: 550px) {
+
+	div.float {
+		display: block;
+		float: left;
+		margins: 0 auto;
+		width: 37%;
+	}
+
+	p.float {
+		width: 100%;
+	}
+
+}
+*/
 
 
 /*
