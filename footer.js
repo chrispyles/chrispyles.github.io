@@ -9,6 +9,8 @@ var html = `<footer>
 		</tr>
 	</table>
 
+	<br>
+
 </footer>`;
 
 document.write(html);
