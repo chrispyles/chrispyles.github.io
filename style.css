@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
@@ -53,7 +53,7 @@ p.iframe {
 }
 
 table {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 19px;
 	margin: 0 auto;
 	/* width: 75%;
@@ -63,7 +63,7 @@ table {
 }
 
 th, td {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 19px;
 	width: 20%;
 	/* padding: 10px 30px; */
@@ -92,7 +92,7 @@ a {
 }
 
 .subheading {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	font-weight: 200;
 	text-align: left;
@@ -125,7 +125,7 @@ p.title {
 	text-align: center;
 	background-color: white;
 	padding-bottom: 20px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 }
 
@@ -197,7 +197,7 @@ div.fixed {
 
 .grid {
 	display: grid;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	font-size: 19px;
 	margin: 0 auto;
