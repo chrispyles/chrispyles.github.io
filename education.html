@@ -235,7 +235,41 @@
 
 					<br>
 
-					<p>If you run <span class="code-box">hailstone(10)</span>, you would get this output:</p>
+					<p>That function uses iteration (a <span class="code-box">while</span> loop) to go through the values of <span class="code-box">n</span> until it gets to 1. However, you can also define the <span class="code-box">hailstone</span> function recursively (a <em>recursive</em> function calls itself in its body):</p>
+
+					<br>
+
+					<div class="code-box">
+
+					<p class="code-box"><span class="def">def </span><span class="func">recursive_hailstone<span class="var" style="color: black;">(<span class="int">n</span>):</span></span></p>
+
+					<p class="code-box"><indent><span class="inbuilt">print</span><span class="var">(n)</span></p>
+
+					<p class="code-box"><indent>step <span class="op">=</span> <span class="int">1</span></p>
+
+					<p class="code-box"><indent><span class="iter">if </span>n <span class="op">== </span><span class="int">1</span>:</p>
+
+					<p class="code-box"><indent><indent><span class="iter">return </span>step</p>
+
+					<p class="code-box"><indent><span class="iter">else</span>:</p>
+
+					<p class="code-box"><indent><indent><span class="iter">if </span>n <span class="op">% <span class="int">2 </span>== </span><span class="iter">0</span>:</p>
+
+					<p class="code-box"><indent><indent><indent>n <span class="op">= </span><span class="inbuilt">int</span>(n<span class="op">/</span><span class="int">2</span>)</p>
+
+					<p class="code-box"><indent><indent><indent><span class="iter">return </span><span class="func">hailstone</span>(n) <span class="op">+ </span>step</p>
+
+					<p class="code-box"><indent><indent><span class="iter">else</span>:</p>
+
+					<p class="code-box"><indent><indent><indent>n <span class="op">= </span><span class="inbuilt">int</span>(<span class="int">3</span><span class="op">*</span>n<span class="op">+</span><span class="int">1</span>)</p>
+
+					<p class="code-box"><indent><indent><indent><span class="iter">return </span><span class="func">hailstone</span>(n) <span class="op">+ </span>step</p>
+
+				</div>
+
+					<br>
+
+					<p>If you run <span class="code-box">hailstone(10)</span> or <span class="code-box">recursive_hailstone(10)</span>, you would get this output:</p>
 
 					<br>
 
