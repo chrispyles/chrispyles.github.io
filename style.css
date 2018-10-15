@@ -40,12 +40,17 @@ h3 {
 	font-size: 22px;
 }
 
-p {
+p, ul {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 19px;
 	margin: 0 auto;
 	width: 75%;
 	font-weight: 200;
+}
+
+ul {
+	width: 75%;
+	padding-left: 5%;
 }
 
 p.iframe {
