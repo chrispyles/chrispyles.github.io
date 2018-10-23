@@ -152,6 +152,10 @@ span.eqn {
 	font-style: italic;
 }
 
+span.tex-num {
+	font-family: serif;
+}
+
 indent {
 	margin-left: 5%;
 }
