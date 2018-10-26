@@ -11,7 +11,7 @@ var html = `<footer>
 			<a href='https://github.com/chrispyles' target='_blank'><span style='margin-left: 5px;'>
 			<img src='https://cpyles.com/assets/social/github.png' class='social'/></a>
 
-			<a href='https://twitter.com/cp_berkeley' target='_blank'>
+			<a href='https://twitter.com/scipystats' target='_blank'>
 			<span style='margin-left: 5px;'>
 			<img class='social' src='https://cpyles.com/assets/social/twitter.png'/></span></a>
 			
