@@ -16,7 +16,7 @@ var html = `<footer>
 			<img class='social' src='https://cpyles.com/assets/social/twitter.png'/></span></a>
 			
 			</p></td>
-			<td><p class='footer align-right'>Updated October 22, 2018</p></td>
+			<td><p class='footer align-right'>Updated October 27, 2018</p></td>
 		</tr>
 	</table>
 
