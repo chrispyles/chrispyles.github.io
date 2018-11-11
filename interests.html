@@ -54,7 +54,7 @@
 
 			<!-- originally on education page-->
 
-			<p>In my own free time, I used what I learned between sitting in on Data 8 lectures during my work at <a href="#ETSmodal">ETS</a> and some studying I did for CS 88 to write a Python function that takes in a table with a filled in sudoku puzzle and determines whether or not the puzzle is solved correctly. Here is the program:</p>
+			<p>In my own free time, I used what I learned between sitting in on Data 8 lectures during my work at <a href="#ETSmodal">ETS</a> and some work I did in CS 88 to write a Sudoku object that can open a file with a sudoku puzzle, read it, and determine if it is a valid solution, among other things. The full .py file can be found <a href="https://github.com/chrispyles/python-projects/blob/master/sudoku/sudoku.py" target="_blank">on GitHub</a>, but I have included the function that checks the validity of the solved puzzle blow.</p>
 
 
 
@@ -68,6 +68,66 @@
 
 					<div class="code-box">
 
+
+						<p class="code-box"><span class="def">def </span><span class="func">check_puzzle</span>(<span class="var">self</span>):<br>
+
+						<indent>"""<br>
+						<indent>>>> s = Sudoku('filled_puzzle_1.txt')<br>
+						<indent>>>> s.check_puzzle()<br>
+						<indent>Congratulations! Your answers check out!<br>
+						<indent>"""<br>
+
+						<indent>collection <span class="op">= </span>[]<br>
+
+						<indent><span class="iter">for</span> i <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">1</span>, <span class="int">10</span>):<br>
+
+						<indent><indent><span class="iter">for</span> j <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">9</span>):<br>
+
+						<indent><indent><indent>num_occurances <span class="op">= </span><span class="inbuilt">sum</span>([i <span class="op">==</span> k[j] <span class="iter">for</span> k <span class="iter">in</span> <span class="called">self</span>.rows])<br>
+
+						<indent><indent><indent><span class="iter">if </span>num_occurances <span class="op">== </span><span class="int">1</span>:<br>
+
+						<indent><indent><indent><indent>collection <span class="op">+=</span> [<span class="int">1</span>]<br>
+
+						<indent><indent><indent><span class="iter">else</span>:<br>
+
+						<indent><indent><indent><indent><span class="inbuilt">print</span>(<span class="str">'Sorry, but your answers do not work.'</span>)<br>
+
+
+
+
+						<indent><span class="iter">for</span> i <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">1</span>, <span class="int">10</span>):<br>
+
+						<indent><indent><span class="iter">for</span> j <span class="iter">in</span> <span class="called">self</span>.rows:<br>
+
+						<indent><indent><indent>num_occurances <span class="op">= </span><span class="inbuilt">sum</span>([i <span class="op">==</span> j[k] <span class="iter">for</span> k <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">9</span>)])<br>
+
+						<indent><indent><indent><span class="iter">if </span>num_occurances <span class="op">== </span><span class="int">1</span>:<br>
+
+						<indent><indent><indent><indent>collection <span class="op">+=</span> [<span class="int">1</span>]<br>
+
+						<indent><indent><indent><span class="iter">else</span>:<br>
+
+						<indent><indent><indent><indent><span class="inbuilt">print</span>(<span class="str">'Sorry, but your answers do not work.'</span>)<br>
+
+
+
+						<indent><span class="iter">if </span><span class="inbuilt">sum</span>(collectioin) <span class="op">==</span> <span class="int">162</span>:<br>
+
+						<indent><indent><span class="inbuilt">print</span>(<span class="str">'Congratulations! Your answers check out'</span>)<br>
+
+						<indent><indent><span class="called">self</span>.completed <span class="op">=</span> <span class="bool">True</span><br>
+
+						<indent><span class="iter">else</span>:<br>
+
+						<indent><indent><span class="inbuilt">print</span>(<span class="str">'Sorry, but your answers do not work.'</span>)
+
+
+					</p>
+
+
+					<!-- 
+
 						<p class="code-box"><span class="iter">from <span class="var">datascience </span>import </span><span class="asterisk">*</span>
 
 						<p class="code-box"><span class="iter">import <span class="var">numpy </span>as </span><span class="var">np</span>
@@ -76,7 +136,7 @@
 
 						<br>
 
-						<p class="code-box"><span class="def">def </span><span class="func">check_sudoku</span><span class="var">(<span class="int">sudoku_table</span>)</span></p>
+						<p class="code-box"><span class="def">def </span><span class="func">check_sudoku</span><span class="var">(<span class="int">sudoku_table</span>)</span>:</p>
 
 						<p class="code-box"><indent><span class="docstring">''' Takes a 9x9 table (not including column title row) of sudoku<br><indent>solutions and determines whether or not they meet the rules of sudoku '''</span></p>
 
@@ -131,6 +191,8 @@
 						<p class="code-box"><indent><indent><span class="inbuilt">print</span>(<span class="str">"Sorry, but your answers don't work."</span>)</p>
 
 						<p class="code-box"><indent><indent><span class="iter">return </span><span class="inbuilt">len</span>(collection_array)</p>
+
+					-->
 
 					</div>
 

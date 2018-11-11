@@ -345,6 +345,12 @@ div.fixed {
 	font-family: monospace !important;
 } /* also use for vars in def statement */
 
+.bool {
+	color: rgb(239, 160, 68);
+	font-family: monospace !important;
+	font-weight: bold;
+}
+
 .asterisk {
 	color: rgb(255, 82, 97);
 } /* for from datascience import * */
