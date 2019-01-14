@@ -367,39 +367,5 @@ span.code-box {
 }
 
 /* for from datascience import * */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Python Interpreter Interface */
-div.py-interp {
-  background-color: black;
-  width: 100%;
-}
 
-p.py-interp {
-  font-weight: bold;
-  font-family: monospace !important;
-  width: 100%;
-  padding-left: 1em;
-  color: white;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Footer Styles */
-footer {
-  width: 75%;
-}
-
-p.footer {
-  width: 100%;
-  font-size: 14px;
-}
-
-img.social {
-  height: 30px;
-}
-
-table.footer {
-  width: 100%;
-  border: 0px solid white;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=test.css.map */
