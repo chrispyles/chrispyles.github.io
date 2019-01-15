@@ -4,6 +4,8 @@ Sass Stylesheet for https://cpyles.com/ and other sites
 by Chris Pyles
 
 */
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic");
 * {
   margin: 0 auto;
   padding: 0;
@@ -12,13 +14,7 @@ by Chris Pyles
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Headings */
-h1.name {
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 50px;
-  font-weight: 300;
-}
-h1.name h1 {
+h1, h1.name {
   width: 75%;
   margin: 0 auto;
   text-align: center !important;
@@ -30,10 +26,14 @@ h1.name h1 {
   letter-spacing: 2px;
 }
 
-h3 {
-  font-size: 22px;
+h1.name {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 50px;
+  font-weight: 300;
 }
-h3 h2 {
+
+h2, h3 {
   width: 75%;
   margin: 0 auto;
   font-family: "Dosis", sans-serif;
@@ -43,14 +43,13 @@ h3 h2 {
   margin: 0 auto;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Paragraphs, Lists, Etc. */
-ul {
-  padding-left: 5%;
-}
-ul p {
-  width: 75%;
-  margin: 0 auto;
+p, ul {
   width: 75%;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
@@ -59,12 +58,16 @@ ul p {
   text-align: left;
 }
 
+ul {
+  padding-left: 5%;
+}
+
 ul.classes {
   width: 100%;
   padding-left: 5%;
 }
 
-p.iframe {
+p.iframe, ul.iframe {
   width: 75%;
 }
 
@@ -84,22 +87,22 @@ button:hover {
   color: white;
 }
 
-th {
-  border-bottom: 1px solid black;
-}
-th td {
-  width: 20%;
-  vertical-align: top;
-}
-th td table {
-  width: 75%;
-  margin: 0 auto;
+table, td, th {
   font-family: "Open Sans", sans-serif;
   font-size: 19px;
   font-weight: 200;
   text-align: left;
   width: 75%;
   margin: 0 auto;
+}
+
+td, th {
+  width: 20%;
+  vertical-align: top;
+}
+
+th {
+  border-bottom: 1px solid black;
 }
 
 tr {
@@ -135,8 +138,6 @@ iv.fixed {
 
 .grid {
   display: grid;
-  width: 75%;
-  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 19px;
   font-weight: 200;
@@ -150,8 +151,6 @@ iv.fixed {
 
 .hail_grid {
   display: grid;
-  width: 75%;
-  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 19px;
   font-weight: 200;
@@ -184,8 +183,6 @@ iv.fixed {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Misc. Classes */
 .subheading {
-  width: 75%;
-  margin: 0 auto;
   width: 75%;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
@@ -285,18 +282,21 @@ div.code-box {
   width: 75%;
   margin: 0 auto;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
-p.code-box {
+p.code-box, ul.code-box {
   width: 100%;
   padding-left: 1em;
   color: black;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 span.code-box {
   color: black;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 .docstring {
@@ -308,57 +308,67 @@ span.code-box {
   font-style: italic;
   color: #c88ec3;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 .func {
   color: #38b3b2;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 /* also use for quotes */
 .var {
   color: black;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 /* also use var for parentheses and colons */
 .iter {
   color: #cf91c9;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 /* also use for return */
 .inbuilt {
   color: #5491c5;
   font-family: monospace !important;
+  font-size: 16px;
   font-style: italic;
 }
 
 .called {
   color: #5491c5;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 /* use for things like = make_array() */
 .op {
   color: #ff714b;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 .str {
   color: #85bd88;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 .int {
   color: #efa044;
   font-family: monospace !important;
+  font-size: 16px;
 }
 
 /* also use for vars in def statement */
 .bool {
   color: #efa044;
   font-family: monospace !important;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -374,7 +384,7 @@ div.py-interp {
   width: 100%;
 }
 
-p.py-interp {
+p.py-interp, ul.py-interp {
   font-weight: bold;
   font-family: monospace !important;
   width: 100%;
@@ -388,7 +398,7 @@ footer {
   width: 75%;
 }
 
-p.footer {
+p.footer, ul.footer {
   width: 100%;
   font-size: 14px;
 }
@@ -397,7 +407,7 @@ img.social {
   height: 30px;
 }
 
-table.footer {
+table.footer, td.footer, th.footer {
   width: 100%;
   border: 0px solid white;
 }

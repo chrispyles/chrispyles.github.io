@@ -5,6 +5,9 @@ by Chris Pyles
 
 */
 
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic");
+
 $centered: 0 auto;
 $standard-border: 1px solid black;
 
@@ -27,7 +30,6 @@ $standard-border: 1px solid black;
 }
 
 @mixin paragraph-font {
-	@include standard;
 	font: {
 		family: 'Open Sans', sans-serif;
 		size: 19px;
@@ -46,44 +48,47 @@ $standard-border: 1px solid black;
 
 /* Headings */
 
+h1 {
+	@include standard;
+	text-align: center !important;
+	letter-spacing: 2px;
+	font-weight: 300 !important;
+	@include heading-font;
+}
+
 h1.name {
+	@extend h1;
 	text-transform: uppercase;
 	letter-spacing: 7px;
 	font: {
 		size: 50px;
 		weight: 300;
 	}
+}
 
-	h1 {
-		@include standard;
-		text-align: center !important;
-		letter-spacing: 2px;
-		font-weight: 300 !important;
-		@include heading-font;
-	}
+h2 {
+	@include standard;
+	@include heading-font;
+	margin: $centered;
 }
 
 h3 {
-	font-size: 22px;
-
-	h2 {
-		@include standard;
-		@include heading-font;
-		margin: $centered;
-	}
+	@extend h2;
+	font-size: 22px;	
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Paragraphs, Lists, Etc. */
 
-ul {
-	padding-left: 5%;
+p {
+	@include standard;
+	@include paragraph-font;
+}
 
-	p {
-		@include standard;
-		@include paragraph-font;
-	}
+ul {
+	@extend p;
+	padding-left: 5%;
 }
 
 ul.classes {
@@ -112,19 +117,20 @@ button {
 	}
 }
 
+table {
+	@include paragraph-font;
+	@include standard;
+}
+
+td {
+	@extend table;
+	width: 20%;
+	vertical-align: top;	
+}
 
 th {
-	border-bottom: $standard-border;
-
-	td {
-		width: 20%;
-		vertical-align: top;
-
-		table {
-			@include paragraph-font;
-			@include standard;
-		}
-	}
+	@extend td;
+	border-bottom: $standard-border;	
 }
 
 tr {
@@ -304,6 +310,7 @@ a#name {
 
 @mixin code-box {
 	font-family: monospace !important;
+	font-size: 16px;
 }
 
 div.code-box {
