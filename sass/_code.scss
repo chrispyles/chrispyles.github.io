@@ -1,0 +1,104 @@
+/* Code Boxes */
+
+@mixin code-box {
+	font-family: monospace !important;
+	font-size: 16px;
+}
+
+div.code-box {
+	@include standard;
+	@include code-box;
+}
+
+p.code-box {
+	width: 100%;
+	padding-left: 1em;
+	color: black;
+	@include code-box
+}
+
+span.code-box {
+	color: black;
+	@include code-box;
+}
+
+.docstring {
+	color: rgb(154, 163, 176);
+	font-family: monospace !important;
+}
+
+.def {
+	font-style: italic;
+	color: rgb(200, 142, 195);
+	@include code-box;
+}
+
+.func {
+	color: rgb(56, 179, 178);
+	@include code-box;
+	} /* also use for quotes */
+
+.var {
+	color: black;
+	@include code-box;
+	} /* also use var for parentheses and colons */
+
+.iter {
+	color: rgb(207, 145, 201);
+	@include code-box;
+	} /* also use for return */
+
+.inbuilt {
+	color: rgb(84, 145, 197);
+	@include code-box;
+	font-style: italic;
+}
+
+.called {
+	color: rgb(84, 145, 197);
+	@include code-box;
+} /* use for things like = make_array() */
+
+.op {
+	color: rgb(255, 113, 75);
+	@include code-box;
+}
+
+.str {
+	color: rgb(133, 189, 136);
+	@include code-box;
+}
+
+.int {
+	color: rgb(239, 160, 68);
+	@include code-box;
+	} /* also use for vars in def statement */
+
+.bool {
+	color: rgb(239, 160, 68);
+	@include code-box;
+	font-weight: bold;
+}
+
+.asterisk {
+	color: rgb(255, 82, 97);
+} /* for from datascience import * */
+
+
+/* Python Interpreter Interface */
+
+div.py-interp {
+	background-color: black;
+	width: 100%;
+}
+
+p.py-interp {
+	font: {
+		weight: bold;
+		family: monospace !important;
+	}
+
+	width: 100%;
+	padding-left: 1em;
+	color: white;
+}

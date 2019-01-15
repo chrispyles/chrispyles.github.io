@@ -6,13 +6,14 @@ by Chris Pyles
 */
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic");
+/* Imports for Sass Helper Files */
+/* Helpers */
 * {
   margin: 0 auto;
   padding: 0;
   line-height: 1.75;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Headings */
 h1, h1.name {
   width: 75%;
@@ -47,7 +48,6 @@ h3 {
   font-size: 22px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Paragraphs, Lists, Etc. */
 p, ul {
   width: 75%;
@@ -118,9 +118,8 @@ indent {
   margin-left: 5%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Grid Styling */
-iv.fixed {
+div.fixed {
   position: fixed;
   background-color: #FFF;
   width: 100%;
@@ -180,104 +179,6 @@ iv.fixed {
   border-bottom: 1px solid black;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Misc. Classes */
-.subheading {
-  width: 75%;
-  margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
-  font-size: 19px;
-  font-weight: 200;
-  text-align: left;
-  font-size: 20px !important;
-  font-style: italic;
-}
-
-.links {
-  text-align: center;
-  background-color: white;
-  padding-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
-  width: 100%;
-}
-
-.image {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.tex-num, .eqn {
-  font-family: serif;
-}
-
-.eqn {
-  font-style: italic;
-}
-
-a#name {
-  text-decoration: none;
-  color: black;
-}
-a#name:visited, a#name:hover, a#name:focus, a#name:active {
-  text-decoration: none;
-  color: black;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Section-Specific Margins */
-#about-me, #education {
-  margin-top: -100px;
-  padding-top: 200px;
-}
-
-#interests, #achievements, #experience, #four04 {
-  margin-top: -150px;
-  padding-top: 300px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Modal Boxes */
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-}
-.modal:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal > div {
-  width: 50%;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  border: 1px solid black;
-  background: #fff;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Code Boxes */
 div.code-box {
   width: 75%;
@@ -378,7 +279,6 @@ span.code-box {
 }
 
 /* for from datascience import * */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Python Interpreter Interface */
 div.py-interp {
   background-color: black;
@@ -393,7 +293,6 @@ p.py-interp, ul.py-interp {
   color: white;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Footer Styles */
 footer {
   width: 75%;
@@ -411,6 +310,100 @@ img.social {
 table.footer, td.footer, th.footer {
   width: 100%;
   border: 0px solid white;
+}
+
+/* Misc. Classes */
+.subheading {
+  width: 75%;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  font-size: 20px !important;
+  font-style: italic;
+}
+
+.links {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+
+.image {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tex-num, .eqn {
+  font-family: serif;
+}
+
+.eqn {
+  font-style: italic;
+}
+
+a#name {
+  text-decoration: none;
+  color: black;
+}
+a#name:visited, a#name:hover, a#name:focus, a#name:active {
+  text-decoration: none;
+  color: black;
+}
+
+/* Section-Specific Margins */
+#about-me, #education {
+  margin-top: -100px;
+  padding-top: 200px;
+}
+
+#interests, #achievements, #experience, #four04 {
+  margin-top: -150px;
+  padding-top: 300px;
+}
+
+/* Modal Boxes */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
