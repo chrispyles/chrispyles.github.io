@@ -238,13 +238,13 @@ iv.fixed {
 	font-weight: bold;
 }
 
-.eqn {
-	font-style: italic;
+.tex-num {
+	font-family: serif;
+}
 
-	.tex-num {
-		font-family: serif;
-	}
-	
+.eqn {
+	@extend .tex-num;
+	font-style: italic;	
 }
 
 a#name {

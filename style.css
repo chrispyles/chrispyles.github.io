@@ -217,11 +217,12 @@ iv.fixed {
   font-weight: bold;
 }
 
+.tex-num, .eqn {
+  font-family: serif;
+}
+
 .eqn {
   font-style: italic;
-}
-.eqn .tex-num {
-  font-family: serif;
 }
 
 a#name {
