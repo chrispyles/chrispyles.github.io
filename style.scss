@@ -1,0 +1,457 @@
+/*
+
+Sass Stylesheet for https://cpyles.com/ and other sites
+by Chris Pyles
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic");
+
+$centered: 0 auto;
+$standard-border: 1px solid black;
+
+@mixin alignment($value) {
+	text-align: $value;
+}
+
+@mixin standard {
+	width: 75%;
+	margin: $centered;
+}
+
+@mixin heading-font {
+	font: {
+		family: 'Dosis', sans-serif;
+		weight: normal;
+	}
+	text-align: left;
+	letter-spacing: 2px;
+}
+
+@mixin paragraph-font {
+	font: {
+		family: 'Open Sans', sans-serif;
+		size: 19px;
+		weight: 200;
+	}
+	text-align: left;
+}
+
+* {
+	margin: $centered;
+	padding: 0;
+	line-height: 1.75;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Headings */
+
+h1 {
+	@include standard;
+	text-align: center !important;
+	letter-spacing: 2px;
+	font-weight: 300 !important;
+	@include heading-font;
+}
+
+h1.name {
+	@extend h1;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font: {
+		size: 50px;
+		weight: 300;
+	}
+}
+
+h2 {
+	@include standard;
+	@include heading-font;
+	margin: $centered;
+}
+
+h3 {
+	@extend h2;
+	font-size: 22px;	
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Paragraphs, Lists, Etc. */
+
+p {
+	@include standard;
+	@include paragraph-font;
+}
+
+ul {
+	@extend p;
+	padding-left: 5%;
+}
+
+ul.classes {
+	width: 100%;
+	padding-left: 5%;
+}
+
+p.iframe {
+	width: 75%;
+}
+
+button {
+	display: flex;
+	margin: $centered;
+	justify-content: center;
+	font-size: 15px;
+	padding: 10px 25px;
+	background-color: white;
+	border: $standard-border;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+
+table {
+	@include paragraph-font;
+	@include standard;
+}
+
+td {
+	@extend table;
+	width: 20%;
+	vertical-align: top;	
+}
+
+th {
+	@extend td;
+	border-bottom: $standard-border;	
+}
+
+tr {
+	width: 20%;
+	border: $standard-border;
+}
+
+a {
+	text-decoration: none;
+}
+
+indent {
+	margin-left: 5%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Grid Styling */
+
+iv.fixed {
+	position: fixed;
+	background-color: #FFF;
+	width: 100%;
+	height: 100px;
+	margin: $centered;
+	top: 0;
+	padding-top: 20px;
+	z-index: 1;
+}
+
+.anchor {
+	padding-top: 150px;
+	margin-top: -150px;
+}
+
+
+.grid {
+	display: grid;
+	@include paragraph-font;
+	@include standard;
+	grid-template: 45px 6fr 6fr 4fr / repeat(3, 1fr);
+	border: $standard-border;
+	grid-row-gap: 10px;
+}
+
+.hail_grid {
+	display: grid;
+	@include paragraph-font;
+	@include standard;
+	grid-template: 1fr / repeat(2, 1fr);
+	grid-row-gap: 10px;
+	grid-column-gap: 40px;
+	background-color: white;
+}
+
+.box {
+	@include alignment(left);
+	margin-left: 30px;
+	margin-right: 30px;
+	align-items: stretch;
+}
+
+.hail_box {
+	@include alignment(left);
+	align-items: stretch;
+}
+
+.row1 {
+	padding: 10px;
+	border-bottom: $standard-border;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Misc. Classes */
+
+.subheading {
+	@include standard;
+	@include paragraph-font;
+	font-size: 20px !important;
+	font-style: italic;
+}
+
+.links {
+	text-align: center;
+	background-color: white;
+	padding-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+}
+
+.image {
+	@include alignment(center);
+}
+
+.align-right {
+	@include alignment(right);
+}
+
+.align-center {
+	@include alignment(center);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.eqn {
+	font-style: italic;
+
+	.tex-num {
+		font-family: serif;
+	}
+	
+}
+
+a#name {
+	text-decoration: none;
+	color: black;
+	&:visited, &:hover, &:focus, &:active {
+		text-decoration: none;
+		color: black;
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Section-Specific Margins */
+
+#about-me, #education {
+	margin-top: -100px;
+	padding-top: 200px;
+}
+
+#interests, #achievements, #experience, #four04 {
+	margin-top: -150px;
+	padding-top: 300px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Modal Boxes */
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+
+	&:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+}
+
+.modal > div {
+	width: 50%;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	border: $standard-border;
+	background: #fff;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Code Boxes */
+
+@mixin code-box {
+	font-family: monospace !important;
+	font-size: 16px;
+}
+
+div.code-box {
+	@include standard;
+	@include code-box;
+}
+
+p.code-box {
+	width: 100%;
+	padding-left: 1em;
+	color: black;
+	@include code-box
+}
+
+span.code-box {
+	color: black;
+	@include code-box;
+}
+
+.docstring {
+	color: rgb(154, 163, 176);
+	font-family: monospace !important;
+}
+
+.def {
+	font-style: italic;
+	color: rgb(200, 142, 195);
+	@include code-box;
+}
+
+.func {
+	color: rgb(56, 179, 178);
+	@include code-box;
+	} /* also use for quotes */
+
+.var {
+	color: black;
+	@include code-box;
+	} /* also use var for parentheses and colons */
+
+.iter {
+	color: rgb(207, 145, 201);
+	@include code-box;
+	} /* also use for return */
+
+.inbuilt {
+	color: rgb(84, 145, 197);
+	@include code-box;
+	font-style: italic;
+}
+
+.called {
+	color: rgb(84, 145, 197);
+	@include code-box;
+} /* use for things like = make_array() */
+
+.op {
+	color: rgb(255, 113, 75);
+	@include code-box;
+}
+
+.str {
+	color: rgb(133, 189, 136);
+	@include code-box;
+}
+
+.int {
+	color: rgb(239, 160, 68);
+	@include code-box;
+	} /* also use for vars in def statement */
+
+.bool {
+	color: rgb(239, 160, 68);
+	@include code-box;
+	font-weight: bold;
+}
+
+.asterisk {
+	color: rgb(255, 82, 97);
+} /* for from datascience import * */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Python Interpreter Interface */
+
+div.py-interp {
+	background-color: black;
+	width: 100%;
+}
+
+p.py-interp {
+	font: {
+		weight: bold;
+		family: monospace !important;
+	}
+
+	width: 100%;
+	padding-left: 1em;
+	color: white;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Footer Styles */
+
+footer {
+	width: 75%;
+}
+
+p.footer {
+	width: 100%;
+	font-size: 14px;
+}
+
+img.social {
+	height: 30px;
+}
+
+table.footer {
+	width: 100%;
+	border: 0px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
