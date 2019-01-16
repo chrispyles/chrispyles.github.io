@@ -2,6 +2,8 @@
 
 $centered: 0 auto;
 $standard-border: 1px solid black;
+$hfont: "Dosis", sans-serif;
+$pfont: "Open Sans", sans-serif;
 
 @mixin alignment($value) {
 	text-align: $value;
@@ -14,7 +16,7 @@ $standard-border: 1px solid black;
 
 @mixin heading-font {
 	font: {
-		family: 'Dosis', sans-serif;
+		family: $hfont;
 		weight: normal;
 	}
 	text-align: left;
@@ -23,7 +25,7 @@ $standard-border: 1px solid black;
 
 @mixin paragraph-font {
 	font: {
-		family: 'Open Sans', sans-serif;
+		family: $pfont;
 		size: 19px;
 		weight: 200;
 	}
