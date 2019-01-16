@@ -3,7 +3,6 @@
 h1 {
 	@include standard;
 	text-align: center !important;
-	letter-spacing: 2px;
 	font-weight: 300 !important;
 	@include heading-font;
 }
@@ -11,7 +10,7 @@ h1 {
 h1.name {
 	@extend h1;
 	text-transform: uppercase;
-	letter-spacing: 7px;
+	letter-spacing: 15px;
 	font: {
 		size: 50px;
 		weight: 300;
