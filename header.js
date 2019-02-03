@@ -4,7 +4,7 @@ var html = `<div class="fixed">
 
 				<p></p>
 
-				<p class="links"><a href="./index.html">About Me</a> | <a href="./education.html">Education</a> | <a href="./interests.html">Interests</a> | <a href="./achievements.html">Achievements & Co-Curriculars</a> | <a href="./experience.html">Experience</a> | <a href="./index.html#resume">Resume</a> | <a href="https://jupyter.cpyles.com" target="_blank">Jupyter</a></p>
+				<p class="links"><a href="./index.html">About Me</a> | <a href="./education.html">Education</a> | <a href="./interests.html">Interests</a> | <a href="./co-curriculars.html">Co-Curriculars</a> | <a href="./experience.html">Work Experience</a> | <a href="./index.html#resume">Resume</a> | <a href="https://jupyter.cpyles.com" target="_blank">Jupyter</a></p>
 
 		</div>
 `;
