@@ -26,6 +26,15 @@ div.fixed {
 	grid-row-gap: 10px;
 }
 
+.jupyter_grid {
+	display: grid;
+	@include paragraph-font;
+	@include standard;
+	grid-template: 45px 6fr 6fr 4fr / repeat(2, 1fr);
+	border: $standard-border;
+	grid-row-gap: 10px;
+}
+
 .hail_grid {
 	display: grid;
 	@include paragraph-font;

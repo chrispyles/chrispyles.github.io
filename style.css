@@ -147,6 +147,19 @@ div.fixed {
   grid-row-gap: 10px;
 }
 
+.jupyter_grid {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  grid-template: 45px 6fr 6fr 4fr/repeat(2, 1fr);
+  border: 1px solid black;
+  grid-row-gap: 10px;
+}
+
 .hail_grid {
   display: grid;
   font-family: "Open Sans", sans-serif;
