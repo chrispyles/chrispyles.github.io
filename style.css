@@ -171,6 +171,7 @@ div.fixed {
 .hail_box {
   text-align: left;
   align-items: stretch;
+  width: 40% !important;
 }
 
 .row1 {

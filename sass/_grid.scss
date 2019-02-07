@@ -46,6 +46,7 @@ div.fixed {
 .hail_box {
 	@include alignment(left);
 	align-items: stretch;
+	width: 40% !important;
 }
 
 .row1 {
