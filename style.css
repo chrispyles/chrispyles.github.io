@@ -155,7 +155,7 @@ div.fixed {
   text-align: left;
   width: 75%;
   margin: 0 auto;
-  grid-template: 45px 6fr 6fr 4fr/repeat(2, 1fr);
+  grid-template: 45px 1fr 1fr/1fr 2fr;
   border: 1px solid black;
   grid-row-gap: 10px;
 }
