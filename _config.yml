@@ -129,6 +129,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .oldwebsite/
+  - CNAME
 
 plugins:
   - jekyll-redirect-from
