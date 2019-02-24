@@ -1,0 +1,422 @@
+/*
+
+Sass Stylesheet for https://cpyles.com/ and other sites
+by Chris Pyles
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic");
+/* Imports for Sass Helper Files */
+/* Helpers */
+* {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.75;
+}
+
+/* Headings */
+h1, h1.name {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center !important;
+  font-weight: 300 !important;
+  font-family: "Dosis", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+h1.name {
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h2, h3 {
+  width: 75%;
+  margin: 0 auto;
+  font-family: "Dosis", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+/* Paragraphs, Lists, Etc. */
+p, ul {
+  width: 75%;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+}
+
+ul {
+  padding-left: 5%;
+}
+
+ul.classes {
+  width: 100%;
+  padding-left: 5%;
+}
+
+p.iframe, ul.iframe {
+  width: 75%;
+}
+
+button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 15px;
+  padding: 10px 25px;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+table, td, th {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+}
+
+td, th {
+  width: 20%;
+  vertical-align: top;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+tr {
+  width: 20%;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+indent {
+  margin-left: 5%;
+}
+
+/* Grid Styling */
+div.fixed {
+  position: fixed;
+  background-color: #FFF;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  top: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.anchor {
+  padding-top: 150px;
+  margin-top: -150px;
+}
+
+.grid {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  grid-template: 45px 6fr 6fr 4fr/repeat(3, 1fr);
+  border: 1px solid black;
+  grid-row-gap: 10px;
+}
+
+.jupyter_grid {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  grid-template: 45px 1fr 1fr/1fr 2fr;
+  border: 1px solid black;
+  grid-row-gap: 10px;
+}
+
+.hail_grid {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  grid-template: 1fr/repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 40px;
+  background-color: white;
+}
+
+.box {
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  align-items: stretch;
+}
+
+.hail_box {
+  text-align: left;
+  align-items: stretch;
+  width: 40% !important;
+}
+
+.row1 {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+/* Code Boxes */
+div.code-box {
+  width: 75%;
+  margin: 0 auto;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+p.code-box, ul.code-box {
+  width: 100%;
+  padding-left: 1em;
+  color: black;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+span.code-box {
+  color: black;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+.docstring {
+  color: #9aa3b0;
+  font-family: monospace !important;
+}
+
+.def {
+  font-style: italic;
+  color: #c88ec3;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+.func {
+  color: #38b3b2;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+/* also use for quotes */
+.var {
+  color: black;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+/* also use var for parentheses and colons */
+.iter {
+  color: #cf91c9;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+/* also use for return */
+.inbuilt {
+  color: #5491c5;
+  font-family: monospace !important;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.called {
+  color: #5491c5;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+/* use for things like = make_array() */
+.op {
+  color: #ff714b;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+.str {
+  color: #85bd88;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+.int {
+  color: #efa044;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+/* also use for vars in def statement */
+.bool {
+  color: #efa044;
+  font-family: monospace !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.asterisk {
+  color: #ff5261;
+}
+
+/* for from datascience import * */
+/* Python Interpreter Interface */
+div.py-interp {
+  background-color: black;
+  width: 100%;
+}
+
+p.py-interp, ul.py-interp {
+  font-weight: bold;
+  font-family: monospace !important;
+  width: 100%;
+  padding-left: 1em;
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+  width: 75%;
+}
+
+p.footer, ul.footer {
+  width: 100%;
+  font-size: 14px;
+}
+
+img.social {
+  height: 30px;
+}
+
+table.footer, td.footer, th.footer {
+  width: 100%;
+  border: 0px solid white;
+}
+
+/* Misc. Classes */
+.subheading {
+  width: 75%;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  font-size: 20px !important;
+  font-style: italic;
+}
+
+.links {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+
+.image {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tex-num, .eqn {
+  font-family: serif;
+}
+
+.eqn {
+  font-style: italic;
+}
+
+a#name {
+  text-decoration: none;
+  color: black;
+}
+a#name:visited, a#name:hover, a#name:focus, a#name:active {
+  text-decoration: none;
+  color: black;
+}
+
+/* Section-Specific Margins */
+#about-me, #education {
+  margin-top: -100px;
+  padding-top: 200px;
+}
+
+#interests, #achievements, #experience, #four04 {
+  margin-top: -150px;
+  padding-top: 300px;
+}
+
+/* Modal Boxes */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

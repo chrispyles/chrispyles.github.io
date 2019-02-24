@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interest | Chris Pyles</title>
+		<link href="./style.css" type="text/css" rel="stylesheet" />
+		<link rel="shortcut icon" href="./assets/favicon.ico"> 
+		<script type="text/javascript" src="./fonts.js"></script> 
+	</head>
+	<body>
+
+		<br>
+
+		<script type="text/javascript" src="./header.js"></script>
+
+
+<!--
+		<div class="fixed">
+
+			<h1 class="name"><a id="name" href="./index.html">Christopher Pyles</a></h1>
+
+				<p></p>
+
+				<p class="links"><a href="./index.html">About Me</a> | <a href="./education.html">Education</a> | <a href="./interests.html">Interests</a> | <a href="./achievements.html">Achievements & Co-Curriculars</a> | <a href="./experience.html">Experience</a> | <a href="./index.html#resume">Resume</a> | <a href="./jupyter_subpages/index.html" target="_blank">Jupyter</a></p>
+
+		</div>
+
+	-->
+
+		<div class="anchor" id="interests">
+
+			<h1>Interests</h1>
+
+			<h2>Coding</h2> 
+
+			<p>Languages: Python, HTML, CSS, SQLite, UNIX Command Line, Git | Currently Learning: Java, R, Ruby</p>
+
+			<br>
+
+			<p>While watching the Data 8 lectures as a part of my position at <a href="#ETSmodal">ETS</a>, I became intrigued by the prospect of data science; I thought that it was amazing how powerful computations could be processed in seconds and how the analysis of large data sets could be performed so quickly. It was in watching these lectures and doing some experiments with the <span class="code-box">datascience</span> library in my free time that I became enamoured with the prospect of learning coding beyond the data-specific aspects of Python libraries. I decided to enroll in <a href="#data8modal">Data 8</a> for Summer 2018 so that I could get credit for the practice I put in while watching the lectures, and then I moved to <a href="#cs88modal">CS 88</a>.</p>
+			<!--
+			<br>
+
+			<p>In the course of my application for Two Six Capital, I completed their data challenge. This project involved analyzing a data set of transactions from one of their businesses in order to answer a few questions about how the business changed over the period from 2013 to mid-2016:</p>
+
+				<ul><li>Is the business improving or deteriorating?</li>
+					<li>Are there regional differences in the business?</li>
+					<li>Is there seasonality in customer behavior?</li>
+					<li>Is customer quality getting better or worse over time?</li></ul>
+
+			<p>In answering these questions, I ran A/B tests to determine whether or not region played a role in the volume of transactions, and I analyzed how trends in gross revenue were indicative of the business's deterioration. For a detailed report and the code I wrote for this project, visit the project's page <a href="https://github.com/chrispyles/two-six-capital-challenge" target="_blank">on GitHub</a>.</p>
+		-->
+
+			<br>
+
+			<!-- originally on education page-->
+
+			<p>In my own free time, I used what I learned between sitting in on Data 8 lectures and some work I did in CS 88 to write a Sudoku object that can open a file with a sudoku puzzle, read it, and determine if it is a valid solution, among other things. The full .py file can be found <a href="https://github.com/chrispyles/python-projects/blob/master/sudoku/sudoku.py" target="_blank">on GitHub</a>, but I have included the function that checks the validity of the solved puzzle below.</p>
+
+
+
+					<!-- <p>In my own free time, I used what I learned between sitting in on Data 8 lectures during my work at <a href="#experience">ETS</a> and some studying I did for CS 88 to write a Python function that takes in a table with a filled in sudoku puzzle and determines whether or not the puzzle is solved correctly. Here is the program:</p> -->
+
+
+
+
+					<br>
+
+
+					<div class="code-box">
+
+
+						<!-- <p class="code-box">
+
+							<span class="def">class</span> <span class="func">Player</span>:<br>
+							<span class="docstring">
+								<indent>"""<br>
+								<indent>>>> c = Categories('categories_6123.txt')<br>
+								<indent>>>> q = Questions('qs_6123.txt', 'an_6123.txt', c)<br>
+								<indent>>>> b = Board(c, q)<br>
+								<indent>>>> p = Player('Player 1', b)<br>
+								<indent>>>> p.score<br>
+								<indent>0<br>
+								<indent>>>> cat = p.board.categories.items()[0]<br>
+								<indent>>>> print(f'Available amounts: {", ".join([str(i) for i in p.board.questions.qs[cat]])}')<br>
+								<indent>Available amounts: 200, 400, 600, 800, 1000<br>
+								<indent>>>> print(f'{p.board.question(cat, 200)}')<br>
+								<indent>Lisa Simpson takes moral stands on many an issue & also plays a mean one of these instruments<br>
+								<indent>"""<br></span>
+
+								<indent><span class="def">def </span><span class="inbuilt">__init__</span>(<span class="var">self</span>, <span class="var">name</span>, <span class="var">board</span>):<br>
+
+								<indent><indent>self.name <span class="op">=</span> name<br>
+
+								<indent><indent>self.score <span class="op">=</span> <span class="int">0</span><br>
+
+								<indent><indent>self.board <span class="op">=</span> board<br>
+
+
+						</p> -->
+
+
+					
+
+
+						<p class="code-box"><span class="def">def </span><span class="func">check_puzzle</span>(<span class="var">self</span>):<br>
+
+						<indent>"""<br>
+						<indent>>>> s = Sudoku('filled_puzzle_1.txt')<br>
+						<indent>>>> s.check_puzzle()<br>
+						<indent>Congratulations! Your answers check out!<br>
+						<indent>"""<br>
+
+						<indent>collection <span class="op">= </span>[]<br>
+
+						<indent><span class="iter">for</span> i <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">1</span>, <span class="int">10</span>):<br>
+
+						<indent><indent><span class="iter">for</span> j <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">9</span>):<br>
+
+						<indent><indent><indent>num_occurances <span class="op">= </span><span class="inbuilt">sum</span>([i <span class="op">==</span> k[j] <span class="iter">for</span> k <span class="iter">in</span> <span class="called">self</span>.rows])<br>
+
+						<indent><indent><indent><span class="iter">if </span>num_occurances <span class="op">== </span><span class="int">1</span>:<br>
+
+						<indent><indent><indent><indent>collection <span class="op">+=</span> [<span class="int">1</span>]<br>
+
+						<indent><indent><indent><span class="iter">else</span>:<br>
+
+						<indent><indent><indent><indent><span class="inbuilt">print</span>(<span class="str">'Sorry, but your answers do not work.'</span>)<br>
+
+
+
+
+						<indent><span class="iter">for</span> i <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">1</span>, <span class="int">10</span>):<br>
+
+						<indent><indent><span class="iter">for</span> j <span class="iter">in</span> <span class="called">self</span>.rows:<br>
+
+						<indent><indent><indent>num_occurances <span class="op">= </span><span class="inbuilt">sum</span>([i <span class="op">==</span> j[k] <span class="iter">for</span> k <span class="iter">in</span> <span class="inbuilt">range</span>(<span class="int">9</span>)])<br>
+
+						<indent><indent><indent><span class="iter">if </span>num_occurances <span class="op">== </span><span class="int">1</span>:<br>
+
+						<indent><indent><indent><indent>collection <span class="op">+=</span> [<span class="int">1</span>]<br>
+
+						<indent><indent><indent><span class="iter">else</span>:<br>
+
+						<indent><indent><indent><indent><span class="inbuilt">print</span>(<span class="str">'Sorry, but your answers do not work.'</span>)<br>
+
+
+
+						<indent><span class="iter">if </span><span class="inbuilt">sum</span>(collection) <span class="op">==</span> <span class="int">162</span>:<br>
+
+						<indent><indent><span class="inbuilt">print</span>(<span class="str">'Congratulations! Your answers check out'</span>)<br>
+
+						<indent><indent><span class="called">self</span>.completed <span class="op">=</span> <span class="bool">True</span><br>
+
+						<indent><span class="iter">else</span>:<br>
+
+						<indent><indent><span class="inbuilt">print</span>(<span class="str">'Sorry, but your answers do not work.'</span>)
+
+
+					</p>
+
+					</div>
+
+
+					<br>
+
+					<p>The first few lines of code import the UC Berkeley <span class="code-box">datascience</span> library and the module NumPy to work with arrays. The function prints a line that tells you whether or not your table is a solution by going through each row and column and verifying that each digit in <span class="code-box"><span class="inbuilt">range</span>(<span class="int">1</span>, <span class="int">10</span>)</span> appears only once (note that the <span class="code-box"><span class="inbuilt">range</span></span> function is inclusive on the first parameter but not on the second).</p>
+
+
+			
+			<br>
+			
+			<p>Over the summer that I took Data 8, I worked on practice problems from past iterations of the CS 61A course (a course at UC Berkeley equivalent to Data 8 and CS 88), and I was introduced to GitHub and its webhosting platform, which inspired me to take up learning HTML and CSS on <a href="https://codecademy.com" target="_blank">Codecademy</a>. In a day, I had learned the basics of both languages and had this website up and running. Coding, although a relatively new interest of mine, is something that I want to learn as much as possible about, and which I intend to pursue throughout my life.</p>
+
+			<br>
+			<br>
+
+			<h2>Finance and the Economy</h2>
+			<p>This interest began when I took AP Macroeconomics in high school, and it has grown since. I was fascinated by how different sectors of the economy were so interconnected with each other, and how a small cause somewhere inevitably led to a large effect in a completely different place. Since AP Macro, my interest has grown more specifically into finance; this semester, I am taking <a href="#e120modal">Engineering 120</a>, a class on economics and finance, and I hope to get more involved in UC Berkeley's finance community.</p>
+
+			<br>
+			<br>
+
+			<h2>Data Science</h2>
+			<p>At the end of Data 8, I found myself interested in learning more about data science. I decided to learn R, a data-oriented programming language, since it is used in most data science applications, and I also took the knowledge from Data 8 to begin working on other data sets that I could find online. As an example, for <a href="https://www.kaggle.com/neuromusic/avocado-prices" target="_blank">this data set</a> from Kaggle which has information about avocado prices, I built a <span class="eqn">k</span>-nearest neighbors classifier to classify avocados as either <span class="code-box">'conventional'</span> or <span class="code-box">'organic'</span>. <a href="./files/avocado_classifier.py" target="_blank">This .py file</a> contains the code for the classifier; it classifies a set of avocados based on the average price, total volume, and total number of bags for that set. The <span class="code-box">test_accuracy</span> function defined in the file showed that the 7-nearest neighbors classifier was 94.8% accurate. You can also find the Jupyter Notebook (in HTML format) that I used while building the classifier and optimizing <span class="eqn">k</span> in the <a href="https://jupyter.cpyles.com" target="_blank">Jupyter</a> section of this website.</p>
+
+			<br>
+
+			<p>Another recent project of mine has been based on <a href="https://www.kaggle.com/mirichoi0218/insurance" target="_blank">an insurance data set</a> I found on Kaggle. It contains some information about different insurance customers, including age, sex, BMI, number of children, region, charges, and whether or not the person was a smoker. In <a href="https://jupyter.cpyles.com/insurance.html">this Jupyter Notebook</a>, I first tried to see if there was a correlation between BMI and insurance charges; the value of <span class="eqn">r</span> that I computed was low enough that there might have been a slight correlation, but there certainly wasn't a prevalent one. Next, I decided to test whether or not being a smoker affected what you were charged by insurance companies; to do this, I did an A/B test to see whether or not the distributions of charges for smokers and non-smokers came from the same underlying distribution. I got a p-value of 0 (meaning that the observed value was more extreme that any of the simulated values under the assumption of the null hypothesis), and concluded that being a smoker does affect your insurance charges.</p>
+
+		</div>
+
+		<!-- MODAL BOXES -->
+		<div id="ETSmodal" class="modal">
+
+			<div>
+
+				<h2 class="align-center">UC Berkeley ETS</h2>
+
+				<br>
+				
+				<p>I worked at ETS during the Spring 2018 semester, operating the booth in the back of one of the large lecture halls (which mainly involved projection, sound, lighting, and camera work). As a part of this, I would listen to lectures for classes without actually being enrolled in them. One of the classes I worked during, Data 8, sparked my interest and led to my taking the class during the subsequent summer term.</p>
+
+				<br>
+
+				<p class="align-center"><a href="#close" title="Close" class="close">Close</a></p>
+
+			</div>
+
+		</div>
+
+		<div id="data8modal" class="modal">
+
+			<div>
+				<h2 class="align-center">Data 8</h2>
+
+				<br>
+
+				<p>Summer 2018: This course, whose full name is "Foundations of Data Science", is the first data science course students take at UC Berkeley. It covers the basics of Python, statistical models, hypothesis testing, A/B testing, p-values, and classification, among other things. More information on this course can be found at <a href="https://guide.berkeley.edu/courses/stat/" target="_blank">https://guide.berkeley.edu/courses/stat/</a> under the <strong>STAT C8</strong> heading.</p>
+
+				<br>
+
+				<p class="align-center"><a href="#close" title="Close" class="close">Close</a></p>
+			</div>
+		</div>
+
+		<div id="cs88modal" class="modal">
+
+			<div>
+				<h2 class="align-center">CS 88</h2>
+
+				<br>
+
+				<p>Fall 2018: This course is a connector to Data 8, and I took it in order to suplement the information that is normally taught in CS 61A (this is the first computer science course most UC Berkeley students take; Data 8 + CS 88 = CS 61A). More information on this course can be found at <a href="https://guide.berkeley.edu/courses/compsci/" target="_blank">https://guide.berkeley.edu/courses/compsci/</a> under the <strong>COMPSCI 88</strong> heading.</p>
+
+				<br>
+
+				<p class="align-center"><a href="#close" title="Close" class="close">Close</a></p>
+			</div>
+		</div>
+
+		<div id="e120modal" class="modal">
+
+			<div>
+				<h2 class="align-center">Engineering 120</h2>
+
+				<br>
+
+				<p>Fall 2018: This course is an introduction to the financial industry; it is mostly focused on personal economics, but it does cover many things related to investments and firms. More information on this course can be found at <a href="http://guide.berkeley.edu/courses/engin/" target="_blank">http://guide.berkeley.edu/courses/engin/</a> under the <strong>ENGIN 120</strong> heading.</p>
+
+				<br>
+
+				<p class="align-center"><a href="#close" title="Close" class="close">Close</a></p>
+			</div>
+		</div>
+
+		<!-- import footer -->
+
+		<br>
+		<br>
+		<br>
+
+		<script type="text/javascript" src="./footer.js"></script>
+
+	</body>
+	</html>
