@@ -15,6 +15,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 ## University of California, Berkeley
 _Major in Applied Mathematics with a Focus in Data Science_
+
 I am currently attending UC Berkeley to earn my BA in Applied Maths, with an anticipated graduation of Spring 2020 and a cumulative GPA of 3.50. I am also trying to take classes that are relevant to my interest in financial systems and computer science, while working on campus and being active in extra-curriculars. When I came to UC Berkeley, I had intended to major in Chemical Biology; that quickly changed, however, as I realized just how much math interested me and I had the opportunity to begin learning data science.
 
 ### Coursework
