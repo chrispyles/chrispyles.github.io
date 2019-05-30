@@ -130,7 +130,7 @@
 
 
 
-<p>Languages: Python, Julia, HTML, CSS, SQLite, UNIX Command Line, Git | Currently Learning: R, Ruby, Java</p>
+<p>Languages: Python, Julia, HTML, CSS, SQLite, UNIX Command Line, Git | Currently Learning: R, Java</p>
 
 
 
@@ -138,40 +138,7 @@
 
 
 
-<p>In my own free time, I used what I learned between sitting in on Data 8 lectures and some work I did in CS 88 to write a Sudoku object that can open a file with a sudoku puzzle, read it, and determine if it is a valid solution, among other things. The full .py file can be found <a rel="noreferrer noopener" href="https://github.com/chrispyles/python-projects/blob/master/sudoku/sudoku.py" target="_blank">on GitHub</a>, but I have included the function that checks the validity of the solved puzzle below.<br></p>
-
-
-
-<pre class="wp-block-code"><code>def check_puzzle(self):
-    """
-    >>> s = Sudoku('filled_puzzle_1.txt')
-    >>> s.check_puzzle()
-    Congratulations! Your answers check out!
-    """
-    collection = []
-    for i in range(1, 10):
-        for j in range(9):
-            num_occurances = sum([i == k[j] for k in self.rows])
-            if num_occurances == 1:
-                collection += [1]
-            else:
-                print('Sorry, but your answers do not work.')
-    for i in range(1, 10):
-        for j in self.rows:
-            num_occurances = sum([i == j[k] for k in range(9)])
-            if num_occurances == 1:
-                collection += [1]
-            else:
-                print('Sorry, but your answers do not work.')
-    if sum(collection) == 162:
-        print('Congratulations! Your answers check out')
-        self.completed = True
-    else:
-        print('Sorry, but your answers do not work.')</code></pre>
-
-
-
-<p>The first few lines of code import <g class="gr_ gr_54 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="54" data-gr-id="54">the </g><code>datascience</code><g class="gr_ gr_54 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="54" data-gr-id="54"> library</g> and the module NumPy to work with arrays. The function prints a line that tells you whether or not your table is a solution by going through each row and column and verifying that each digit <g class="gr_ gr_61 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="61" data-gr-id="61">in </g><code>range(1, 10)</code><g class="gr_ gr_61 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="61" data-gr-id="61"> appears</g> only once (note that <g class="gr_ gr_70 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="70" data-gr-id="70">the </g><code>range</code><g class="gr_ gr_70 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="70" data-gr-id="70"> function</g> is inclusive on the first parameter but not on the second).</p>
+<p>I have toyed around with Python in quite a few experiments, most notably in making text-based games like Jeopardy, Hangman, and Wheel of Fortune. The code for these games is available <a href="https://github.com/chrispyles/python-games">on Github</a>.</p>
 
 
 
