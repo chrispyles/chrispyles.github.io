@@ -1,0 +1,4 @@
+.tagcloud.rounded-corners a {border-radius: 10px;}
+.ew-author ul, .ew-archive ul, .ew-categories ul {text-align: right;margin-left: 0;}
+.ew-author li, .ew-archive li, .ew-categories li {display: block;height: 1%;overflow: hidden;}
+.ew-author ul a, .ew-archive ul a, .ew-categories ul a {float: left;}
