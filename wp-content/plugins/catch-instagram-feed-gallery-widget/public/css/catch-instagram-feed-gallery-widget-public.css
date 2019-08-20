@@ -33,11 +33,12 @@
 .catch-instagram-feed-gallery-widget-wrapper .catch-instagram-feed-gallery-widget-image-wrapper .item > a, .catch-instagram-feed-gallery-widget-wrapper .catch-instagram-feed-gallery-widget-image-wrapper .item > a:hover, .catch-instagram-feed-gallery-widget-wrapper .catch-instagram-feed-gallery-widget-image-wrapper .item > a:focus {color: transparent;display: block;}
 .catch-instagram-feed-gallery-widget-wrapper .item > a {line-height: 0;}
 .catch-instagram-feed-gallery-widget-wrapper div:not(.grid-rotator) .item > a {position: relative;}
-.catch-instagram-feed-gallery-widget-wrapper .overlay-icon {color: #fff;font-size: 35px;opacity: .6;position: absolute;right: 25px;text-decoration: none;top: 10px;}
+.catch-instagram-feed-gallery-widget-wrapper .overlay-icon {color: #fff;font-size: 2rem;opacity: .6;position: absolute;right: 1rem;text-decoration: none;top: 1rem;}
+@media screen and (max-width: 560px) {.catch-instagram-feed-gallery-widget-wrapper .overlay-icon {font-size: 1rem;right: .5rem;top: .5rem;}}
 .catch-instagram-feed-gallery-widget-wrapper.round .overlay-icon {right: 48%;top: 40%;}
 .catch-instagram-feed-gallery-widget-wrapper.default ul:after, .catch-instagram-feed-gallery-widget-wrapper.grid ul:after, .catch-instagram-feed-gallery-widget-wrapper.round ul:after {clear: both;content: " ";display: block;}
 .catch-instagram-feed-gallery-widget-wrapper .catch-instagram-feed-gallery-widget-image-wrapper span.cifgw-overlay {height: 100%;margin: 0 auto;margin: 0;text-align: center;width: 100%;position: absolute;}
-.item:hover .cifgw-overlay {background: rgba(255,255,255,.65);}
+.item:hover .cifgw-overlay {background: rgba(0,0,0,.5);}
 .item {position: relative;}
 @font-face {font-family: FontAwesome;font-weight: normal;font-style: normal;src: url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");src: url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");}
 .fa {display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
