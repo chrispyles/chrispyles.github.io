@@ -1,0 +1,50 @@
+.container * {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.anchor {
+    padding-top: 75px;
+    margin-top: -75px;
+}
+
+.red {
+    background: red;
+    border: 3px solid blue;
+    height: 100px;
+}
+
+.grid-image {
+    width: inherit;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+pre#jeopardy {
+    white-space: pre-line;
+    /*margin-right: 20px;
+    margin-left: 20px;*/
+    background-color: #f3f3f3;
+    padding: 10px 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+table.position-title {
+    width: 100%;
+}
+
+div.jumbotron#about-me {
+    background: url("assets/code-background.jpeg");
+    background-size: cover;
+    color: #eee;
+}
+
+div.jumbotron#about-me p.lead {
+    background: rgba(50, 50, 50, 0.8);
+    padding: 10px 15px 10px 15px;
+}
+
+/*div.jumbotron-contents {
+    vertical-align: middle;
+}*/
