@@ -45,6 +45,17 @@ div.jumbotron#about-me p.lead {
     padding: 10px 15px 10px 15px;
 }
 
+li.social {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+}
+
+li.social a {
+    color: rgba(0, 0, 0, 0.9);
+}
+
 /*div.jumbotron-contents {
     vertical-align: middle;
 }*/
