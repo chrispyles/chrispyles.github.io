@@ -62,3 +62,18 @@ li.social {
 li.social a {
     color: rgba(0, 0, 0, 0.9);
 }
+
+.quiet {
+  color: #AAA;
+  font-style: italic;
+}
+
+h1 span.quiet, h2 span.quiet {
+  font-style: normal;
+  font-weight: lighter;
+  margin-left: 15px;
+}
+
+h2#course-header {
+    margin-top: 20px;
+}
