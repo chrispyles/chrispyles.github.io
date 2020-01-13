@@ -41,6 +41,9 @@ table.position-title {
     width: 100%;
 }
 
+
+/* About Me Section */
+
 div.jumbotron#about-me {
     background: url("assets/code-background.jpeg");
     background-size: cover;
@@ -52,6 +55,9 @@ div.jumbotron#about-me p.lead {
     padding: 10px 15px 10px 15px;
 }
 
+
+/* Social Links Styles */
+
 li.social {
     padding-left: 15px;
     padding-right: 15px;
@@ -62,6 +68,12 @@ li.social {
 li.social a {
     color: rgba(0, 0, 0, 0.9);
 }
+
+/* 
+
+Teaching Pages Styles
+
+*/
 
 .quiet {
   color: #AAA;
@@ -76,4 +88,24 @@ h1 span.quiet, h2 span.quiet {
 
 h2#course-header {
     margin-top: 20px;
+}
+
+
+/* Notes Table */
+
+table#section-notes {
+    width: 100%;
+}
+
+table#section-notes tr {
+    border: 1px solid black;
+}
+
+table#section-notes tr:nth-of-type(2n) {
+    background-color: #EEE;
+}
+
+table#section-notes td, table#section-notes th {
+    border-right: 1px solid black;
+    padding-left: 10px;
 }
