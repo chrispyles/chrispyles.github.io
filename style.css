@@ -74,7 +74,7 @@ Teaching Pages Styles
 
 h1 span.quiet, h2 span.quiet {
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 200;
   margin-left: 15px;
 }
 
@@ -100,4 +100,8 @@ table#section-notes tr:nth-of-type(2n) {
 table#section-notes td, table#section-notes th {
     border-right: 1px solid black;
     padding-left: 10px;
+}
+
+table#section-notes th#resources-column {
+    width: 350px;
 }
