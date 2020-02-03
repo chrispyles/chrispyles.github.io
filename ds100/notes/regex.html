@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chris Pyles</title>
+
+    <!-- Popover JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="../../assets/styles/prism.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a58fb71897.js"></script>
+
+    <!-- MathJax -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <!-- Additional Styles -->
+    <link rel="stylesheet" type="text/css" href="../../assets/styles/style.css">
+
+    <!-- Favicon -->
+    <link src="../../../assets/favicon.ico" rel="favicon">
+
+    <!-- Popover Script -->
+    <script type="text/javascript">
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+        <a class="navbar-brand" href="#">Chris Pyles</a>
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarLinks"
+            aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarLinks">
+
+            <ul class="navbar-nav mr-auto justify-content-end">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Teaching
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link" href="../">Data 100</a>
+                    </div>
+                
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Social Glyphicons -->
+        <div>
+
+            <ul class="navbar-nav ml-auto justify-content-end">
+
+                <li class="nav-item social"><a href="https://github.com/chrispyles" target="_blank">
+
+                        <i class="fab fa-github"></i>
+
+                    </a></li>
+
+                <li class="nav-item social"><a href="https://linkedin.com/in/christopherapyles" target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a></li>
+
+                <li class="nav-item social"><a href="https://twitter.com/linearregressor" target="_blank">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <h2 id="course-header">Data 100 Notes <span class="quiet">Regular Expressions</span></h2>
+
+        <p><strong>Regular expressions</strong> are a language that allows us to search for patterns in text data. Special characters are used to denote specific patterns, which an interpeter uses to compare a string against. Regexes are used commonly in find and find-and-replace operations, and are also useful for verifying the format of an input (e.g. a phone number in a website form).</p>
+
+        <p>Regular expressions use several wildcard characters, escaped letters, and sequences to define the patterns that they search for. A (non-comprehensive) list of these is:</p>
+
+        <img src="./images/regex-cheat-sheet.jpg" alt="Regex Cheat Sheet" style="display: block; margin: auto;">
+
+        <p>Regular expressions define <em>character classes</em> which contain multiple characters that share some attributes. For example, we can define ranges of letters using <code>[a-f]</code>. One of these that is special is the <code>\b</code> class: it does not represent a character but a "word boundary," meaning that it does not consume a character when it is matched. For example, the phrase <code>bombastic sticker</code> will match <code>\bstic</code> once but <code>stic</code> twice, because the first instance of <code>stic</code> does not have a word boundary before it.</p>
+
+        <p>One important thing that is not included in the graphic is the second meaning of the <code>?</code> character. <code>?</code> can also make any quantifier placed before it "non-greedy." By default, regex quantifiers (<code>*</code>, <code>+</code>, etc.) are <em>greedy</em>, meaning that they will take up as many characters as possible while still matching their pattern. Adding the <code>?</code> quantifier after another quantifier makes it <em>non-greedy</em>, so that it will take up as few characters as possible. Consider the following sentence:</p>
+
+        <p style="text-align: center;"><code>Lisa, the neighborhood dog-walker, walks all the dogs whose owners don't walk them.</code></p>
+
+        <p>Now let's consider two regexes: <code>[A-Z].*,</code> and <code>[A-Z].*?,</code>. This regex will look for a capital letter (<code>[A-Z]</code>), any number of non-line break characters (<code>.*</code>), and a comma, in that order. The second one has the <code>?</code> quantifier after the <code>*</code> quantifier, so it will match non-greedily. Because of greedy matching, the first regex will match <code>Lisa, the neighborhood dog-walker,</code>, using as many characters as possible to still match the pattern. Because of the <code>?</code> quantifier, however, the second one will only match <code>Lisa,</code>. As you can see, we could still have matched more characters in the sentence, but the <code>?</code> quantifier forced our <code>*</code> quantifier to match non-greedily.</p>
+
+        <div class="notes-question">
+
+            <h5>Practice Question</h5>
+
+            <p>Which of the following regexes will match the shortest sequence of characters in the sentence below? (Note: In regexes, <code>^</code>, when not inside brackets, matches the start of a line and <code>$</code> the end of a line.)</p>
+
+            <p style="text-align: center;"><code>"No," said Harvey, "we can't get them to stop. They won't listen to us for some reason."</code></p>
+
+            <ol type="a">
+                <li><code>"[A-Z].*$</code></li>
+                <li><code>'\w+'</code></li>
+                <li><code>,.*?'</code></li>
+                <li><code>'.*$</code></li>
+            </ol>
+
+            <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#q1answer" aria-expanded="false" aria-controls="q1answer">Show Answer</button>
+
+            <div class="collapse" id="q1answer">
+                <p><strong>(c)</strong>. This regex will match from the first comma to the first apostrophe, with a length of 25 characters. Regexes (a) and (d) match almost the whole thing (because of greedy matching), and regex (b) doesn't match at all, since there are non-word characters between the two apostrophes.</p>
+            </div>
+
+        </div>
+
+        <h3>Escaping</h3>
+        
+        <p>An important concept in regexes is how to "escape" a character. Let's say that you want to match the <code>*</code> character literally in a string; the regex <code>*</code> won't work because the regex engine interprets <code>*</code> as a quantifier. For this reason, regexes provide an escape character, <code>\</code>, that, when placed before another special character in a regex, causes the pattern to match to that character literal rather than the pattern that it represents. To match the <code>*</code> character, we would use <code>\*</code>.</p>
+
+        <div class="notes-question">
+
+            <h5>Practice Question</h5>
+
+            <p>Which regex(es) below will match the <code>\</code> character?</p>
+
+            <ol type="a">
+                <li><code>\\</code></li>
+                <li><code>\</code></li>
+                <li><code>\w</code></li>
+                <li><code>\W</code></li>
+            </ol>
+
+            <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#q2answer" aria-expanded="false" aria-controls="q2answer">Show Answer</button>
+
+            <div class="collapse" id="q2answer">
+                <p><strong>(a)</strong> and <strong>(d)</strong>. Remember that even though the <code>\</code> character escapes other special characters, it is itself a special character, and as such must also be escaped to be matched (thus <code>\\</code> and not <code>\</code>). Because <code>\</code> is not a word character, it is captured by <code>\W</code> and not by <code>\w</code>.</p>
+            </div>
+
+        </div>
+
+        <h3>Regular Expressions in Python</h3>
+
+        <p>Python's <code>re</code> library provides its syntax for working with regular expressions.</p>
+
+    </div>
+    
+    <footer style="height: 100px;"></footer>
+
+</body>
+
+<script src="../../assets/javascript/prism.js"></script>
+
+<!-- Remove leading whitespace inside pre tags
+<script type="text/javascript">
+    var pre= document.querySelector('pre');
+
+    //insert a span in front of the first letter.  (the span will automatically close.)
+    pre.innerHTML= pre.textContent.replace(/(\w)/, '<span>$1');
+
+    //get the new span's left offset:
+    var left= pre.querySelector('span').getClientRects()[0].left;
+
+    //move the code to the left, taking into account the body's margin:
+    pre.style.marginLeft= (-left + pre.getClientRects()[0].left)+'px';
+</script> -->
+
+<!-- <script type="text/javascript">hljs.initHighlighting();</script> -->
+
+</html>

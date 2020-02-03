@@ -36,7 +36,7 @@ table.position-title {
 /* About Me Section */
 
 div.jumbotron#about-me {
-    background: url("assets/code-background.jpeg");
+    background: url("../code-background.jpeg");
     background-size: cover;
     color: #eee;
 }
@@ -66,6 +66,19 @@ li.social a {
 Teaching Pages Styles
 
 */
+
+div.jumbotron#ds100-jumbotron {
+    background: url("../surface-background.jpg");
+    background-size: cover;
+    background-position: 0% 60%;
+    /* color: #eee; */
+    height: 300px;
+}
+
+div.jumbotron h2#ds100-header {
+    background-color: rgba(230, 230, 230, .5);
+    text-align: center;
+}
 
 .quiet {
   color: #AAA;
@@ -104,4 +117,16 @@ table#section-notes td, table#section-notes th {
 
 table#section-notes th#resources-column {
     width: 350px;
+}
+
+
+/* Notes Pages */
+
+/* div.notes-question ol, div.notes-question button {
+    display: inline-block
+} */
+
+div.notes-question button {
+    float: right;
+    bottom: 0%;
 }
