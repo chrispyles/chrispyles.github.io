@@ -7,6 +7,12 @@ by Chris Pyles
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .container * {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -35,16 +41,27 @@ table.position-title {
 
 /* About Me Section */
 
-div.jumbotron#about-me {
-    background: url("../code-background.jpeg");
+div.jumbotron#home-jumbotron {
+    background: url("../images/hard-drive-closeup.jpg");
     background-size: cover;
     color: #eee;
+    height: 97vh;
 }
 
-div.jumbotron#about-me p.lead {
+h1.jumbotron-text {
+    color: #fff;
+    /* margin: auto auto; */
+    text-align: center;
+    font-size: 400px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 75px;
+    padding-top: 10%;
+}
+
+/* div.jumbotron#about-me p.lead {
     background: rgba(50, 50, 50, 0.8);
     padding: 10px 15px 10px 15px;
-}
+} */
 
 
 /* Social Links Styles */
@@ -68,7 +85,7 @@ Teaching Pages Styles
 */
 
 div.jumbotron#ds100-jumbotron {
-    background: url("../surface-background.jpg");
+    background: url("../images/surface-background.jpg");
     background-size: cover;
     background-position: 0% 60%;
     /* color: #eee; */

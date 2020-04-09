@@ -30,6 +30,9 @@
 
     <!-- MathJax -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
     <!-- Additional Styles -->
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
@@ -75,7 +78,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#course-dev">Course Development</a>
+                    <a class="nav-link" href="#teaching">Teaching</a>
                 </li>
 
                 <li class="nav-item">
@@ -94,7 +97,7 @@
                 
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        Teaching
+                        Course Resources
                     </a>
                 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -105,50 +108,54 @@
 
             </ul>
 
-        </div>
-
-        <!-- Social Glyphicons -->
-        <div>
-            
-            <ul class="navbar-nav ml-auto justify-content-end">
+            <!-- Social Glyphicons -->
+            <div>
                 
-                <li class="nav-item social"><a href="https://github.com/chrispyles" target="_blank">
+                <ul class="navbar-nav ml-auto justify-content-end">
+                    
+                    <li class="nav-item social"><a href="https://github.com/chrispyles" target="_blank">
 
-                    <i class="fab fa-github"></i>
+                        <i class="fab fa-github"></i>
 
-                </a></li>
+                    </a></li>
 
-                <li class="nav-item social"><a href="https://linkedin.com/in/christopherapyles" target="_blank">
+                    <li class="nav-item social"><a href="https://linkedin.com/in/christopherapyles" target="_blank">
 
-                    <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
 
-                </a></li>
+                    </a></li>
 
-                <li class="nav-item social"><a href="https://twitter.com/linearregressor" target="_blank">
+                    <li class="nav-item social"><a href="https://twitter.com/linearregressor" target="_blank">
 
-                    <i class="fab fa-twitter"></i>
+                        <i class="fab fa-twitter"></i>
 
-                </a></li>
+                    </a></li>
 
-            </ul>
+                </ul>
+
+            </div>
 
         </div>
 
     </nav>
 
-    <div class="jumbotron" id="about-me">
+    <div class="jumbotron" id="home-jumbotron">
 
-        <div class="container jumbotron-contents">
-
-            <h1 class="display-4">Hello, world!</h1>
-
-            <p class="lead">I am currently in my third year at UC Berkeley, pursuing a Computer Science and Data Science BA. Because data science is such an evolving field, especially at the level of undergraduate education, I have taken a keen interest in data science pedagogy. I currently work at the UC Berkeley Division of Data Science and Information as a connector assistant, a modules developer, and a lead developer on the External Pedagogy Team which interfaces with other institutions about how we teach data science. I am also completing an honors thesis for degree that will focus on the DataHub, UC Berkeley's cloud computing solution which is a distribution of the JupyterHub.</p>
-
+        <div class="jumbotron-contents container">
+            <h1 class="jumbotron-text">Chris.</h1>
         </div>
 
     </div>
 
     <div class="container">
+
+        <div class="" id="about-me">
+
+            <!-- <h1 class="display-4">Hello, world!</h1> -->
+
+            <p class="lead">I am currently in my third year at UC Berkeley, pursuing a Computer Science and Data Science BA. Because data science is such an evolving field, especially at the level of undergraduate education, I have taken a keen interest in data science pedagogy, becoming heavily involved in the campus's data science ecosystem. I currently work at the UC Berkeley Division of Computing, Data Science, and Society as lead developer on the Infrastructure Team, building and maintaining the open source software that our data science and CS courses run on.</p>
+
+        </div>
 
         <!-- Education -->
         <div class="anchor" id="education">
@@ -159,9 +166,9 @@
 
             <p><em>Class of 2021, Majoring in Computer Science and Data Science (Business & Industrial Analytics), Minoring in Demography</em></p>
 
-            <p>I am currently attending UC Berkeley to earn my BA in Computer Science and Data Science, with an anticipated graduation of Spring 2021. I am also trying to take classes that are relevant to my interest in financial systems while working on campus and being active in extra-curriculars. When I came to UC Berkeley, I had intended to major in Chemical Biology; that quickly changed, however, as I realized just how much math interested me and I had the opportunity to begin learning data science.</p>
+            <p>I am currently attending UC Berkeley to earn my BA in Computer Science and Data Science, with an anticipated graduation of Spring 2021. I am also trying to take classes that are relevant to my interest in financial systems while working on campus and being active in extra-curriculars. When I came to UC Berkeley, I had intended to major in Chemical Biology; that quickly changed, however, as I realized just how much math interested me and I had the opportunity to begin learning data science. The long and winding path that I took to arrive at my choice of majors has led me into becoming very active on campus within the ecosystem that my majors inhabit.</p>
 
-            <p>Some of the projects that I have completed in the course of my studies include Gitlet (a functional miniature-version of Git programmed in Java), BearMaps (a mapping and navigation program based on OpenStreetMaps), and a Spam/Ham classifier based on logistic regression with 5-fold cross-validation.</p>
+            <p>Some of the projects that I have completed in the course of my studies include an RDBMS built in Java, Gitlet (a functional miniature-version of Git programmed in Java), BearMaps (a mapping and navigation program based on OpenStreetMaps and graph algorithms), and a Spam/Ham classifier based on logistic regression.</p>
 
         </div>
 
@@ -177,12 +184,14 @@
 
                     <div class="col-lg-4 col-sm-6 col-xs-12">
 
-                        <a href="https://github.com/ucbds-infra/otter-grader" 
-                        target="_blank" 
-                        data-toggle="popover" 
-                        data-trigger="hover"
-                        title="Otter-Grader"
-                        data-content="A Python- and Docker-based serverless autograding solution that can grade both Python scripts and Jupyter Notebooks. Designed for use at institutions whose data science efforts cannot yet afford a server-based autograder.">
+                        <a 
+                            href="https://otter-grader.rtfd.io" 
+                            target="_blank" 
+                            data-toggle="popover" 
+                            data-trigger="hover"
+                            title="Otter-Grader"
+                            data-content="A Python-based server-optional autograding solution that can grade both Python scripts and Jupyter Notebooks. Designed for use at institutions whose data science efforts cannot yet afford a server-based autograder but scalable to institutions with more rigorous infrastructure requirements."
+                        >
                         
                             <img src="assets/projects/division-logo.jpg" height=100% class="grid-image">
                         
@@ -192,12 +201,14 @@
 
                     <div class="col-lg-4 col-sm-6 col-xs-12">
                         
-                        <a href="https://github.com/chrispyles/nbforms" 
-                        target="_blank" 
-                        data-toggle="popover" 
-                        data-trigger="hover" 
-                        title="nbforms" 
-                        data-content="A Python library that allows students to contribute answers inside of Jupyter Notebooks allowing the data to be ready for immediate use. Requires an nbforms-server (already built on Sinatra + ActiveRecord) that can be run on a free Heroku dyno.">
+                        <a 
+                            href="https://github.com/chrispyles/nbforms" 
+                            target="_blank" 
+                            data-toggle="popover" 
+                            data-trigger="hover" 
+                            title="nbforms" 
+                            data-content="A Python library that allows students to contribute answers inside of Jupyter Notebooks allowing the data to be ready for immediate use. Requires an nbforms-server (already built on Sinatra + ActiveRecord) that can be run on a free Heroku dyno."
+                        >
 
                             <img src="assets/projects/nbforms-logo.jpg" class="grid-image">
 
@@ -205,41 +216,50 @@
 
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!-- <div class="col-lg-4 col-sm-6 col-xs-12">
                         
-                        <a href="https://dsjl.chrispyles.io/" 
-                        target="_blank"  
-                        data-toggle="popover" 
-                        data-trigger="hover" 
-                        title="Data Science in Julia" 
-                        data-content="This is a book that I am working on which discusses how to do data science using the open-source language Julia. It teaches users basic Julia syntax and then how to use its package community to leverage Julia to answer data science questions.">
+                        <a 
+                            href="https://dsjl.chrispyles.io/" 
+                            target="_blank"  
+                            data-toggle="popover" 
+                            data-trigger="hover" 
+                            title="Data Science in Julia" 
+                            data-content="This is a book that I am working on which discusses how to do data science using the open-source language Julia. It teaches users basic Julia syntax and then how to use its package community to leverage Julia to answer data science questions."
+                        >
 
                             <img src="assets/projects/julia.png" class="grid-image">
 
                         </a>
 
-                    </div>
+                    </div> -->
 
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!-- <div class="col-lg-4 col-sm-6 col-xs-12">
                         
-                        <a href="https://github.com/saasbook/Cal-NERDS" 
-                        target="_blank" 
-                        data-toggle="popover" 
-                        data-trigger="hover" 
-                        title="Cal NERDS Scheduler" 
-                        data-content="A Ruby on Rails web application designed for Cal NERDS to track student director schedules and hours for budgeting. Uses Google OAuth and sends users automated reminder emails to submit their weekly schedules.">
+                        <a 
+                            href="https://github.com/saasbook/Cal-NERDS" 
+                            target="_blank" 
+                            data-toggle="popover" 
+                            data-trigger="hover" 
+                            title="Cal NERDS Scheduler" 
+                            data-content="A Ruby on Rails web application designed for Cal NERDS to track student director schedules and hours for budgeting. Uses Google OAuth and sends users automated reminder emails to submit their weekly schedules."
+                        >
                             
                             <img src="assets/projects/calnerds-logo.jpg" class="grid-image">
 
                         </a>
 
-                    </div>
+                    </div> -->
                 
                     <div class="col-lg-4 col-sm-6 col-xs-12">
                 
-                        <a href="https://oktests.herokuapp.com" target="_blank" data-toggle="popover" data-trigger="hover"
+                        <a 
+                            href="https://oktests.herokuapp.com" 
+                            target="_blank" 
+                            data-toggle="popover" 
+                            data-trigger="hover"
                             title="Ok Tests Generator"
-                            data-content="This is a generator of ok-formatted tests for Python autograding. It is built on Ruby + Sinatra and is hosted on Heroku.">
+                            data-content="This is a generator of ok-formatted tests for Python autograding. It is built on Ruby + Sinatra and is hosted on Heroku."
+                        >
                 
                             <img src="assets/projects/ok-logo.svg" height=100% class="grid-image">
                 
@@ -247,21 +267,22 @@
                 
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!-- <div class="col-lg-4 col-sm-6 col-xs-12">
                         
-                        <!-- https://p-hacking.herokuapp.com/ -->
-                        <a href="https://p-hacking.herokuapp.com/" 
-                        target="_blank" 
-                        data-toggle="popover" 
-                        data-trigger="hover" 
-                        title="P-Hacking" 
-                        data-content="This applet, written in Python using ipywidgets, demonstrates how one can hack their way to statistically significant results.">
+                        <a 
+                            href="https://p-hacking.herokuapp.com/" 
+                            target="_blank" 
+                            data-toggle="popover" 
+                            data-trigger="hover" 
+                            title="P-Hacking" 
+                            data-content="This applet, written in Python using ipywidgets, demonstrates how one can hack their way to statistically significant results."
+                        >
 
                             <img src="assets/projects/p-hacking.png" class="grid-image">
 
                         </a>
                         
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -270,9 +291,13 @@
         </div>
 
         <!-- Course Development -->
-        <div class="anchor" id="course-dev">
+        <div class="anchor" id="teaching">
             
-            <h1>Course Development</h1>
+            <h1>Teaching</h1>
+
+            <h4>Undergraduate Student Instructor, UC Berkeley Electrical Engineering and Computer Science</h4>
+
+            <p>Since January 2020, I have been a UGSI for Data 100: Principles & Techniques of Data Science (approx. 900 students). My role includes leading a discussion and lab section comprised of about 30 students each, developing teaching materials for these sections, and holding office hours for studens in the course. I also try to write materials for students to review and to use to study, including posting my discussion materials, and post them <a href="./ds100/">on my website</a>.</p>
 
             <h4>Data Science Curriculum Development, UC Berkeley</h4>
 
@@ -305,17 +330,8 @@
 
             <table class="position-title">
                 <tr>
-                    <td><h4>Undergraduate Student Instructor</h4></td>
-                    <td><p class="text-right"><em>UC Berkeley Electrical Engineering and Computer Science, January 2020 - Present</em></p></td>
-                </tr>
-            </table>
-
-            <p>I am currently a UGSI for Data 100: Principles and Techniques of Data Science. As a UGSI, I run a lab and disucssion section, and hold office hours each week. I am also on the course's infrastructure team, which works on autograding solutions for the course as well as interfaces with the JuptyerHub maintainers on campus.</p>
-
-            <table class="position-title">
-                <tr>
                     <td><h4>Connector Assistant & Modules Developer</h4></td>
-                    <td><p class="text-right"><em>Division of Data Science and Information, UC Berkeley</em></p></td>
+                    <td><p class="text-right"><em>UC Berkeley Data Science Education Program</em></p></td>
                 </tr>
             </table>
 
@@ -328,16 +344,16 @@
                 </tr>
             </table>
 
-            <p>I was an AI for two courses: Data 100: Principles and Techniques of Computer Science & CS 88: Computational Structures in Data Science. Being an AI is similar to lab assisting, in that I spend my time in the course lab sections assisting students with completing the assignments, answering theoretical questions, and troubleshooting technical issues with assignments and students' machines.</p>
+            <p>I was an AI for two courses: Data 100: Principles & Techniques of Computer Science & CS 88: Computational Structures in Data Science. Being an AI is similar to lab assisting, in that I spend my time in the course lab sections assisting students with completing the assignments, answering theoretical questions, and troubleshooting technical issues with assignments and students' machines.</p>
 
-            <table class="position-title">
+            <!-- <table class="position-title">
                 <tr>
                     <td><h4>CTO & Web Designer</h4></td>
                     <td><p class="text-right"><em>Partners Through Education</em></p></td>
                 </tr>
             </table>
 
-            <p><a href="http://partnersthrougheducation.org/" target="_blank">Partners Through Education</a> is a student-run non-profit that aims to provide scholarships and college admissions resources for students in the LA area. I was given the opportunity to work with them as their CTO and web designer. I run their website (linked above) which uses WordPress infrastructure and is hosted as a static HTML site on Github.</p>
+            <p><a href="http://partnersthrougheducation.org/" target="_blank">Partners Through Education</a> is a student-run non-profit that aims to provide scholarships and college admissions resources for students in the LA area. I was given the opportunity to work with them as their CTO and web designer. I run their website (linked above) which uses WordPress infrastructure and is hosted as a static HTML site on Github.</p> -->
 
             <table class="position-title">
                 <tr>
@@ -358,7 +374,7 @@
             <table class="position-title">
                 <tr id="ext-intern">
                     <td><h4>Lead Developer</h4></td>
-                    <td><p class="text-right"><em>UC Berkeley Division of Data Science and Information, May 2019 - Present</em></p></td>
+                    <td><p class="text-right"><em>UC Berkeley Division of Computing, Data Science, and Society, May 2019 - Present</em></p></td>
                 </tr>
             </table>
 
