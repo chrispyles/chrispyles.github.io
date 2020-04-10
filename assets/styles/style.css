@@ -8,6 +8,7 @@ by Chris Pyles
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
@@ -41,11 +42,14 @@ table.position-title {
 
 /* About Me Section */
 
+div.jumbotron.landing-jumbotron {
+    color: #eee;
+    height: 97vh;
+}
+
 div.jumbotron#home-jumbotron {
     background: url("../images/hard-drive-closeup.jpg");
     background-size: cover;
-    color: #eee;
-    height: 97vh;
 }
 
 h1.jumbotron-text {
@@ -85,11 +89,15 @@ Teaching Pages Styles
 */
 
 div.jumbotron#ds100-jumbotron {
-    background: url("../images/surface-background.jpg");
+    background: url("../images/cool-data-viz-background.jpg");
     background-size: cover;
-    background-position: 0% 60%;
-    /* color: #eee; */
-    height: 300px;
+    height: 60vh;
+}
+
+div.jumbotron#ds100-jumbotron h1.jumbotron-text {
+    font-size: 250px;
+    letter-spacing: 75px;
+    padding-top: 5%;
 }
 
 div.jumbotron h2#ds100-header {
