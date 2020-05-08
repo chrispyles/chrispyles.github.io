@@ -155,3 +155,7 @@ div.notes-question button {
     float: right;
     bottom: 0%;
 }
+
+iframe.nb-iframe {
+    padding-top: 50px;
+}
