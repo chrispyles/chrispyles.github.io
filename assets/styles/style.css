@@ -30,9 +30,13 @@ div.anchor {
     max-height: 300px;
 }
 
-/* Height for Cal NERDS logo */
+/* Height for Cal NERDS logo
 img[src="assets/projects/calnerds-logo.jpg"] {
     height: 100%;
+} */
+
+.grid-image-container {
+    height: 300px;
 }
 
 table.position-title {
