@@ -54,6 +54,11 @@ div.jumbotron.landing-jumbotron {
 div.jumbotron#home-jumbotron {
     background: url("../images/hard-drive-closeup.jpg");
     background-size: cover;
+    margin-bottom: -50px;
+}
+
+div#about-me p.lead {
+    margin-top: 60px;
 }
 
 h1.jumbotron-text {
