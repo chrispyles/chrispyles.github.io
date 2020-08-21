@@ -65,10 +65,12 @@ h1.jumbotron-text {
     color: #fff;
     /* margin: auto auto; */
     text-align: center;
-    font-size: 400px;
+    /* font-size: 400px; */
+    font-size: 30vw;
     font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 75px;
+    letter-spacing: 1vw;
     padding-top: 10%;
+    overflow: hidden;
 }
 
 /* div.jumbotron#about-me p.lead {
