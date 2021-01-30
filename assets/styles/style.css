@@ -49,10 +49,11 @@ table.position-title {
 div.jumbotron.landing-jumbotron {
     color: #eee;
     height: 97vh;
+    padding: none;
 }
 
 div.jumbotron#home-jumbotron {
-    background: url("../images/hard-drive-closeup.jpg");
+    background: url("../images/bw-hard-disk.jpg");
     background-size: cover;
     margin-bottom: -50px;
 }
@@ -69,7 +70,7 @@ h1.jumbotron-text {
     font-size: 30vw;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1vw;
-    padding-top: 10%;
+    /* padding-top: 10%; */
     overflow: hidden;
 }
 

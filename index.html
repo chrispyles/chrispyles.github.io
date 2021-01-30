@@ -136,7 +136,7 @@
 
     </nav>
 
-    <div class="jumbotron landing-jumbotron" id="home-jumbotron">
+    <div class="jumbotron landing-jumbotron fill-page" id="home-jumbotron">
 
         <div class="jumbotron-contents container">
             <h1 class="jumbotron-text">Chris.</h1>
@@ -199,6 +199,23 @@
                     <div class="col-lg-4 col-sm-6 col-xs-12 grid-image-container">
                         
                         <a 
+                            href="http://dsdiscovery.org" 
+                            target="_blank" 
+                            data-toggle="popover" 
+                            data-trigger="hover" 
+                            title="Data Science Discovery Application" 
+                            data-content="A Django web app application built to allow students to apply to data science reseearch projects. I wrote much of the front- and back-end for this project, and manage its deployment on Azure App Service."
+                        >
+
+                            <img src="assets/projects/discovery-logo.png" class="grid-image">
+
+                        </a>
+
+                    </div>
+
+                    <!-- <div class="col-lg-4 col-sm-6 col-xs-12 grid-image-container">
+                        
+                        <a 
                             href="https://github.com/chrispyles/nbforms" 
                             target="_blank" 
                             data-toggle="popover" 
@@ -211,7 +228,7 @@
 
                         </a>
 
-                    </div>
+                    </div> -->
 
                     <div class="col-lg-4 col-sm-6 col-xs-12 grid-image-container">
                         
@@ -293,9 +310,9 @@
             
             <h1>Teaching</h1>
 
-            <h4>Undergraduate Student Instructor, UC Berkeley Division of Computing, Data Science, and Society</h4>
+            <h4>Undergraduate Student Instructor, UC Berkeley Division of Computing, Data Science and Society</h4>
 
-            <h5><a href="https://ds100.org/" target="_blank">Data 100: Principles & Techniques of Data Science</a></h5>
+            <h5><a href="https://ds100.org/sp21" target="_blank">Data 100: Principles & Techniques of Data Science</a></h5>
 
             <p><strong>Spring 2021, Fall 2020, Spring 2020.</strong> Since January 2020, I have been a UGSI for Data 100: Principles & Techniques of Data Science, a class of approximately 1200 students. My role includes leading a discussion and lab section comprised of about 30 students each, developing teaching materials for these sections, and holding office hours for studens in the course. My main responsibility for the course covers the course infrastrucutre, including managing the autograder (Otter-Grader, referenced above) and cloud computing environment that students use to complete their assignments.</p>
 
@@ -305,7 +322,7 @@
 
             <p>I present here some of the materials that I developed for courses at UC Berkeley as a part of the work I did at the Division, as well as some details on the courses they are for and my role therein. Most of what I present here is work relating to curriculum development, but I also worked as something of a lab assistant on courses, including L&S 88.</p>
 
-            <h5><a href="https://data-88e.github.io/fa20" target="_blank">Data 88E: Economic Models</a></h4>
+            <h5><a href="https://data-88e.github.io/sp21" target="_blank">Data 88E: Economic Models</a></h4>
 
             <p><strong>Spring 2021, Fall 2020, Spring 2020, Fall 2019.</strong> This course is another Data 8 connector course that looks at how to apply the methods and tools of data science to economic questions. Lecture topics include SymPy, supply & demand, utility, the Cobb-Douglas production function, inequality, game theory, and other applied topics. I am a connector assistant for this class, and my contribution was the game theory lecture along with some <code>ipywidgets</code>-backed applets for use in other notebooks.</p>
 
@@ -373,23 +390,23 @@
 
             <table class="position-title">
                 <tr id="ext-intern">
-                    <td><h4>Statistics Intern</h4></td>
-                    <td><p class="text-right"><em>Federal Reserve Bank of San Francisco, May 2020 - Present</em></p></td>
+                    <td><h4>Contract Software Engineer</h4></td>
+                    <td><p class="text-right"><em>Microsoft, October 2020 - Present</em></p></td>
+                </tr>
+            </table>
+
+            <p>At Microsoft, I am currently working on building an open-source auto-assessment tool for Python called Seymour. Most conventional autograders run tests on students' code and assigns a grade based on the passing and failing of those tests. In contrast, Seymour executes a student's code and creates a memory fingerprint of that execution. This fingerprint can then be used to compare the student's implementation against various reference implementations that the instructor provides, to allow the students to solve a problem in many different ways. This memory fingerprint can also be used to assess things like plagiarism, where each student's fingerprint is compared to their peers'.</p>
+
+            <table class="position-title">
+                <tr id="ext-intern">
+                    <td><h4>Statistics Software Development Intern</h4></td>
+                    <td><p class="text-right"><em>Federal Reserve Bank of San Francisco, May 2020 - August 2020</em></p></td>
                 </tr>
             </table>
 
             <p>As a part of my internship, I perform inspection and analysis on data from various bank financial reports utilized for analysis of economic activity by the Federal Reserve Board of Governors, including detecting and writing remarks for anomalous data points and assessing trends and issues by comparing against past financial data. This involves using internal databases to assess financial data reported to the Statistics function, managing data pipelines from various data sources in order to query, merge, shape, filter, and transform data to meet business needs, and applying cleaned data to business problems by creating data products that utilize the data and algorithms to reduce the workload of analysts.</p>
 
             <p>I built a remark prediction algorithm (a two-part program) to accompany anomaly detection performed on weekly balance sheet data from the FR 2644 for 65+ depository institutions. The first part pulls 52 weeks of historical data for the report from the current as-of date and merges the data queried from 4 tables into a usable form for predicting remarks and the second matches detected anomalies with the most recent viable remark to carry forward in order to auto-fill the remark for analyst.</p>
-
-            <table class="position-title">
-                <tr id="ext-intern">
-                    <td><h4>Undergraduate Student Instructor</h4></td>
-                    <td><p class="text-right"><em>UC Berkeley Electrical Engineering and Computer Science, January 2020 - Present</em></p></td>
-                </tr>
-            </table>
-
-            <p>As a UGSI, I am responsible for teaching discussion sections, holding office hours, grading exams, and developing and maintaining infrastructure for a course of near 1200 students. This includes managing the course JupyterHub distribution and developing new features for the class autograding solution, Otter-Grader, which I built as a part of my position at DSEP.</p>
 
             <table class="position-title">
                 <tr id="ext-intern">
