@@ -43,6 +43,10 @@ table.position-title {
     width: 100%;
 }
 
+.bg-light {
+    background-color: #f5f6f7 !important;
+}
+
 
 /* About Me Section */
 
