@@ -55,12 +55,6 @@ div.fill-height {
     padding: none;
 }
 
-div.jumbotron#home-jumbotron {
-    background: url("../images/bw-hard-disk.jpg");
-    background-size: cover;
-    margin-bottom: -50px;
-}
-
 div#about-me p.lead {
     margin-top: 60px;
     text-align: justify;
@@ -85,6 +79,7 @@ div#headshot-container {
 
 div#headshot-container img {
     width: 100%;
+    border-radius: 60px;
 }
 
 /* div.jumbotron#about-me p.lead {
