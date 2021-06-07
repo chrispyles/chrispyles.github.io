@@ -9,6 +9,7 @@ by Chris Pyles
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
@@ -30,11 +31,6 @@ div.anchor {
     max-height: 300px;
 }
 
-/* Height for Cal NERDS logo
-img[src="assets/projects/calnerds-logo.jpg"] {
-    height: 100%;
-} */
-
 .grid-image-container {
     height: 300px;
 }
@@ -46,9 +42,16 @@ table.position-title {
 
 /* About Me Section */
 
-div.jumbotron.landing-jumbotron {
-    color: #eee;
-    height: 97vh;
+h1.name {
+    font-family: Oswald;
+    font-size: 65px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+div.fill-height {
+    /* color: #eee; */
+    height: 102vh;
     padding: none;
 }
 
@@ -60,6 +63,8 @@ div.jumbotron#home-jumbotron {
 
 div#about-me p.lead {
     margin-top: 60px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 h1.jumbotron-text {
@@ -72,6 +77,14 @@ h1.jumbotron-text {
     letter-spacing: 1vw;
     /* padding-top: 10%; */
     overflow: hidden;
+}
+
+div#headshot-container {
+    margin-right: 50px;
+}
+
+div#headshot-container img {
+    width: 100%;
 }
 
 /* div.jumbotron#about-me p.lead {
