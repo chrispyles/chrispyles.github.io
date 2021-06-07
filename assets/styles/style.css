@@ -7,12 +7,16 @@ by Chris Pyles
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); */
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container * {
@@ -59,33 +63,25 @@ div#about-me p.lead {
     margin-top: 60px;
     text-align: justify;
     text-justify: inter-word;
+    overflow-wrap: break-word; 
+    max-width : 100%;
 }
 
 h1.jumbotron-text {
     color: #fff;
-    /* margin: auto auto; */
     text-align: center;
-    /* font-size: 400px; */
     font-size: 30vw;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1vw;
-    /* padding-top: 10%; */
     overflow: hidden;
 }
 
-div#headshot-container {
-    margin-right: 50px;
-}
-
 div#headshot-container img {
+    object-fit: cover;
     width: 100%;
     border-radius: 60px;
+    max-height: 80vh;
 }
-
-/* div.jumbotron#about-me p.lead {
-    background: rgba(50, 50, 50, 0.8);
-    padding: 10px 15px 10px 15px;
-} */
 
 
 /* Social Links Styles */

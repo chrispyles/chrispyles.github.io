@@ -20,7 +20,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
     <!-- Boostrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -36,6 +36,12 @@
 
     <!-- MathJax -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
     
     <!-- Additional Styles -->
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
@@ -56,15 +62,15 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
-        <a class="navbar-brand" href="#">Chris Pyles</a>
+        <a class="navbar-brand ms-5" href="#">Chris Pyles</a>
 
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarLinks">
 
-            <ul class="navbar-nav mr-auto justify-content-end">
+            <ul class="navbar-nav me-auto justify-content-end">
 
                 <li class="nav-item">
                     <a class="nav-link" href="#about-me">About Me<!--  <span class="sr-only">(current)</span> --></a>
@@ -106,9 +112,9 @@
             </ul>
 
             <!-- Social Glyphicons -->
-            <div>
+            <div class="me-5">
                 
-                <ul class="navbar-nav ml-auto justify-content-end">
+                <ul class="navbar-nav ms-auto justify-content-end">
                     
                     <li class="nav-item social"><a href="https://github.com/chrispyles" target="_blank">
 
@@ -142,13 +148,13 @@
 
     <div class="container">
 
-        <div class="d-flex flex-row align-items-center fill-height anchor" id="about-me">
+        <div class="align-items-center fill-height anchor d-xs-flex flex-xs-column d-md-flex flex-md-row" id="about-me">
 
-            <div id="headshot-container">
+            <div class="d-none d-md-block pe-5 col-sm-4 col-md-5" id="headshot-container">
                 <img id="headshot" src="assets/images/grad.jpg" alt="Christopher Pyles" />
             </div>
 
-            <div>
+            <div class="col-sm-8 col-md-7">
 
                 <h1 class="name">CHRIS<br>PYLES</h1>
 
@@ -337,7 +343,7 @@
             <table class="position-title">
                 <tr>
                     <td><h4>Connector Assistant & Modules Developer</h4></td>
-                    <td><p class="text-right"><em>UC Berkeley Data Science Education Program</em></p></td>
+                    <td><p class="text-end"><em>UC Berkeley Data Science Education Program</em></p></td>
                 </tr>
             </table>
 
@@ -346,7 +352,7 @@
             <table class="position-title">
                 <tr>
                     <td><h4>Academic Intern</h4></td>
-                    <td><p class="text-right"><em>Department of Electrical Engineering & Computer Science, UC Berkeley</em></p></td>
+                    <td><p class="text-end"><em>Department of Electrical Engineering & Computer Science, UC Berkeley</em></p></td>
                 </tr>
             </table>
 
@@ -355,7 +361,7 @@
             <!-- <table class="position-title">
                 <tr>
                     <td><h4>CTO & Web Designer</h4></td>
-                    <td><p class="text-right"><em>Partners Through Education</em></p></td>
+                    <td><p class="text-end"><em>Partners Through Education</em></p></td>
                 </tr>
             </table>
 
@@ -364,7 +370,7 @@
             <table class="position-title">
                 <tr>
                     <td><h4>Eagle Scout</h4></td>
-                    <td><p class="text-right"><em>As of October 19, 2016</em></p></td>
+                    <td><p class="text-end"><em>As of October 19, 2016</em></p></td>
                 </tr>
             </table>
 
@@ -380,7 +386,7 @@
             <table class="position-title">
                 <tr id="ext-intern">
                     <td><h4>Software Engineer</h4></td>
-                    <td><p class="text-right"><em>IXL Learning, starting July 2021</em></p></td>
+                    <td><p class="text-end"><em>IXL Learning, starting July 2021</em></p></td>
                 </tr>
             </table>
 
@@ -389,7 +395,7 @@
             <table class="position-title">
                 <tr id="ext-intern">
                     <td><h4>Contract Software Engineer</h4></td>
-                    <td><p class="text-right"><em>Microsoft, October 2020 - Present</em></p></td>
+                    <td><p class="text-end"><em>Microsoft, October 2020 - Present</em></p></td>
                 </tr>
             </table>
 
@@ -398,7 +404,7 @@
             <table class="position-title">
                 <tr id="ext-intern">
                     <td><h4>Statistics Software Development Intern</h4></td>
-                    <td><p class="text-right"><em>Federal Reserve Bank of San Francisco, May 2020 - August 2020</em></p></td>
+                    <td><p class="text-end"><em>Federal Reserve Bank of San Francisco, May 2020 - August 2020</em></p></td>
                 </tr>
             </table>
 
@@ -409,7 +415,7 @@
             <table class="position-title">
                 <tr id="ext-intern">
                     <td><h4>Lead Developer</h4></td>
-                    <td><p class="text-right"><em>UC Berkeley Data Science Education Program, May 2019 - Present</em></p></td>
+                    <td><p class="text-end"><em>UC Berkeley Data Science Education Program, May 2019 - Present</em></p></td>
                 </tr>
             </table>
 
