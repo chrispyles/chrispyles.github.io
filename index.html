@@ -81,6 +81,10 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="#projects">Open-Source Projects</a>
                 </li>
 
@@ -166,6 +170,114 @@
             <p>I graduated from UC Berkeley, earning a Bachelor's degree in Computer Science and Data Science. While at Berkeley, I tried to take classes that were relevant to my interest in financial systems while working on campus and being active in extra-curriculars. When I came to UC Berkeley, I had intended to major in Chemical Biology; that quickly changed, however, as I realized just how much math interested me and I had the opportunity to begin learning data science. The long and winding path that I took to arrive at my choice of majors has led me into becoming very active on campus within the ecosystem that my majors inhabit, working in various roles in the data science/CS communities, including developing and co-teaching a course about the economic applications of data science.</p>
 
             <p>I completed an <a href="https://github.com/chrispyles/honors-thesis" target="_blank">honors thesis</a> for my data science program. My thesis topic was to determine the efficacy of predicting movie ratings using convolutional neural networks trained on poster images. I trained several different neural networks on posters queried from The Movie Databases's API and compared them to control models trained on other movie data to see whether these neural networks were viable models. Some of the other projects that I have completed in the course of my studies include an RDBMS built in Java, Gitlet (a functional miniature-version of Git programmed in Java), BearMaps (a mapping and navigation program based on OpenStreetMaps and graph algorithms), and a Spam/Ham classifier based on logistic regression.</p>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="anchor" id="skills">
+
+            <h1>Skills</h1>
+
+            <div class="d-flex flex-wrap" id="skills-container"></div>
+
+            <script>
+                const skills = [
+                    {
+                        label: "Language",
+                        message: "Python",
+                        logo: "python",
+                    },
+                    {
+                        label: "Language",
+                        message: "JavaScript",
+                        logo: "javascript",
+                    },
+                    {
+                        label: "Language",
+                        message: "TypeScript",
+                        logo: "typescript",
+                    },
+                    {
+                        label: "Language",
+                        message: "R",
+                        logo: "r",
+                    },
+                    {
+                        label: "Framework",
+                        message: "Django",
+                        logo: "django",
+                    },
+                    {
+                        label: "Framework",
+                        message: "React",
+                        logo: "react",
+                    },
+                    {
+                        label: "Framework",
+                        message: "Next.js",
+                        logo: "nextdotjs",
+                    },
+                    {
+                        label: "Framework",
+                        message: "Ruby on Rails",
+                        logo: "rubyonrails",
+                    },
+                    {
+                        label: "Tool",
+                        message: "Git",
+                        logo: "git",
+                    },
+                    {
+                        label: "Tool",
+                        message: "Jupyter",
+                        logo: "jupyter",
+                    },
+                    {
+                        label: "Tool",
+                        message: "PostgreSQL",
+                        logo: "postgresql",
+                    },
+                    {
+                        label: "Tool",
+                        message: "Docker",
+                        logo: "docker",
+                    },
+                    {
+                        label: "Tool",
+                        message: "Azure",
+                        logo: "microsoftazure",
+                    },
+                    {
+                        label: "Tool",
+                        message: "Google Cloud",
+                        logo: "googlecloud",
+                    },
+                ]
+
+                function createImageUrl(badgeData) {
+                    const label = encodeURIComponent(badgeData.label);
+                    const message = encodeURIComponent(badgeData.message);
+                    return `https://img.shields.io/static/v1?label=${label}&message=${message}&labelColor=212529` +
+                        `&logo=${badgeData.logo}&logoColor=white&color=035280&style=for-the-badge`;
+                }
+
+                function createImageNode(badgeData) {
+                    const img = document.createElement("img");
+                    img.setAttribute("src", createImageUrl(badgeData));
+                    img.setAttribute("alt", `${badgeData.label}: ${badgeData.message}`);
+
+                    const div = document.createElement("div");
+                    div.appendChild(img);
+                    return div;
+                }
+
+                function createAndRenderImage(badgeData) {
+                    const image = createImageNode(badgeData);
+                    document.getElementById("skills-container").appendChild(image);
+                }
+
+                skills.forEach(createAndRenderImage);
+            </script>
 
         </div>
 

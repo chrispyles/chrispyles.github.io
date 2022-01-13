@@ -178,3 +178,8 @@ div.notes-question button {
 iframe.nb-iframe {
     padding-top: 50px;
 }
+
+/* Skills */
+#skills-container div {
+    margin-right: 10px;
+}
