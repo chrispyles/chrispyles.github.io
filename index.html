@@ -107,16 +107,16 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="#experience">Work Experience</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="#teaching">Teaching</a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#co-curriculars">Co-Curriculars</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Work Experience</a>
-                </li>
+                </li> -->
 
                 <!-- <li class="nav-item dropdown">
                 
@@ -137,6 +137,12 @@
             <div class="me-5">
                 
                 <ul class="navbar-nav ms-auto justify-content-end">
+
+                    <li class="nav-item social"><a href="https://linkedin.com/in/chris-pyles" target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a></li>
                     
                     <li class="nav-item social"><a href="https://github.com/chrispyles" target="_blank">
 
@@ -144,9 +150,9 @@
 
                     </a></li>
 
-                    <li class="nav-item social"><a href="https://linkedin.com/in/chris-pyles" target="_blank">
+                    <li class="nav-item social"><a href="https://letterboxd.com/chrispyles/" target="_blank">
 
-                        <i class="fab fa-linkedin"></i>
+                        <img src="assets/social/letterboxd.svg" alt="Letterboxd" class="social" />
 
                     </a></li>
 
@@ -163,15 +169,14 @@
         <div class="align-items-center fill-height anchor d-xs-flex flex-xs-column d-md-flex flex-md-row" id="about-me">
 
             <div class="d-none d-md-block pe-5 col-sm-4 col-md-5" id="headshot-container">
-                <img id="headshot" src="assets/images/grad.jpg" alt="Christopher Pyles" />
+                <img id="headshot" src="assets/images/ixl-headshot.jpg" alt="Christopher Pyles" />
             </div>
 
             <div class="col-sm-8 col-md-7">
 
                 <h1 class="name">CHRIS<br>PYLES</h1>
 
-                <p class="lead">I am an incoming software engineer at IXL Learning, having just graduated from UC Berkeley with a Bachelor's degree in Computer Science and Data Science. My primary interest lies in educational technology, as I spent most of my time at Berkeley working at the Data Science Education Program developing software solutions to facilitate data science pedagogy. My primary focus there was in autograding and full-stack development, developing a Python and R autograding solution and a few web applications for various programs. I have also contracted for Microsoft, developing another autograding solution for Python.</p>
-
+                <p class="lead">I am a site reliability engineer at Google, focusing on capacity management. I also have lots of experience in software engineering and web development, as well as educational technology. I graduated from UC Berkeley with a Bachelor's degree in Computer Science and Data Science (with Honors), where I spent a couple of years working on building an a couple of <a href="#projects">autograders</a> for Python and R which I still contribute to. In my free time, I like to watch movies and contribute to open-source projects.</p>
             </div>
 
         </div>
@@ -183,7 +188,12 @@
 
             <h3>University of California, Berkeley</h3>
 
-            <p><em>Class of 2021, Majoring in Computer Science and Data Science (Business & Industrial Analytics), Minoring in Demography</em></p>
+            <em>
+                <div class="d-flex flex-row">
+                    <p>Major: Computer Science and Data Science (with Honors), Minor: Demography</p>
+                    <p class="ms-auto">August 2017 - May 2021</p>
+                </div>
+            </em>
 
             <p>I graduated from UC Berkeley, earning a Bachelor's degree in Computer Science and Data Science. While at Berkeley, I tried to take classes that were relevant to my interest in financial systems while working on campus and being active in extra-curriculars. When I came to UC Berkeley, I had intended to major in Chemical Biology; that quickly changed, however, as I realized just how much math interested me and I had the opportunity to begin learning data science. The long and winding path that I took to arrive at my choice of majors has led me into becoming very active on campus within the ecosystem that my majors inhabit, working in various roles in the data science/CS communities, including developing and co-teaching a course about the economic applications of data science.</p>
 
@@ -209,6 +219,11 @@
                         label: "Language",
                         message: "JavaScript",
                         logo: "javascript",
+                    },
+                    {
+                        label: "Language",
+                        message: "Java",
+                        logo: "java",
                     },
                     {
                         label: "Language",
@@ -373,75 +388,6 @@
 
         </div>
 
-        <!-- Course Development -->
-        <div class="anchor" id="teaching">
-            
-            <h1>Teaching</h1>
-
-            <h4>Undergraduate Student Instructor, UC Berkeley Division of Computing, Data Science and Society</h4>
-
-            <h5><a href="https://ds100.org/sp21" target="_blank">Data 100: Principles & Techniques of Data Science</a></h5>
-
-            <p><strong>Spring 2021, Fall 2020, Spring 2020.</strong> Since January 2020, I have been a UGSI for Data 100: Principles & Techniques of Data Science, a class of approximately 1200 students. My role includes leading a discussion and lab section comprised of about 30 students each, developing teaching materials for these sections, and holding office hours for studens in the course. My main responsibility for the course covers the course infrastrucutre, including managing the autograder (Otter-Grader, referenced above) and cloud computing environment that students use to complete their assignments.</p>
-
-            <h4>Data Science Curriculum Development, UC Berkeley Data Science Education Program</h4>
-
-            <p>As a part of my time at DSEP, I participated in curriculum development for some courses that are taught by DSEP staff and for other "data-enabled" courses (courses outside the Division but which use DSEP infrastructure). The first course that I worked on, L&S 88, focused on reproducibility and open science. It was a connector course for Data 8 (the foundational course for data science students) and it was my role as a connector assistant that spurred me into working more and more in the campus data science community.</p>
-
-            <p>I present here some of the materials that I developed for courses at UC Berkeley as a part of the work I did at the Division, as well as some details on the courses they are for and my role therein. Most of what I present here is work relating to curriculum development, but I also worked as something of a lab assistant on courses, including L&S 88.</p>
-
-            <h5><a href="https://data-88e.github.io/sp21" target="_blank">Data 88E: Economic Models</a></h4>
-
-            <p><strong>Spring 2021, Fall 2020, Spring 2020, Fall 2019.</strong> This course is another Data 8 connector course that looks at how to apply the methods and tools of data science to economic questions. Lecture topics include SymPy, supply & demand, utility, the Cobb-Douglas production function, inequality, game theory, and other applied topics. I am a connector assistant for this class, and my contribution was the game theory lecture along with some <code>ipywidgets</code>-backed applets for use in other notebooks.</p>
-
-            <h5><a href="https://github.com/ds-modules/SW-282" target="_blank">SW 282: Social Welfare Research</a></h5>
-
-            <p><strong>Fall 2019.</strong> This is a <em>module</em> (a set of notebooks presented in non-DS courses) that I am building from scratch. It brings the power of data science to students who have no coding experience so that they can leverage the tools we show them to use in research. It covers subjects including data abstractions for rectangular data, creating data visualizations, and estimating population parameters using the boostrap.</p>
-
-            <h5><a href="https://github.com/ds-modules/MCB-32" target="_blank">MCB 32: Introduction to Human Physiology</a></h5>
-
-            <p><strong>Summer 2019.</strong> This module brings several physiological concepts into the data science framework. My role on this module as mainly in upkeep and updating the notebook styles and code, but I also worked on Lab 9, which deals with building a k-nearest neighbors classifier for diabetes, by adding a section in which we explain hypothesis testing and run an A/B test on the data used in the notebook.</p>
-
-            <h5><a href="https://github.com/chrispyles/uc-berkeley/tree/master/ls88-sp19" target="_blank">L&S 88: Reproducibility and Open Science</a></h4>
-
-            <p><strong>Spring 2019.</strong> This course was a Data 8 connector course that focused on questions of reproducibility and open science within the Data Science community. It featured lectures on things like Project Jupyter, Licensing, and Data Repositories & Archiving. My role in this class was as a connector assistant, which primarily involved curriculum development and lab assisting in class. I developed quite a few labs for this course, including a <code>matplotlib</code> tutorial and a lab on Python vs. R in Jupyter notebooks.</p>
-
-        </div>
-
-        <!-- Co-Curriculars -->
-        <div class="anchor" id="co-curriculars">
-            
-            <h1>Co-Curriculars</h1>
-
-            <table class="position-title">
-                <tr>
-                    <td><h4>Connector Assistant & Modules Developer</h4></td>
-                    <td><p class="text-end"><em>UC Berkeley Data Science Education Program</em></p></td>
-                </tr>
-            </table>
-
-            <p>I started at DSEP in January 2019 as a connector assistant for L&S 88: Reproducibility & Open Science (discussed above). As connector assistant, my role was twofold: I attended class and acted as a lab assistant during the lab portion of the class, and I worked with the course instructors to develop assignments that fit with the narrative they had for the course. After L&S 88 ended, I stayed on at the division and worked on a few different <em>modules</em> (sets of notebooks taught in non-DS courses). The modules that I worked on include a wide range of subjects, including human physiology, sociology, social welfare, and French.</p>
-
-            <table class="position-title">
-                <tr>
-                    <td><h4>Academic Intern</h4></td>
-                    <td><p class="text-end"><em>Department of Electrical Engineering & Computer Science, UC Berkeley</em></p></td>
-                </tr>
-            </table>
-
-            <p>I was an AI for two courses: Data 100: Principles & Techniques of Computer Science & CS 88: Computational Structures in Data Science. Being an AI is similar to lab assisting, in that I spend my time in the course lab sections assisting students with completing the assignments, answering theoretical questions, and troubleshooting technical issues with assignments and students' machines.</p>
-
-            <table class="position-title">
-                <tr>
-                    <td><h4>Eagle Scout</h4></td>
-                    <td><p class="text-end"><em>As of October 19, 2016</em></p></td>
-                </tr>
-            </table>
-
-            <p>The highest award in the Boy Scouts of America, I worked my way up through seven ranks and twenty-something merit badges before completing an Eagle Scout Service Project in order to obtain this honor. The Eagle Project involved designing, funding, and completing a project to benefit a local nonprofit; my project involved repainting ceiling tiles in my high school’s MPR. You can see my project notebook (from proposal to conclusion) <a href="files/eagle-project-wb.pdf">here</a>.</p>
-
-        </div>
-
         <!-- Work Experience -->
         <div class="anchor" id="experience">
             
@@ -449,12 +395,21 @@
 
             <table class="position-title">
                 <tr id="ext-intern">
-                    <td><h4>Software Engineer</h4></td>
-                    <td><p class="text-end"><em>IXL Learning, July 2021 - Present</em></p></td>
+                    <td><h4>Site Reliability Engineer</h4></td>
+                    <td><p class="text-end"><em>Google, May 2022 - Present</em></p></td>
                 </tr>
             </table>
 
-            <p>At IXL, I am a member of the Teacher Experience team, which works on maintaining and building new features for educators on IXL's platform. This is a full-stack development role on an Agile team with biweekly standups and releases. The primary tools I use here are Struts 2 and React.</p>
+            <p>I am an incoming site reliability engineer at Google, working on capacity management.</p>
+
+            <table class="position-title">
+                <tr id="ext-intern">
+                    <td><h4>Software Engineer</h4></td>
+                    <td><p class="text-end"><em>IXL Learning, July 2021 - May 2022</em></p></td>
+                </tr>
+            </table>
+
+            <p>At IXL, I was a member of the Teacher Experience team, which works on maintaining and building new features for educators on IXL's platform. My role involved full-stack development in Struts and React, working on an Agile team with biweekly standups and releases. Within my first six months at IXL, I had already led a full-scale project to allow instructors to pin skill plans for specific classes instead of their entire roster, for which I designed the back-end, wrote a detailed design doc, and led the team through implementation. One of the other big projects I worked on at IXL was a complete refactor of the back-end for personalized skill plans for exams like the SAT, ACT, and NWEA MAP, a feature used by more than 250,000 users. For this project, I designed the new back-end and did most of the implementation. </p>
 
             <table class="position-title">
                 <tr id="ext-intern">
@@ -488,6 +443,41 @@
             <p>The main project I work on is an open source Python and R autograding solution, <a href="https://github.com/ucbds-infra/otter-grader" target="_blank">Otter-Grader</a>, that scalably grades students’ programming assignments and abstracts away autograding internals for instructors, which has been adopted in 15+ courses at and outside of UC Berkeley and has impacted 2,500+ students. Part of this work has been creating an open source community for development around GitHub and a public Slack to allow instructors and contributors to communicate effectively and to allow iterations on the package to be a community effort. I also led an interactive hands-on demonstration of autograding solutions and a presentation on the engineering and infrastructure constraints of those solutions at the <a href="https://data.berkeley.edu/academics/resources/data-science-education-resources/2020-national-workshop-data-science-education" target="_blank">2020 National Workshop on Data Science Education</a>.</p>
 
             <p>Another of the projects I led was the end-to-end development and deployment of a Django web application for the <a href="https://github.com/DS-Discovery/DS-Exchange" target="_blank">Data Science Discovery program</a>, allowing students to apply to various projects run a data science research program on campus and hosted on Microsoft Azure. I created an open source GitHub workflow following engineering best practices for collaboration including branch-per-feature, CI/CD pipelines, and multiple staging environments. I also wrote comprehensive internal documentation for the application deployment pipeline as well as how to use and develop on the application following the dev practices set out for this project.</p>
+
+        </div>
+
+        <!-- Course Development -->
+        <div class="anchor" id="teaching">
+            
+            <h1>Teaching</h1>
+
+            <h4>Undergraduate Student Instructor, UC Berkeley Division of Computing, Data Science and Society</h4>
+
+            <h5><a href="https://ds100.org/sp21" target="_blank">Data 100: Principles & Techniques of Data Science</a></h5>
+
+            <p><strong>Spring 2021, Fall 2020, Spring 2020.</strong> Since January 2020, I have been a UGSI for Data 100: Principles & Techniques of Data Science, a class of approximately 1200 students. My role includes leading a discussion and lab section comprised of about 30 students each, developing teaching materials for these sections, and holding office hours for studens in the course. My main responsibility for the course covers the course infrastrucutre, including managing the autograder (Otter-Grader, referenced above) and cloud computing environment that students use to complete their assignments.</p>
+
+            <h4>Data Science Curriculum Development, UC Berkeley Data Science Education Program</h4>
+
+            <p>As a part of my time at DSEP, I participated in curriculum development for some courses that are taught by DSEP staff and for other "data-enabled" courses (courses outside the Division but which use DSEP infrastructure). The first course that I worked on, L&S 88, focused on reproducibility and open science. It was a connector course for Data 8 (the foundational course for data science students) and it was my role as a connector assistant that spurred me into working more and more in the campus data science community.</p>
+
+            <p>I present here some of the materials that I developed for courses at UC Berkeley as a part of the work I did at the Division, as well as some details on the courses they are for and my role therein. Most of what I present here is work relating to curriculum development, but I also worked as something of a lab assistant on courses, including L&S 88.</p>
+
+            <h5><a href="https://data-88e.github.io/sp21" target="_blank">Data 88E: Economic Models</a></h4>
+
+            <p><strong>Spring 2021, Fall 2020, Spring 2020, Fall 2019.</strong> This course is another Data 8 connector course that looks at how to apply the methods and tools of data science to economic questions. Lecture topics include SymPy, supply & demand, utility, the Cobb-Douglas production function, inequality, game theory, and other applied topics. I am a connector assistant for this class, and my contribution was the game theory lecture along with some <code>ipywidgets</code>-backed applets for use in other notebooks.</p>
+
+            <h5><a href="https://github.com/ds-modules/SW-282" target="_blank">SW 282: Social Welfare Research</a></h5>
+
+            <p><strong>Fall 2019.</strong> This is a <em>module</em> (a set of notebooks presented in non-DS courses) that I am building from scratch. It brings the power of data science to students who have no coding experience so that they can leverage the tools we show them to use in research. It covers subjects including data abstractions for rectangular data, creating data visualizations, and estimating population parameters using the boostrap.</p>
+
+            <h5><a href="https://github.com/ds-modules/MCB-32" target="_blank">MCB 32: Introduction to Human Physiology</a></h5>
+
+            <p><strong>Summer 2019.</strong> This module brings several physiological concepts into the data science framework. My role on this module as mainly in upkeep and updating the notebook styles and code, but I also worked on Lab 9, which deals with building a k-nearest neighbors classifier for diabetes, by adding a section in which we explain hypothesis testing and run an A/B test on the data used in the notebook.</p>
+
+            <h5><a href="https://github.com/chrispyles/uc-berkeley/tree/master/ls88-sp19" target="_blank">L&S 88: Reproducibility and Open Science</a></h4>
+
+            <p><strong>Spring 2019.</strong> This course was a Data 8 connector course that focused on questions of reproducibility and open science within the Data Science community. It featured lectures on things like Project Jupyter, Licensing, and Data Repositories & Archiving. My role in this class was as a connector assistant, which primarily involved curriculum development and lab assisting in class. I developed quite a few labs for this course, including a <code>matplotlib</code> tutorial and a lab on Python vs. R in Jupyter notebooks.</p>
 
         </div>
 
