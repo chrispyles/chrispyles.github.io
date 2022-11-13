@@ -25,14 +25,12 @@
     <meta property="og:url" content="https://chrispyles.io/">
     <meta property="og:title" content="Chris Pyles">
     <meta property="og:description" content="A portfolio for Chris Pyles, a software engineer working on educational technology and full-stack web development.">
-    <meta property="og:image" content="assets/images/social-metadata-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chrispyles.io/">
     <meta property="twitter:title" content="Chris Pyles">
     <meta property="twitter:description" content="A portfolio for Chris Pyles, a software engineer working on educational technology and full-stack web development.">
-    <meta property="twitter:image" content="assets/images/social-metadata-image.jpg">
 
     <!-- Popover JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -51,9 +49,6 @@
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/a58fb71897.js"></script>
-
-    <!-- MathJax -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -80,7 +75,7 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
-        <a class="navbar-brand ms-5" href="#">Chris Pyles</a>
+        <a class="navbar-brand ms-5 name" href="#">Chris Pyles</a>
 
         <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -91,7 +86,7 @@
             <ul class="navbar-nav me-auto justify-content-end">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-me">About Me<!--  <span class="sr-only">(current)</span> --></a>
+                    <a class="nav-link" href="#about-me">About Me</a>
                 </li>
 
                 <li class="nav-item">
@@ -103,11 +98,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Open-Source Projects</a>
+                    <a class="nav-link" href="#experience">Work Experience</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Work Experience</a>
+                    <a class="nav-link" href="#projects">Open-Source Projects</a>
                 </li>
 
                 <li class="nav-item">
@@ -159,7 +154,7 @@
 
                 <h1 class="name">CHRIS<br>PYLES</h1>
 
-                <p class="lead">I am a site reliability engineer at Google, focusing on capacity management. I also have lots of experience in software engineering and web development, as well as educational technology. I graduated from UC Berkeley with a Bachelor's degree in Computer Science and Data Science (with Honors), where I spent a couple of years working on building a couple of <a href="#projects">autograders</a> for Python and R which I still contribute to. In my free time, I like to watch movies and contribute to open-source projects.</p>
+                <p class="lead">I am a software engineer in Google's Site Relability Engineering org, focusing on internal tooling for managing capacity for Google services. I also have experience in full-stack web development and educational technology. I graduated from UC Berkeley with a Bachelor's degree in Computer Science and Data Science (with Honors), where I spent a couple of years working on building <a href="#projects">autograders</a> for Python and R which I still contribute to. In my free time, I like to watch movies and contribute to other open-source projects.</p>
             </div>
 
         </div>
@@ -173,14 +168,12 @@
 
             <em>
                 <div class="d-flex flex-row">
-                    <p>Major: Computer Science and Data Science (with Honors), Minor: Demography</p>
+                    <p>Bachelor's Degree, Major: Computer Science and Data Science (with Honors), Minor: Demography</p>
                     <p class="ms-auto">August 2017 - May 2021</p>
                 </div>
             </em>
 
-            <p>I graduated from UC Berkeley, earning a Bachelor's degree in Computer Science and Data Science. While at Berkeley, I tried to take classes that were relevant to my interest in financial systems while working on campus and being active in extra-curriculars. When I came to UC Berkeley, I had intended to major in Chemical Biology; that quickly changed, however, as I realized just how much math interested me and I had the opportunity to begin learning data science. The long and winding path that I took to arrive at my choice of majors has led me into becoming very active on campus within the ecosystem that my majors inhabit, working in various roles in the data science/CS communities, including developing and co-teaching a course about the economic applications of data science.</p>
-
-            <p>I completed an <a href="https://github.com/chrispyles/honors-thesis" target="_blank">honors thesis</a> for my data science program. My thesis topic was to determine the efficacy of predicting movie ratings using convolutional neural networks trained on poster images. I trained several different neural networks on posters queried from The Movie Databases's API and compared them to control models trained on other movie data to see whether these neural networks were viable models. Some of the other projects that I have completed in the course of my studies include an RDBMS built in Java, Gitlet (a functional miniature-version of Git programmed in Java), BearMaps (a mapping and navigation program based on OpenStreetMaps and graph algorithms), and a Spam/Ham classifier based on logistic regression.</p>
+            <p>I graduated from UC Berkeley, earning a Bachelor's degree in Computer Science and Data Science. While at Berkeley, I tried to get involved in the campus communities surrounding my majors; I worked for two years at the Data Science Education Program, a subdivision of UC Berkeley's <a href="https://data.berkeley.edu/" target="_blank">Division of Computing, Data Science, and Society</a>. At DSEP, I worked not only as the <a href="#experience-cdss">lead developer</a> for their infrastructure team, but also as a contributor for the <a href="#teaching-ds-curriculum">data science curriculum</a> and, eventually, as a TA for <a href="#teaching-data-100">Data 100</a>, a core upper-division data science course.</p>
 
         </div>
 
@@ -297,6 +290,68 @@
 
         </div>
 
+        <!-- Work Experience -->
+        <div class="anchor" id="experience">
+            
+            <h1>Work Experience</h1>
+
+            <table class="position-title">
+                <tr id="ext-intern">
+                    <td><h4>Software Engineer</h4></td>
+                    <td><p class="text-end"><em>Google, May 2022 - Present</em></p></td>
+                </tr>
+            </table>
+
+            <p>I am currently a software egineer in Google's Site Reliability Engineering org, building internal tooling for automated capacity management. This is primarly a web development role for an internal site built with Angular (in TypeScript) on the front-end and Go on the back-end.</p>
+
+            <table class="position-title">
+                <tr id="ext-intern">
+                    <td><h4>Software Engineer</h4></td>
+                    <td><p class="text-end"><em>IXL Learning, July 2021 - May 2022</em></p></td>
+                </tr>
+            </table>
+
+            <p>At IXL, I was a member of the Teacher Experience team, which works on maintaining and building new features for educators on IXL's platform. My role involved full-stack development in Struts and React, working on an Agile team with biweekly standups and releases. Within my first six months at IXL, I had already led a full-scale project to allow instructors to pin skill plans for specific classes instead of their entire roster, for which I designed the back-end, wrote a detailed design doc, and led the team through implementation. One of the other big projects I worked on at IXL was a complete refactor of the back-end for personalized skill plans for exams like the SAT, ACT, and NWEA MAP, a feature used by more than 250,000 users. For this project, I designed the new back-end and did most of the implementation. </p>
+
+            <table class="position-title">
+                <tr id="ext-intern">
+                    <td><h4>Contract Software Engineer</h4></td>
+                    <td><p class="text-end"><em>Microsoft, October 2020 - June 2021</em></p></td>
+                </tr>
+            </table>
+
+            <p>At Microsoft, I architected and engineered an open source Python auto-assessment solution called <a href="https://github.com/microsoft/pybryt" target="_blank">PyBryt</a> that implements a unique autograding structure grounded in the philosophy that intermediate to advanced programming courses should not require students to follow a rigid scaffold for solving problems. I provided engineering support to a series of pilots of PyBryt in courses of up to 1,200 students per semester at UC Berkeley, Imperial College London, and Tel Aviv University, and developed and designed software on an Agile team with biweekly standup schedule emphasizing short feedback cycles and iterative development with weekly internal releases. I spent most of the first half of my time at Microsoft working on the initial release of and developing new features for PyBryt.</p>
+
+            <p>In the latter half of my time at Microsoft, I shifted focus to work more on furthering the adoption of PyBryt beyond its pilots at UC Berkeley, Imperial College London, and Tel Aviv University (while still working on feature development). I created a <a href="https://github.com/microsoft/pybryt-action" target="_;blank">GitHub Action</a> to automate the use of PyBryt as a continuous integration tool for student repositories; I then used this Action to orchestrate a full-scale implementation of a real-world grading pipeline using GitHub Classroom for collecting different implementations of algorithms to be used to construct exercises for interactive Microsoft Learn modules. I also authored <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/pybryt-for-pedagogical-auto-assessment/ba-p/3263659" target="_blank">a blog post</a> and two Microsoft Learn modules on <a href="https://docs.microsoft.com/learn/modules/introduction-pybryt/" target="_blank">an introduction to</a> and <a href="https://docs.microsoft.com/en-us/learn/modules/advanced-pybryt/" target="_blank">advanced uses of</a> PyBryt geared towards academics looking to adopt the solution.</p>
+
+            <table class="position-title">
+                <tr id="ext-intern">
+                    <td><h4>Statistics Software Development Intern</h4></td>
+                    <td><p class="text-end"><em>Federal Reserve Bank of San Francisco, May 2020 - August 2020</em></p></td>
+                </tr>
+            </table>
+
+            <p>As a part of my internship, I perform inspection and analysis on data from various bank financial reports utilized for analysis of economic activity by the Federal Reserve Board of Governors, including detecting and writing remarks for anomalous data points and assessing trends and issues by comparing against past financial data. This involves using internal databases to assess financial data reported to the Statistics function, managing data pipelines from various data sources in order to query, merge, shape, filter, and transform data to meet business needs, and applying cleaned data to business problems by creating data products that utilize the data and algorithms to reduce the workload of analysts.</p>
+
+            <p>I built a remark prediction algorithm (a two-part program) to accompany anomaly detection performed on weekly balance sheet data from the FR 2644 for 65+ depository institutions. The first part pulls 52 weeks of historical data for the report from the current as-of date and merges the data queried from 4 tables into a usable form for predicting remarks and the second matches detected anomalies with the most recent viable remark to carry forward in order to auto-fill the remark for analyst.</p>
+
+            <div class="anchor" id="experience-cdss">
+                <table class="position-title">
+                    <tr id="ext-intern">
+                        <td><h4>Lead Developer</h4></td>
+                        <td><p class="text-end"><em>UC Berkeley Data Science Education Program, May 2019 - June 2021</em></p></td>
+                    </tr>
+                </table>
+            </div>
+
+            <p>I lead a team of 8 developers working on 3 concurrent open source projects often using previously-unfamiliar technologies using Agile methodologies (include behavior- and test-driven development and continuous integration) to organize development cycles and encourage parallelization of tasks, including performing code review and facilitating weekly meeting standups.</p>
+
+            <p>The main project I work on is an open source Python and R autograding solution, <a href="https://github.com/ucbds-infra/otter-grader" target="_blank">Otter-Grader</a>, that scalably grades students’ programming assignments and abstracts away autograding internals for instructors, which has been adopted in 15+ courses at and outside of UC Berkeley and has impacted 2,500+ students. Part of this work has been creating an open source community for development around GitHub and a public Slack to allow instructors and contributors to communicate effectively and to allow iterations on the package to be a community effort. I also led an interactive hands-on demonstration of autograding solutions and a presentation on the engineering and infrastructure constraints of those solutions at the <a href="https://data.berkeley.edu/academics/resources/data-science-education-resources/2020-national-workshop-data-science-education" target="_blank">2020 National Workshop on Data Science Education</a>.</p>
+
+            <p>Another of the projects I led was the end-to-end development and deployment of a Django web application for the <a href="https://github.com/DS-Discovery/DS-Exchange" target="_blank">Data Science Discovery program</a>, allowing students to apply to various projects run a data science research program on campus and hosted on Microsoft Azure. I created an open source GitHub workflow following engineering best practices for collaboration including branch-per-feature, CI/CD pipelines, and multiple staging environments. I also wrote comprehensive internal documentation for the application deployment pipeline as well as how to use and develop on the application following the dev practices set out for this project.</p>
+
+        </div>
+
         <!-- Projects -->
         <div class="anchor" id="projects">
 
@@ -371,66 +426,6 @@
 
         </div>
 
-        <!-- Work Experience -->
-        <div class="anchor" id="experience">
-            
-            <h1>Work Experience</h1>
-
-            <table class="position-title">
-                <tr id="ext-intern">
-                    <td><h4>Site Reliability Engineer</h4></td>
-                    <td><p class="text-end"><em>Google, May 2022 - Present</em></p></td>
-                </tr>
-            </table>
-
-            <p>I am an incoming site reliability engineer at Google, working on capacity management.</p>
-
-            <table class="position-title">
-                <tr id="ext-intern">
-                    <td><h4>Software Engineer</h4></td>
-                    <td><p class="text-end"><em>IXL Learning, July 2021 - May 2022</em></p></td>
-                </tr>
-            </table>
-
-            <p>At IXL, I was a member of the Teacher Experience team, which works on maintaining and building new features for educators on IXL's platform. My role involved full-stack development in Struts and React, working on an Agile team with biweekly standups and releases. Within my first six months at IXL, I had already led a full-scale project to allow instructors to pin skill plans for specific classes instead of their entire roster, for which I designed the back-end, wrote a detailed design doc, and led the team through implementation. One of the other big projects I worked on at IXL was a complete refactor of the back-end for personalized skill plans for exams like the SAT, ACT, and NWEA MAP, a feature used by more than 250,000 users. For this project, I designed the new back-end and did most of the implementation. </p>
-
-            <table class="position-title">
-                <tr id="ext-intern">
-                    <td><h4>Contract Software Engineer</h4></td>
-                    <td><p class="text-end"><em>Microsoft, October 2020 - June 2021</em></p></td>
-                </tr>
-            </table>
-
-            <p>At Microsoft, I architected and engineered an open source Python auto-assessment solution called <a href="https://github.com/microsoft/pybryt" target="_blank">PyBryt</a> that implements a unique autograding structure grounded in the philosophy that intermediate to advanced programming courses should not require students to follow a rigid scaffold for solving problems. I provided engineering support to a series of pilots of PyBryt in courses of up to 1,200 students per semester at UC Berkeley, Imperial College London, and Tel Aviv University, and developed and designed software on an Agile team with biweekly standup schedule emphasizing short feedback cycles and iterative development with weekly internal releases. I spent most of the first half of my time at Microsoft working on the initial release of and developing new features for PyBryt.</p>
-
-            <p>In the latter half of my time at Microsoft, I shifted focus to work more on furthering the adoption of PyBryt beyond its pilots at UC Berkeley, Imperial College London, and Tel Aviv University (while still working on feature development). I created a <a href="https://github.com/microsoft/pybryt-action" target="_;blank">GitHub Action</a> to automate the use of PyBryt as a continuous integration tool for student repositories; I then used this Action to orchestrate a full-scale implementation of a real-world grading pipeline using GitHub Classroom for collecting different implementations of algorithms to be used to construct exercises for interactive Microsoft Learn modules. I also authored <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/pybryt-for-pedagogical-auto-assessment/ba-p/3263659" target="_blank">a blog post</a> and two Microsoft Learn modules on <a href="https://docs.microsoft.com/learn/modules/introduction-pybryt/" target="_blank">an introduction to</a> and <a href="https://docs.microsoft.com/en-us/learn/modules/advanced-pybryt/" target="_blank">advanced uses of</a> PyBryt geared towards academics looking to adopt the solution.</p>
-
-            <table class="position-title">
-                <tr id="ext-intern">
-                    <td><h4>Statistics Software Development Intern</h4></td>
-                    <td><p class="text-end"><em>Federal Reserve Bank of San Francisco, May 2020 - August 2020</em></p></td>
-                </tr>
-            </table>
-
-            <p>As a part of my internship, I perform inspection and analysis on data from various bank financial reports utilized for analysis of economic activity by the Federal Reserve Board of Governors, including detecting and writing remarks for anomalous data points and assessing trends and issues by comparing against past financial data. This involves using internal databases to assess financial data reported to the Statistics function, managing data pipelines from various data sources in order to query, merge, shape, filter, and transform data to meet business needs, and applying cleaned data to business problems by creating data products that utilize the data and algorithms to reduce the workload of analysts.</p>
-
-            <p>I built a remark prediction algorithm (a two-part program) to accompany anomaly detection performed on weekly balance sheet data from the FR 2644 for 65+ depository institutions. The first part pulls 52 weeks of historical data for the report from the current as-of date and merges the data queried from 4 tables into a usable form for predicting remarks and the second matches detected anomalies with the most recent viable remark to carry forward in order to auto-fill the remark for analyst.</p>
-
-            <table class="position-title">
-                <tr id="ext-intern">
-                    <td><h4>Lead Developer</h4></td>
-                    <td><p class="text-end"><em>UC Berkeley Data Science Education Program, May 2019 - June 2021</em></p></td>
-                </tr>
-            </table>
-
-            <p>I lead a team of 8 developers working on 3 concurrent open source projects often using previously-unfamiliar technologies using Agile methodologies (include behavior- and test-driven development and continuous integration) to organize development cycles and encourage parallelization of tasks, including performing code review and facilitating weekly meeting standups.</p>
-
-            <p>The main project I work on is an open source Python and R autograding solution, <a href="https://github.com/ucbds-infra/otter-grader" target="_blank">Otter-Grader</a>, that scalably grades students’ programming assignments and abstracts away autograding internals for instructors, which has been adopted in 15+ courses at and outside of UC Berkeley and has impacted 2,500+ students. Part of this work has been creating an open source community for development around GitHub and a public Slack to allow instructors and contributors to communicate effectively and to allow iterations on the package to be a community effort. I also led an interactive hands-on demonstration of autograding solutions and a presentation on the engineering and infrastructure constraints of those solutions at the <a href="https://data.berkeley.edu/academics/resources/data-science-education-resources/2020-national-workshop-data-science-education" target="_blank">2020 National Workshop on Data Science Education</a>.</p>
-
-            <p>Another of the projects I led was the end-to-end development and deployment of a Django web application for the <a href="https://github.com/DS-Discovery/DS-Exchange" target="_blank">Data Science Discovery program</a>, allowing students to apply to various projects run a data science research program on campus and hosted on Microsoft Azure. I created an open source GitHub workflow following engineering best practices for collaboration including branch-per-feature, CI/CD pipelines, and multiple staging environments. I also wrote comprehensive internal documentation for the application deployment pipeline as well as how to use and develop on the application following the dev practices set out for this project.</p>
-
-        </div>
-
         <!-- Course Development -->
         <div class="anchor" id="teaching">
             
@@ -438,11 +433,11 @@
 
             <h4>Undergraduate Student Instructor, UC Berkeley Division of Computing, Data Science and Society</h4>
 
-            <h5><a href="https://ds100.org/sp21" target="_blank">Data 100: Principles & Techniques of Data Science</a></h5>
+            <h5 id="teaching-data-100" class="anchor"><a href="https://ds100.org/sp21" target="_blank">Data 100: Principles & Techniques of Data Science</a></h5>
 
             <p><strong>Spring 2021, Fall 2020, Spring 2020.</strong> Since January 2020, I have been a UGSI for Data 100: Principles & Techniques of Data Science, a class of approximately 1200 students. My role includes leading a discussion and lab section comprised of about 30 students each, developing teaching materials for these sections, and holding office hours for studens in the course. My main responsibility for the course covers the course infrastrucutre, including managing the autograder (Otter-Grader, referenced above) and cloud computing environment that students use to complete their assignments.</p>
 
-            <h4>Data Science Curriculum Development, UC Berkeley Data Science Education Program</h4>
+            <h4 id="teaching-ds-curriculum" class="anchor">Data Science Curriculum Development, UC Berkeley Data Science Education Program</h4>
 
             <p>As a part of my time at DSEP, I participated in curriculum development for some courses that are taught by DSEP staff and for other "data-enabled" courses (courses outside the Division but which use DSEP infrastructure). The first course that I worked on, L&S 88, focused on reproducibility and open science. It was a connector course for Data 8 (the foundational course for data science students) and it was my role as a connector assistant that spurred me into working more and more in the campus data science community.</p>
 

@@ -24,7 +24,7 @@ a {
     padding-bottom: 5px;
 }
 
-div.anchor {
+.anchor {
     padding-top: 75px;
     margin-top: -75px;
 }
@@ -49,8 +49,13 @@ table.position-title {
 
 /* About Me Section */
 
-h1.name {
+.name {
     font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1.name {
     font-size: 65px;
     letter-spacing: 10px;
     text-align: center;
