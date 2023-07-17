@@ -11,12 +11,38 @@ by Chris Pyles
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); */
 
-* {
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    scroll-padding: 56px;
+}
+
+body {
+    --color-text: #182328;
+    --color-background: #FFF;
+    --color-accent: #0070b6;
+    --color-accent-dark: #035280;
+
     font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-text);
+}
+
+main {
+    scroll-snap-type: y mandatory;
+}
+
+main > div:not(:first-child) {
+    scroll-snap-align: start;
+    margin-bottom: 100px;
 }
 
 a {
+    color: var(--color-accent);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent-dark);
 }
 
 .container * {
@@ -24,10 +50,10 @@ a {
     padding-bottom: 5px;
 }
 
-.anchor {
+/* .anchor {
     padding-top: 75px;
     margin-top: -75px;
-}
+} */
 
 .grid-image {
     width: inherit;
@@ -62,10 +88,17 @@ h1.name {
 }
 
 div.fill-height {
-    /* color: #eee; */
-    height: 102vh;
-    padding: none;
+    min-height: calc(100vh - 56px);
+    scroll-snap-align: start;
 }
+
+/* div.fill-height:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+div.fill-height:last-child {
+    min-height: calc(100vh - 56px);
+} */
 
 div#about-me p.lead {
     margin-top: 60px;
@@ -75,14 +108,14 @@ div#about-me p.lead {
     max-width : 100%;
 }
 
-h1.jumbotron-text {
+/* h1.jumbotron-text {
     color: #fff;
     text-align: center;
     font-size: 30vw;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1vw;
     overflow: hidden;
-}
+} */
 
 div#headshot-container img {
     object-fit: cover;
@@ -118,7 +151,7 @@ Teaching Pages Styles
 
 */
 
-div.jumbotron#ds100-jumbotron {
+/* div.jumbotron#ds100-jumbotron {
     background: url("../images/cool-data-viz-background.jpg");
     background-size: cover;
     height: 60vh;
@@ -148,7 +181,7 @@ h1 span.quiet, h2 span.quiet {
 
 h2#course-header {
     margin-top: 20px;
-}
+} */
 
 
 /* Notes Table */
