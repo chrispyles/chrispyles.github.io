@@ -375,7 +375,7 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 4rem;
 
-  a {
+  > a {
     background-color: var(--color-card);
     border-radius: 0.5rem;
     color: var(--color-text);
@@ -394,7 +394,8 @@ nav {
     justify-content: space-between;
     margin-bottom: 1.5rem;
 
-    img {
+    img,
+    svg {
       width: 3rem;
     }
 
