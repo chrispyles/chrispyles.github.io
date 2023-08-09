@@ -48,7 +48,6 @@ $responsive-phone-breakpoint: 700px;
   scroll-snap-type: y proximity;
 
   @include responsive {
-    scroll-padding: 10rem;
     scroll-snap-type: none;
   }
 }
@@ -110,6 +109,10 @@ main {
 
     > h2 {
       margin-top: -8rem;
+
+      @include responsive {
+        margin-top: unset;
+      }
     }
   }
 
@@ -148,10 +151,17 @@ main {
   }
 }
 
-.center-content-vertically {
+.center-content-vertically,
+.force-center-content-vertically {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.center-content-vertically {
+  @include responsive {
+    justify-content: flex-start;
+  }
 }
 
 .container {
@@ -306,8 +316,6 @@ nav {
     flex-direction: column;
 
     ul {
-      flex-direction: row;
-
       li {
         border-left: none;
         border-top:  0.125rem solid var(--color-accent);
