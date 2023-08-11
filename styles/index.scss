@@ -237,7 +237,10 @@ nav {
   ol {
     column-gap: 1rem;
     display: flex;
-    list-style: zero-padded inside;
+
+    @supports (list-style: zero-padded inside) {
+      list-style: zero-padded inside;
+    }
 
     li {
       cursor: pointer;
@@ -247,24 +250,36 @@ nav {
 
       &::before {
         content: '';
-        margin-left: -1rem;
+        margin-left: -0.5rem;
       }
 
-      &::after {
-        --_overflow: 0.3rem;
-        border-bottom: 0.1rem solid var(--color-accent);
-        bottom: 0;
-        content: '';
-        height: 0.1rem;
-        left: calc(-1 * var(--_overflow));
-        position: absolute;
-        scale: var(--_scale, 0) 1;
-        transition: scale 205ms;
-        width: calc(100% + 2 * var(--_overflow));
-      }
+      @supports (list-style: zero-padded inside) {
+        &::after {
+          --_overflow: 0.3rem;
+          border-bottom: 0.1rem solid var(--color-accent);
+          bottom: 0;
+          content: '';
+          height: 0.1rem;
+          left: calc(-1 * var(--_overflow));
+          position: absolute;
+          scale: var(--_scale, 0) 1;
+          transition: scale 205ms;
+          width: calc(100% + 2 * var(--_overflow));
+        }
 
-      &:hover {
-        --_scale: 1;
+        &:hover {
+          --_scale: 1;
+        }
+      }
+    }
+
+    @supports not (list-style: zero-padded inside) {
+      li {
+        margin-left: 3rem;
+
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
 
