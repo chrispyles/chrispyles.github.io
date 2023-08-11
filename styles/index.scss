@@ -240,12 +240,31 @@ nav {
     list-style: zero-padded inside;
 
     li {
+      cursor: pointer;
       line-height: $nav-height;
+      position: relative;
       vertical-align: middle;
 
       &::before {
         content: '';
-        margin-left: -0.3rem;
+        margin-left: -1rem;
+      }
+
+      &::after {
+        --_overflow: 0.3rem;
+        border-bottom: 0.1rem solid var(--color-accent);
+        bottom: 0;
+        content: '';
+        height: 0.1rem;
+        left: calc(-1 * var(--_overflow));
+        position: absolute;
+        scale: var(--_scale, 0) 1;
+        transition: scale 205ms;
+        width: calc(100% + 2 * var(--_overflow));
+      }
+
+      &:hover {
+        --_scale: 1;
       }
     }
 
@@ -258,6 +277,10 @@ nav {
         margin: 0.2rem 0;
       }
     }
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 }
 
