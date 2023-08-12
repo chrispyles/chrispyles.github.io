@@ -196,6 +196,11 @@ nav {
   padding-top: $nav-padding-top;
   position: sticky;
   top: 0;
+  z-index: 100;
+
+  @include responsive {
+    padding-bottom: 1rem;
+  }
 
   > :first-child {
     align-self: center;
@@ -234,15 +239,21 @@ nav {
     }
   }
 
-  ol {
-    column-gap: 1rem;
-    display: flex;
+  // $counter-style is used as a check that the browser supports @counter-style.
+  $counter-style: 'list-style: zero-padded inside';
 
-    @supports (list-style: zero-padded inside) {
-      list-style: zero-padded inside;
+  ol {
+    column-gap: 2rem;
+    counter-reset: section-links;
+    display: flex;
+    list-style: none;
+
+    @supports not (#{$counter-style}) {
+      column-gap: 0.5rem;
     }
 
     li {
+      counter-increment: section-links;
       cursor: pointer;
       line-height: $nav-height;
       position: relative;
@@ -250,10 +261,17 @@ nav {
 
       &::before {
         content: '';
-        margin-left: -0.5rem;
+
+        @supports (#{$counter-style}) {
+          content: counter(section-links, zero-padded) '. ';
+        }
+
+        @supports not (#{$counter-style}) {
+          margin-left: -1.5rem;
+        }
       }
 
-      @supports (list-style: zero-padded inside) {
+      @supports (#{$counter-style}) {
         &::after {
           --_overflow: 0.3rem;
           border-bottom: 0.1rem solid var(--color-accent);
@@ -273,7 +291,7 @@ nav {
       }
     }
 
-    @supports not (list-style: zero-padded inside) {
+    @supports not (#{$counter-style}) {
       li {
         margin-left: 3rem;
 
@@ -520,6 +538,10 @@ $icon-size: 1.5rem;
 
 #responsive-social-icons {
   display: none;
+
+  &::before {
+    content: '';
+  }
 
   @include responsive-phone {
     display: flex;
