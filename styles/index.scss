@@ -12,7 +12,7 @@ $nav-padding-top: 0.75rem;
 $color-text: #DDF2FC;
 $color-accent: #B5C7B6;
 
-$responsive-breakpoint: 950px;
+$responsive-breakpoint: 1000px;
 @mixin responsive {
   @media (max-width: #{$responsive-breakpoint}) {
     @content;
@@ -204,7 +204,7 @@ nav {
 
   > :first-child {
     align-self: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
   }
 
   .right-nav {
