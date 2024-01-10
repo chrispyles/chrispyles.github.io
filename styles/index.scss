@@ -102,10 +102,7 @@ i {
 main {
   > div {
     counter-increment: sections;
-
-    &:not(:first-child) {
-      scroll-snap-align: start;
-    }
+    scroll-snap-align: start;
 
     > h2 {
       margin-top: -8rem;
