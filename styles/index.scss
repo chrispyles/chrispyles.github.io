@@ -9,8 +9,10 @@ $root-padding-x: 1.25rem;
 $nav-height: 1.875rem;
 $nav-padding-top: 0.75rem;
 
+// Color scheme: https://coolors.co/ffffff-d0bcbe-f7f08d-141f2f-ddf2fc-293c56
+// Old color scheme: https://coolors.co/ffffff-d0bcbe-b5c7b6-141f2f-ddf2fc-293c56
 $color-text: #DDF2FC;
-$color-accent: #B5C7B6;
+$color-accent: #F7F08D;
 
 $responsive-breakpoint: 1000px;
 @mixin responsive {
