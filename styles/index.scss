@@ -383,6 +383,10 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 2rem 0 0;
+
+  @include responsive-phone {
+    flex-direction: column;
+  }
 }
 
 .degree {
@@ -394,6 +398,10 @@ nav {
     display: flex;
     font-style: italic;
     justify-content: space-between;
+
+    @include responsive-phone {
+      flex-direction: column;
+    }
   }
 }
 
@@ -403,6 +411,14 @@ nav {
   grid-column-gap: 1rem;
   grid-row-gap: 0.75rem;
   margin: 1rem 0;
+
+  @include responsive-phone {
+    grid-template-columns: 1fr;
+
+    h3:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
 
   h3 {
     align-self: center;
