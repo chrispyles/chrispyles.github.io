@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $fonts: (
   "header": ('Merriweather Sans', sans-serif),
   "body": ('Source Sans Pro', sans-serif),
@@ -43,7 +45,7 @@ $responsive-phone-breakpoint: 700px;
   background-color: var(--color-background);
   color: var(--color-text);
   counter-reset: sections;
-  font-family: map-get($fonts, 'body');
+  font-family: map.get($fonts, 'body');
   padding: 0 $root-padding-x;
   scroll-behavior: smooth;
   scroll-padding: calc(#{$nav-height} + #{$nav-padding-top});
@@ -63,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: map-get($fonts, 'header');
+  font-family: map.get($fonts, 'header');
 }
 
 p {
@@ -94,7 +96,7 @@ button {
 
 code {
   color: var(--color-code);
-  font-family: map-get($fonts, 'mono');
+  font-family: map.get($fonts, 'mono');
 }
 
 i {
@@ -117,7 +119,7 @@ main {
 
   h2 {
     color: var(--color-accent);
-    font-family: map-get($fonts, 'mono');
+    font-family: map.get($fonts, 'mono');
 
     &::before {
       color: var(--color-text);
@@ -130,7 +132,7 @@ main {
 // Utility classes
 
 .serif {
-  font-family: map-get($fonts, 'serif');
+  font-family: map.get($fonts, 'serif');
 }
 
 .accent {
@@ -139,7 +141,7 @@ main {
 }
 
 .mono {
-  font-family: map-get($fonts, 'mono');
+  font-family: map.get($fonts, 'mono');
 }
 
 .full-height {
@@ -189,7 +191,7 @@ main {
 nav {
   background-color: var(--color-background);
   display: flex;
-  font-family: map-get($fonts, 'mono');
+  font-family: map.get($fonts, 'mono');
   height: $nav-height;
   justify-content: space-between;
   padding-top: $nav-padding-top;
@@ -201,9 +203,16 @@ nav {
     padding-bottom: 1rem;
   }
 
+  svg {
+    fill: var(--color-text);
+  }
+
   > :first-child {
     align-self: center;
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
   }
 
   .right-nav {
