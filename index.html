@@ -19,7 +19,7 @@
   <meta name="title" content="Chris Pyles">
   <meta
     name="description"
-    content="A portfolio for Chris Pyles, a software engineer with experience in web development and ed-tech.."
+    content="A portfolio for Chris Pyles, a software engineer at Google building distributed systems for automated capacity management."
   >
 
   <!-- Open Graph / Facebook -->
@@ -28,7 +28,7 @@
   <meta property="og:title" content="Chris Pyles">
   <meta
     property="og:description"
-    content="A portfolio for Chris Pyles, a software engineer with experience in web development and ed-tech."
+    content="A portfolio for Chris Pyles, a software engineer at Google building distributed systems for automated capacity management."
   >
 
   <!-- Twitter -->
@@ -37,7 +37,7 @@
   <meta property="twitter:title" content="Chris Pyles">
   <meta
     property="twitter:description"
-    content="A portfolio for Chris Pyles, a software engineer with experience in web development and ed-tech."
+    content="A portfolio for Chris Pyles, a software engineer at Google building distributed systems for automated capacity management."
   >
 
   <!-- jQuery -->
@@ -118,7 +118,7 @@
       </h1>
 
       <p>
-        I'm a software engineer, currently working at Google, with experience in web development and educational technology.
+        I'm a software engineer at Google building distributed systems for automated capacity management.
       </p>
 
       <script>
@@ -190,7 +190,7 @@
             role="button"
           >
             Microsoft<br>
-            <em>October 2020 - June 2021</em>
+            <em>October 2020 - May 2022</em>
           </li>
 
           <li
@@ -209,7 +209,11 @@
               <p><em>Google, May 2022 - Present</em></p>
             </div>
 
-            <p>At Google, I work as a full stack engineer on an internal capacity management platform that serves over 25,000 services across the organization. One of my largest contributions is the capacity projection validator I redesigned and now own end-to-end — a system that evaluates roughly 100,000 daily proposals to ensure they meet service owner requirements and don't violate configured constraints. I also built an orchestration application that coordinated automated and manual service moves across multiple stakeholder groups, which has been used to move over 10,000 services. Beyond feature work, I've championed efforts to reduce technical debt, including a refactor of our demand charting system that cut loading times by 80%, and improvements to our application's filtering system that meaningfully increased user productivity.</p>
+            <p>At Google, I work as an engineer on an internal automated capacity management platform for over 40k services and managing over 430k jobs. It's built as a set of distributed backends written in Python and Go backed by a distributed Spanner database. I redesigned and now own the capacity projection validator which evaluates ~100k capacity plans daily to ensure they meet service owner requirements and do not violate configured constraints before actuation.</p>
+            
+            <p>I've proposed and led several efforts to reduce technical debt within our system, including cleaning up over 10k lines of dead code from feature flags and cutting the loading time of our demand data charting pipeline by 80% by refactoring out unnecessary data parsing. Another of my previous projects was to create an application for orchestrating automated and manual service moves between service owners, resource managers, and product managers which has been used to move over 10k services.</p>
+
+            <p><em><strong>Technologies</strong>: Go, Python, Spanner, SQL, gRPC/Protocol Buffers, TypeScript, Angular</em></p>
           </div>
 
           <div id="experience-ixl">
@@ -218,7 +222,9 @@
               <p><em>IXL Learning, July 2021 - May 2022</em></p>
             </div>
 
-            <p>At IXL Learning, I was part of the Teacher Experience team, building tools that shape how instructors interact with IXL's platform. My most impactful project was developing personalized learning paths tied to students' NWEA MAP test scores — a feature that is now actively used by over 250,000 students nationwide. I also architected a follow-on project to clean up the technical debt introduced by that feature, pulling hard-coded logic out of the codebase and into flexible database tables. Within my first six months, I planned and led a project to support skill plan pinning for individual classes, which required new database schemas, refactoring of existing infrastructure, and new frontend components — all shipped on schedule.</p>
+            <p>At IXL Learning, I was part of the Teacher Experience team, building tools that shape how instructors interact with IXL's platform. My most impactful project was developing personalized learning paths tied to students' NWEA MAP test scores — a feature that is now actively used by over 250k students nationwide. I also architected a follow-on project to clean up the technical debt introduced by that feature, pulling hard-coded logic out of the codebase and into flexible database tables. Within my first six months, I planned and led a project to support skill plan pinning for individual classes, which required new database schemas, refactoring of existing infrastructure, and new frontend components — all shipped on schedule.</p>
+
+            <p><em><strong>Technologies</strong>: Java, Struts 2, JavaScript, React, Git, GitLab, Jira</em></p>
           </div>
 
           <div id="experience-microsoft">
@@ -229,7 +235,9 @@
 
             <p>At Microsoft, I architected and engineered an open source Python auto-assessment solution called <a href="https://github.com/microsoft/pybryt" target="_blank">PyBryt</a> that implements a unique autograding structure grounded in the philosophy that intermediate to advanced programming courses should not require students to follow a rigid scaffold for solving problems. I provided engineering support to a series of pilots of PyBryt in courses of up to 1,200 students per semester at UC Berkeley, Imperial College London, and Tel Aviv University. I spent most of the first half of my time at Microsoft working on the initial release of and developing new features for PyBryt.</p>
 
-            <p>In the latter half of my time at Microsoft, I shifted focus to driving the adoption of PyBryt beyond its pilot courses (while still working on feature development). I created a <a href="https://github.com/microsoft/pybryt-action" target="_;blank">GitHub Action</a> to automate the use of PyBryt as a continuous integration tool for student repositories; I then used this Action to orchestrate a full-scale implementation of a real-world grading pipeline using GitHub Classroom for collecting different implementations of algorithms to be used to construct exercises for interactive Microsoft Learn modules. I also authored <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/pybryt-for-pedagogical-auto-assessment/ba-p/3263659" target="_blank">a blog post</a> and two Microsoft Learn modules on <a href="https://docs.microsoft.com/learn/modules/introduction-pybryt/" target="_blank">an introduction to</a> and <a href="https://docs.microsoft.com/en-us/learn/modules/advanced-pybryt/" target="_blank">advanced uses of</a> PyBryt geared towards academics looking to adopt the solution.</p>
+            <p>In the latter half of my time at Microsoft, I shifted focus to driving the adoption of PyBryt beyond its pilot courses (while still working on feature development). I created a <a href="https://github.com/microsoft/pybryt-action" target="_blank">GitHub Action</a> to automate the use of PyBryt as a continuous integration tool for student repositories; I then used this Action to orchestrate a full-scale implementation of a real-world grading pipeline using GitHub Classroom for collecting different implementations of algorithms to be used to construct exercises for interactive Microsoft Learn modules. I also authored <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/pybryt-for-pedagogical-auto-assessment/ba-p/3263659" target="_blank">a blog post</a> and two Microsoft Learn modules on <a href="https://docs.microsoft.com/learn/modules/introduction-pybryt/" target="_blank">an introduction to</a> and <a href="https://docs.microsoft.com/en-us/learn/modules/advanced-pybryt/" target="_blank">advanced uses of</a> PyBryt geared towards academics looking to adopt the solution.</p>
+
+            <p><em><strong>Technologies</strong>: Python, Jupyter Notebooks, Sphinx, Git, Tracing</em></p>
           </div>
 
           <div id="experience-ucb">
@@ -240,7 +248,9 @@
 
             <p>I led a team of 8 developers working on 3 concurrent open source projects at a time often using previously-unfamiliar technologies. We used Agile methodologies to organize development cycles and encouraged parallelization of tasks, including performing code review and facilitating weekly meeting standups.</p>
 
-            <p>The main project I worked on is an open source Python and R autograding solution, <a href="https://github.com/ucbds-infra/otter-grader" target="_blank">Otter-Grader</a>, that scalably grades students' programming assignments and abstracts away autograding internals for instructors, which has been adopted in several courses at and outside of UC Berkeley and has used to grade assignments for over 10,000 students at UC Berkeley alone. Part of this work has been creating an open source community for development around GitHub and a public Slack to allow instructors and contributors to communicate effectively and to allow iterations on the package to be a community effort. I also led an interactive hands-on demonstration of autograding solutions and a presentation on the engineering and infrastructure constraints of those solutions at the <a href="https://data.berkeley.edu/academics/resources/data-science-education-resources/2020-national-workshop-data-science-education" target="_blank">2020 National Workshop on Data Science Education</a>.</p>
+            <p>The main project I worked on is an open source Python and R autograding solution, <a href="https://github.com/ucbds-infra/otter-grader" target="_blank">Otter-Grader</a>, that scalably grades students' programming assignments and abstracts away autograding internals for instructors, which has been adopted in several courses at and outside of UC Berkeley and has been used to grade assignments for over 10,000 students at UC Berkeley alone. Part of this work has been creating an open source community for development around GitHub and a public Slack to allow instructors and contributors to communicate effectively and to allow iterations on the package to be a community effort.</p>
+
+            <p><em><strong>Technologies</strong>: Python, R, Docker, Azure, Google Cloud, Jupyter Notebooks, PostgreSQL</em></p>
           </div>
         </div>
       </div>
@@ -295,24 +305,29 @@
             <img data-shields-logo="python" alt="Python logo" />
             Python
           </div>
-
-          <div class="skill">
-            <img data-shields-logo="typescript" alt="TypeScript logo" />
-            TypeScript
-          </div>
-
+          
           <div class="skill">
             <img data-shields-logo="go" alt="Golang logo" />
             Go
           </div>
 
           <div class="skill">
+            <img data-shields-logo="typescript" alt="TypeScript logo" />
+            TypeScript
+          </div>
+          
+          <div class="skill">
             <img data-shields-logo="javascript" alt="JavaScript logo" />
             JavaScript
           </div>
 
           <div class="skill">
-            <img data-shields-logo="openjdk" alt="OpenJDK logo" />
+            <img data-shields-logo="sql" alt="SQL logo" />
+            SQL
+          </div>
+
+          <div class="skill">
+            <img data-shields-logo="java" alt="Java logo" />
             Java
           </div>
 
@@ -320,49 +335,41 @@
             <img data-shields-logo="r" alt="R logo" />
             R
           </div>
-
-          <div class="skill">
-            <img data-shields-logo="ruby" alt="Ruby logo" />
-            Ruby
-          </div>
-
-          <div class="skill">
-            <img data-shields-logo="julia" alt="Julia logo" />
-            Julia
-          </div>
         </div>
 
-        <h3>Frameworks</h3>
+        <h3>Concepts</h3>
 
         <div class="skills">
           <div class="skill">
-            <img data-shields-logo="angular" alt="Angular logo" />
-            Angular
+            distributed systems
           </div>
 
           <div class="skill">
-            <img data-shields-logo="react" alt="React logo" />
-            React
+            RPCs
           </div>
 
           <div class="skill">
-            <img data-shields-logo="django" alt="Django logo" />
-            Django
+            concurrency
           </div>
 
           <div class="skill">
-            <img data-shields-logo="apache" Alt="Apache logo" />
-            Apache Struts
+            microservice architectures
           </div>
 
           <div class="skill">
-            <img data-shields-logo="rubyonrails" alt="Rails logo" />
-            Ruby on Rails
+            distributed database transactions
           </div>
 
           <div class="skill">
-            <img data-shields-logo="nextdotjs" alt="Next.js logo" />
-            Next.js
+            performance optimization
+          </div>
+
+          <div class="skill">
+            fault tolerance
+          </div>
+
+          <div class="skill">
+            test-driven development
           </div>
         </div>
 
@@ -370,13 +377,37 @@
 
         <div class="skills">
           <div class="skill">
+            <img data-shields-logo="docker" alt="Docker logo" />
+            Docker
+          </div>
+
+          <div class="skill">
+            <!-- <img data-shields-logo="spanner" alt="Spanner logo" /> -->
+            Spanner
+          </div>
+
+          <div class="skill">
+            <img src="https://raw.githubusercontent.com/grpc/grpc.io/refs/heads/main/assets/icons/logo.svg" alt="gRPC logo" />
+            gRPC
+          </div>
+
+          <div class="skill">
+            Protocol Buffers
+          </div>
+
+          <div class="skill">
             <img data-shields-logo="git" alt="Git logo" />
             Git
           </div>
 
           <div class="skill">
-            <img data-shields-logo="jupyter" alt="Jupyter logo" />
-            Jupyter
+            <img data-shields-logo="github" alt="GitHub logo" />
+            GitHub
+          </div>
+
+          <div class="skill">
+            <img data-shields-logo="github" alt="GitHub logo" />
+            GitHub Actions
           </div>
 
           <div class="skill">
@@ -385,13 +416,8 @@
           </div>
 
           <div class="skill">
-            <img data-shields-logo="docker" alt="Docker logo" />
-            Docker
-          </div>
-
-          <div class="skill">
-            <img data-shields-logo="googlecloud" alt="Google Cloud logo" />
-            Google Cloud
+            <!-- <img data-shields-logo="pprof" alt="pprof logo" /> -->
+            pprof
           </div>
         </div>
       </div>
@@ -420,7 +446,7 @@
 
           <p>Otter-Grader is a Python-based server-optional autograding solution that can grade both Python and R assignments.</p>
 
-          <p><em>Utilized: Python, R, Docker</em></p>
+          <p><em>Utilized: Python, R, Docker, Jupyter Notebooks, GitHub Actions</em></p>
         </a>
 
         <a href="https://github.com/microsoft/pybryt" target="_blank">
@@ -431,7 +457,7 @@
 
           <p>PyBryt is a Python auto-assessment tool designed to avoid the rigidly-structured unit test based autograding format of conventional autograders.</p>
 
-          <p><em>Utilized: Python, Jupyter Notebooks</em></p>
+          <p><em>Utilized: Python, Jupyter Notebooks, Git, Sphinx, Tracing</em></p>
         </a>
 
         <a href="https://github.com/chrispyles/fica" target="_blank">
@@ -451,7 +477,7 @@
             </svg>
           </h3>
 
-          <p><code>fica</code> is a Python package for managing and documenting configuration files. It can be used to define a type-safe structure for a configuration object and, in conjuction with Sphinx, create simple, formatted documentation for each value.</p>
+          <p><code>fica</code> is a Python package for managing and documenting configuration files. It can be used to define a type-safe structure for a configuration object and, in conjunction with Sphinx, create simple, formatted documentation for each value.</p>
 
           <p><em>Utilized: Python, Metaprogramming, Sphinx</em></p>
         </a>
@@ -473,7 +499,7 @@
             <img src="assets/projects/amaze-logo.svg" />
           </h3>
 
-          <p>Amaze is a small maze game that generates random mazes for you to solve and uses depth-first search to find the solution to the maze. It's is a serverless Angular single-page application.</p>
+          <p>Amaze is a small maze game that generates random mazes for you to solve and uses depth-first search to find the solution to the maze. It's a serverless Angular single-page application.</p>
 
           <p><em>Utilized: Angular, TypeScript, Node.js</em></p>
         </a>
